@@ -1,0 +1,46 @@
+.c-partner {
+	@include pc {
+		padding-top: rem(50);
+		padding-bottom: rem(132);
+	}
+	@include sp {
+		padding-bottom: vw(90);
+	}
+	.max-inner {
+		@include pc {
+			max-width: rem(904);
+		}
+	}
+}
+
+.c-partner__title {
+	@include font-pc(30, 44, -80, 600);
+	@include font-sp(20, 29, -80, 600);
+}
+
+.c-partner__text {
+	@include font-pc(30, 44, -80, 600);
+	@include font-sp(20, 29, -80, 600);
+}
+
+.c-partner__img01 {
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		@include sp {
+			max-width: vw(293.36);
+		}
+	}
+}
+
+.c-partner__img02 {
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		@include sp {
+			max-width: vw(307.42);
+		}
+	}
+}

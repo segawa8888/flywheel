@@ -1,0 +1,33 @@
+<%- include(`${ROOT}_include/_img`) %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% var meta={ path: "../../",title: 'not-found' , description: 'description' , keywords: 'keywords' , og : { url: ``, iamge: '' } } -%>
+  <%- include(`${ROOT}_common/_head`, { meta: meta }) %>
+</head>
+
+<body>
+  <%- include(`${ROOT}_common/_header.ejs`, {path: meta.path}) %>
+  <!-- contents start -->
+  <div id="mainContents" class="not-found sub">
+    <section class="pt-160">
+      <div class="max-inner">
+        <h1 class="u-title ta-c">404 Not Found</h1>
+        <p class="u-text ta-c mt-97 mt-sp-69">誠に申し訳ございませんが、<br class="is-sp">アクセスしようとしたページは<br>
+          削除、変更されたか、<br class="is-sp">現在利用できない可能性があります。<br>
+          下記リンクからご覧になりたいページを<br class="is-sp">お探しください。</p>
+        <div class="mt-97 mt-sp-69">
+          <a href="/" class="c-btn mx-auto">FLYWHEEL ホームページへ</a>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  <!-- contents end -->
+
+  <%- include(`${ROOT}_common/_footer.ejs`,{path: meta.path}) %>
+  <%- include(`${ROOT}_common/_script.ejs`, {path: meta.path}) %>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+.p-message__inner {
+    @include pc {
+        max-width: rem(911);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p-message__tittle {
+    @include font-pc(26, 26, 0, 600);
+    @include font-sp(22, 22, 0, 600);
+}
+
+.p-message__items {
+    @include pc {
+        margin-top: rem(71);
+    }
+    @include sp {
+        margin-top: vw(40);
+    }
+}
+
+.p-message__item:nth-child(n+2) {
+    @include pc {
+        margin-top: rem(85);
+    }
+    @include sp {
+        margin-top: vw(73);
+    }
+}
+
+.p-message__wrap {
+    display: flex;
+    @include pc {
+        gap:0 rem(70);
+    }
+    @include sp {
+        gap:0 vw(19);
+    }
+}
+
+.p-message__img {
+    @include pc {
+        width:rem(327);
+        flex:none;
+    }
+    @include sp {
+        width:vw(150);
+    }
+}
+
+.p-message__lead {
+    @include font-pc(24, 24, 0, 600);
+    @include font-sp(20, 20, 0, 600);
+    @include sp {
+        margin-top: vw(10);
+    }
+}
+
+.p-message__sub {
+    @include font-pc(15, 30, 0, 500);
+    @include font-sp(14, 30, 0, 500);
+    @include pc {
+        margin-top:rem(10);
+    }
+    @include sp {
+        margin-top: vw(7);
+    }
+}
+
+.p-message__disc {
+    @include font-pc(14, 24, 0, 400);
+    @include font-sp(14, 24, 0, 400);
+    @include pc {
+        margin-top:rem(15);
+    }
+    @include sp {
+        margin-top: vw(15);
+    }
+}
+
+.p-message__text {
+    @include font-pc(15, 26, 0, 400);
+    @include font-sp(15, 28, 0, 400);
+    @include pc {
+        margin-top:rem(30);
+        width: rem(434);
+    }
+    @include sp {
+        width: 100%;
+        margin-top: vw(15);
+    }
+}
+
+.p-message__wrapper {
+    text-align: center;
+    @include pc {
+        margin-top: rem(196);
+    }
+    @include sp {
+        margin-top: vw(120);
+    }
+}
+
+.p-message__strong {
+    @include font-pc(34, 34, -100, 600);
+    @include font-sp(28, 28, -100, 600);
+}
+
+.p-message__message {
+    @include font-pc(22,46, -40, 600);
+    @include font-sp(18, 34, -40, 600);
+    @include pc {
+        margin-top: rem(111);
+    }
+    @include sp {
+        margin-top: vw(85);
+    }
+}
+
+.p-message__foot {
+    @include font-pc(16, 28, -20, 600);
+    @include font-sp(14, 24, 0, 600);
+    @include pc{
+        margin-top: rem(80);
+    }
+    @include sp {
+        margin-top: vw(45);
+    }
+}
+
+.p-message__yokoyama {
+    @include font-pc(24, 24, 0, 600);
+    @include font-sp(20, 20, 0, 600);
+    @include pc {
+        margin-top: rem(20);
+    }
+    @include sp {
+        margin-top: vw(20);
+    }
+}

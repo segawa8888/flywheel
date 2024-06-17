@@ -1,0 +1,176 @@
+<%- include(`${ROOT}_include/_img`) %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% var meta={ path: "../",title: '導入事例一覧' , description: 'description' , keywords: 'keywords' , og : { url: ``, iamge: '' } } -%>
+  <%- include(`${ROOT}_common/_head`, { meta: meta }) %>
+</head>
+
+<body>
+  <%- include(`${ROOT}_common/_header.ejs`, {path: meta.path}) %>
+  <!-- contents start -->
+  <div id="mainContents" class="case sub">
+    <section class="pt-160 pb-sp-20">
+      <div class="max-inner">
+        <h1 class="u-title ta-c mb-65 mb-sp-40">導入事例</h1>
+        <p class="mb-92 ta-c u-lead01">Conata(コナタ)™の導入事例をご紹介します</p>
+
+        <ul class="c-category mx-auto">
+          <li class="c-category-item mb-10 mb-sp-15 mr-24 mr-sp-0">
+            <div>
+              <input type="radio" name="category" id="category01">
+              <label for="category01">ALL</label>
+            </div>
+          </li>
+          <li class="c-category-item mb-10 mb-sp-15 mr-24 mr-sp-0">
+            <div>
+              <input type="radio" name="category" id="category02">
+              <label for="category02">EC・小売・流通</label>
+            </div>
+          </li>
+          <li class="c-category-item mb-10 mb-sp-15 mr-24 mr-sp-0">
+            <div>
+              <input type="radio" name="category" id="category03">
+              <label for="category03">メディア・エンターテイメント</label>
+            </div>
+          </li>
+          <li class="c-category-item mb-10 mb-sp-15 mr-24 mr-sp-0">
+            <div>
+              <input type="radio" name="category" id="category04">
+              <label for="category04">交通インフラ</label>
+            </div>
+          </li>
+          <li class="c-category-item mb-10 mb-sp-15 mr-24 mr-sp-0">
+            <div>
+              <input type="radio" name="category" id="category05">
+              <label for="category05">メーカー</label>
+            </div>
+          </li>
+          <li class="c-category-item mb-10 mb-sp-15 mr-24 mr-sp-0">
+            <div>
+              <input type="radio" name="category" id="category06">
+              <label for="category06">金融</label>
+            </div>
+          </li>
+          <li class="c-category-item mb-10 mb-sp-15 mr-24 mr-sp-0">
+            <div>
+              <input type="radio" name="category" id="category07">
+              <label for="category07">Smart Cities</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="c-case-wrap p-top-case mt-0 pt-100 pb-170 pb-sp-90">
+      <div class="max-inner">
+        <ul class="c-case mb-60 mb-sp-0">
+          <li class="pb-120 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-case__img mb-11 mb-sp-10">
+                <%- img("dummy01", "ダミー画像", "common", "png") %>
+              </div>
+              <div class="c-case__logo mb-11 mb-sp-10">
+                <%- img("dummy_logo01", "ロゴ", "common", "png") %>
+              </div>
+              <p class="c-case__company mb-5 mb-sp-12">株式会社 大阪メトロ アドエラ</p>
+              <p class="c-case__title">DOOHのプログラマティック広告配信を実現</p>
+            </a>
+          </li>
+          <li class="pb-120 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-case__img mb-11 mb-sp-10">
+                <%- img("dummy02", "ダミー画像", "common", "png") %>
+              </div>
+              <div class="c-case__logo mb-11 mb-sp-10">
+                <%- img("dummy_logo02", "ロゴ", "common", "png") %>
+              </div>
+              <p class="c-case__company mb-5 mb-sp-12">アスクル株式会社</p>
+              <p class="c-case__title">需要予測技術により売上改善の予測モデルを開発</p>
+            </a>
+          </li>
+          <li class="pb-120 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-case__img mb-11 mb-sp-10">
+                <%- img("dummy03", "ダミー画像", "common", "png") %>
+              </div>
+              <div class="c-case__logo mb-11 mb-sp-10">
+                <%- img("dummy_logo03", "ロゴ", "common", "png") %>
+              </div>
+              <p class="c-case__company mb-5 mb-sp-12">株式会社オークファン</p>
+              <p class="c-case__title">日本最大級B2B卸サイトパーソナライズ化の検証で売上が4倍に</p>
+            </a>
+          </li>
+          <li class="pb-120 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-case__img mb-11 mb-sp-10">
+                <%- img("dummy01", "ダミー画像", "common", "png") %>
+              </div>
+              <div class="c-case__logo mb-11 mb-sp-10">
+                <%- img("dummy_logo01", "ロゴ", "common", "png") %>
+              </div>
+              <p class="c-case__company mb-5 mb-sp-12">株式会社 大阪メトロ アドエラ</p>
+              <p class="c-case__title">DOOHのプログラマティック広告配信を実現</p>
+            </a>
+          </li>
+          <li class="pb-120 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-case__img mb-11 mb-sp-10">
+                <%- img("dummy02", "ダミー画像", "common", "png") %>
+              </div>
+              <div class="c-case__logo mb-11 mb-sp-10">
+                <%- img("dummy_logo02", "ロゴ", "common", "png") %>
+              </div>
+              <p class="c-case__company mb-5 mb-sp-12">アスクル株式会社</p>
+              <p class="c-case__title">需要予測技術により売上改善の予測モデルを開発</p>
+            </a>
+          </li>
+          <li class="pb-120 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-case__img mb-11 mb-sp-10">
+                <%- img("dummy03", "ダミー画像", "common", "png") %>
+              </div>
+              <div class="c-case__logo mb-11 mb-sp-10">
+                <%- img("dummy_logo03", "ロゴ", "common", "png") %>
+              </div>
+              <p class="c-case__company mb-5 mb-sp-12">株式会社オークファン</p>
+              <p class="c-case__title">日本最大級B2B卸サイトパーソナライズ化の検証で売上が4倍に</p>
+            </a>
+          </li>
+        </ul>
+
+        <a href="/case/" class="c-btn blue mx-auto">
+          <span>もっと見る</span>
+        </a>
+
+
+      </div>
+    </section>
+    <div class="p-top-cv is-bg-blue">
+      <div class="max-inner ta-c">
+        <p class="mb-30 mb-sp-28">データ活用プラットフォームConataの<br>紹介資料・導入事例集はこちら</p>
+        <div class="mb-90 mb-sp-82">
+          <a href="/download/" class="c-btn cv blue mx-auto">
+            <span>資料請求</span>
+          </a>
+        </div>
+        <p class="mb-36 mb-sp-28">個別のご質問・ご相談はこちら</p>
+        <a href="/contact/" class="c-btn blue mx-auto">
+          <span class="">
+            お問い合わせ
+          </span>
+        </a>
+      </div>
+    </div>
+    <section class="c-partner pt-200 pb-0 pt-sp-80 pb-sp-80">
+      <%- include(`${ROOT}_include/_partner.ejs`) %>
+    </section>
+
+  </div>
+  <!-- contents end -->
+
+  <%- include(`${ROOT}_common/_footer.ejs`,{path: meta.path}) %>
+  <%- include(`${ROOT}_common/_script.ejs`, {path: meta.path}) %>
+</body>
+
+</html>

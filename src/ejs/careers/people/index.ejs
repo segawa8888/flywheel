@@ -1,0 +1,249 @@
+<%- include(`${ROOT}_include/_img`) %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% var meta={ path: "../../",title: 'PEOPLE&TEAM' , description: 'description' , keywords: 'keywords' , og : { url: ``, iamge: '' } } -%>
+  <%- include(`${ROOT}_common/_head`, { meta: meta }) %>
+</head>
+
+<body>
+  <%- include(`${ROOT}_common/_header.ejs`, {path: meta.path}) %>
+  <!-- contents start -->
+  <div id="mainContents" class="people sub">
+    <section class="pt-160 pb-sp-20">
+      <div class="max-inner">
+        <h1 class="u-title ta-c mb-10 mb-sp-0">PEOPLE</h1>
+        <p class="mb-92 mb-sp-40 ta-c u-lead01">社員インタビュー</p>
+
+        <ul class="c-category mx-auto">
+          <li class="c-category-item mb-10 mb-sp-15 mr-24 mr-sp-0">
+            <div>
+              <input type="radio" name="category" id="category01">
+              <label for="category01">ALL</label>
+            </div>
+          </li>
+          <li class="c-category-item mb-10 mb-sp-15 mr-24 mr-sp-0">
+            <div>
+              <input type="radio" name="category" id="category02">
+              <label for="category02">ENGINEER</label>
+            </div>
+          </li>
+          <li class="c-category-item mb-10 mb-sp-15 mr-24 mr-sp-0">
+            <div>
+              <input type="radio" name="category" id="category03">
+              <label for="category03">BUSINESS</label>
+            </div>
+          </li>
+          <li class="c-category-item mb-10 mb-sp-15 mr-24 mr-sp-0">
+            <div>
+              <input type="radio" name="category" id="category04">
+              <label for="category04">CORPORATE</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="c-news-wrap mt-0 pt-120 pb-60 pt-sp-30 pb-sp-60">
+      <div class="max-inner">
+        <ul class="c-news mb-60 mb-sp-30">
+          <li class="pb-80 pb-sp-70">
+            <a href="/careers-2/people1/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy", "ダミー画像", "people", "png") %>
+              </div>
+              <div class="d-flex justify-btw">
+                <p class="c-news-date mb-10 mb-sp-8 mr-5">社員インタビュー</p>
+                <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                  <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5 fw-medium">ENGINEER</p>
+                </div>
+              </div>
+              <p class="c-news-title">プロダクトマネージャー<br>横井啓介</p>
+            </a>
+          </li>
+
+          <li class="pb-80 pb-sp-70">
+            <a href="/careers-2/people1/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy2", "ダミー画像", "people", "png") %>
+              </div>
+              <div class="d-flex justify-btw">
+                <p class="c-news-date mb-10 mb-sp-8 mr-5">チームインタビュー</p>
+                <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                  <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5 fw-medium">CORPORATE</p>
+                </div>
+              </div>
+              <p class="c-news-title">コーポレートチーム<br>より透明な人事制度を目指して</p>
+            </a>
+          </li>
+
+          <li class="pb-80 pb-sp-70">
+            <a href="/careers-2/people1/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy3", "ダミー画像", "people", "png") %>
+              </div>
+              <div class="d-flex justify-btw">
+                <p class="c-news-date mb-10 mb-sp-8 mr-5">社員動画インタビュー</p>
+                <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                  <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5 fw-medium">ENGINEER</p>
+                </div>
+              </div>
+              <p class="c-news-title">データサイエンティスト<br>川端貴幸</p>
+            </a>
+          </li>
+
+          <li class="pb-80 pb-sp-70">
+            <a href="/careers-2/people1/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy", "ダミー画像", "people", "png") %>
+              </div>
+              <div class="d-flex justify-btw">
+                <p class="c-news-date mb-10 mb-sp-8 mr-5">社員インタビュー</p>
+                <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                  <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5 fw-medium">ENGINEER</p>
+                </div>
+              </div>
+              <p class="c-news-title">プロダクトマネージャー<br>横井啓介</p>
+            </a>
+          </li>
+
+          <li class="pb-80 pb-sp-70">
+            <a href="/careers-2/people1/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy2", "ダミー画像", "people", "png") %>
+              </div>
+              <div class="d-flex justify-btw">
+                <p class="c-news-date mb-10 mb-sp-8 mr-5">チームインタビュー</p>
+                <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                  <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5 fw-medium">CORPORATE</p>
+                </div>
+              </div>
+              <p class="c-news-title">コーポレートチーム<br>より透明な人事制度を目指して</p>
+            </a>
+          </li>
+
+          <li class="pb-80 pb-sp-70">
+            <a href="/careers-2/people1/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy3", "ダミー画像", "people", "png") %>
+              </div>
+              <div class="d-flex justify-btw">
+                <p class="c-news-date mb-10 mb-sp-8 mr-5">社員動画インタビュー</p>
+                <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                  <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5 fw-medium">ENGINEER</p>
+                </div>
+              </div>
+              <p class="c-news-title">データサイエンティスト<br>川端貴幸</p>
+            </a>
+          </li>
+
+          <li class="pb-80 pb-sp-70">
+            <a href="/careers-2/people1/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy", "ダミー画像", "people", "png") %>
+              </div>
+              <div class="d-flex justify-btw">
+                <p class="c-news-date mb-10 mb-sp-8 mr-5">社員インタビュー</p>
+                <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                  <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5 fw-medium">ENGINEER</p>
+                </div>
+              </div>
+              <p class="c-news-title">プロダクトマネージャー<br>横井啓介</p>
+            </a>
+          </li>
+
+          <li class="pb-80 pb-sp-70">
+            <a href="/careers-2/people1/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy2", "ダミー画像", "people", "png") %>
+              </div>
+              <div class="d-flex justify-btw">
+                <p class="c-news-date mb-10 mb-sp-8 mr-5">チームインタビュー</p>
+                <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                  <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5 fw-medium">CORPORATE</p>
+                </div>
+              </div>
+              <p class="c-news-title">コーポレートチーム<br>より透明な人事制度を目指して</p>
+            </a>
+          </li>
+
+          <li class="pb-80 pb-sp-70">
+            <a href="/careers-2/people1/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy3", "ダミー画像", "people", "png") %>
+              </div>
+              <div class="d-flex justify-btw">
+                <p class="c-news-date mb-10 mb-sp-8 mr-5">社員動画インタビュー</p>
+                <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                  <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5 fw-medium">ENGINEER</p>
+                </div>
+              </div>
+              <p class="c-news-title">データサイエンティスト<br>川端貴幸</p>
+            </a>
+          </li>
+
+          <li class="pb-80 pb-sp-70">
+            <a href="/careers-2/people1/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy", "ダミー画像", "people", "png") %>
+              </div>
+              <div class="d-flex justify-btw">
+                <p class="c-news-date mb-10 mb-sp-8 mr-5">社員インタビュー</p>
+                <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                  <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5 fw-medium">ENGINEER</p>
+                </div>
+              </div>
+              <p class="c-news-title">プロダクトマネージャー<br>横井啓介</p>
+            </a>
+          </li>
+
+          <li class="pb-80 pb-sp-70">
+            <a href="/careers-2/people1/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy2", "ダミー画像", "people", "png") %>
+              </div>
+              <div class="d-flex justify-btw">
+                <p class="c-news-date mb-10 mb-sp-8 mr-5">チームインタビュー</p>
+                <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                  <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5 fw-medium">CORPORATE</p>
+                </div>
+              </div>
+              <p class="c-news-title">コーポレートチーム<br>より透明な人事制度を目指して</p>
+            </a>
+          </li>
+
+          <li class="pb-80 pb-sp-70">
+            <a href="/careers-2/people1/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy3", "ダミー画像", "people", "png") %>
+              </div>
+              <div class="d-flex justify-btw">
+                <p class="c-news-date mb-10 mb-sp-8 mr-5">社員動画インタビュー</p>
+                <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                  <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5 fw-medium">ENGINEER</p>
+                </div>
+              </div>
+              <p class="c-news-title">データサイエンティスト<br>川端貴幸</p>
+            </a>
+          </li>
+
+
+        </ul>
+
+        <ul class="c-pagenation-news font-accent">
+          <li class="prev"><a href=""></a></li>
+          <li class="current"><a href="">1</a></li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li class="next"><a href=""></a></li>
+        </ul>
+
+
+      </div>
+    </section>
+
+    <%- include(`${ROOT}_common/_footer.ejs`,{path: meta.path}) %>
+    <%- include(`${ROOT}_common/_script.ejs`, {path: meta.path}) %>
+</body>
+
+</html>

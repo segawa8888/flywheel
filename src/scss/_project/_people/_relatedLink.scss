@@ -1,0 +1,17 @@
+.p-people-relatedLink__title {
+	@include font-pc(24, 27, 0, 700);
+	@include font-sp(18, 27, 0, 700);
+}
+
+.p-people-relatedLink {
+	.c-btn {
+		font-weight: 700;
+		@include pc {
+			padding: rem(5);
+		}
+		@include sp {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

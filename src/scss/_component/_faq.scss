@@ -1,0 +1,36 @@
+.c-faq {
+    background-color: $baseColor;
+}
+
+.c-faq__inner {
+	@include sp {
+		padding-left: vw(38);
+		padding-right: vw(38);
+	}
+}
+
+.c-case__faq {
+    @include font-pc(22, 38, -20, 500);
+    @include font-sp(18, 38, -20, 500);
+}
+
+.c-faq__top {
+    @include pc {
+        padding-top: rem(101);
+        padding-bottom: rem(101);
+    }
+    @include sp {
+        padding-top: vw(104);
+        padding-bottom: vw(101);
+    }
+}
+
+.c-faq__btn {
+    font-weight: 600;
+    @include pc {
+        margin-top: rem(40);
+    }
+    @include sp {
+        margin-top: vw(41);
+    }
+}

@@ -1,0 +1,136 @@
+.c-btn {
+	border: solid 1px $baseColor;
+	transition: all 0.2s;
+	background-color: #fff;
+	text-align: center;
+	display: block;
+	position: relative;
+	@include pc {
+		width: rem(300);
+		padding: rem(15) rem(10);
+	}
+	@include sp {
+		width: vw(250);
+		padding: vw(12) vw(10);
+	}
+	&:hover {
+		@include pc {
+			background-color: $baseColor;
+			color: #fff;
+		}
+	}
+	&.blue {
+		background-color: $baseColor;
+		color: #fff;
+		border-color: $baseColor;
+		@include font-pc(20, 23, 0, 600);
+		@include font-sp(16, 23, 0, 600);
+		&:hover {
+			@include pc {
+				background-color: #fff;
+				color: $baseColor;
+			}
+		}
+	}
+	&.white {
+		border:1px solid #fff;
+		background-color: $baseColor;
+		color: #fff;
+		@include font-pc(20, 23, 0, 600);
+		@include font-sp(16, 23, 0, 600);
+		&:hover {
+			color:$baseColor;
+			background-color: #fff;
+		}
+	}
+	&.faq {
+		border: solid 1px $baseColor;
+		background-color: #fff;
+		@include font-pc(20, 23, 100, 600);
+		@include font-sp(16, 23, 100, 600);
+		&:hover {
+			background-color: $baseColor;
+			color:#fff;
+			border: 1px solid #fff;
+		}
+	}
+	&.cv {
+		@include pc {
+			padding: rem(30) rem(10);
+		}
+	}
+
+	&.datalab {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.last {
+			display: none;
+		}
+		@include pc {
+			padding: rem(5) rem(5);
+		}
+		@include sp {
+			width: vw(300);
+			padding: vw(6) vw(10);
+		}
+		&:hover {
+			img {
+				mix-blend-mode: plus-lighter;
+			}
+			.last {
+				display: block;
+			}
+			.first {
+				display: none;
+			}
+		}
+		span {
+			&:first-child {
+				img {
+					object-fit: contain;
+					@include pc {
+						width: rem(233.71);
+						height: rem(17.86);
+					}
+					@include sp {
+						width: vw(233.71);
+						height: vw(17.86);
+					}
+				}
+			}
+			&:last-child {
+				@include pc {
+					margin-left: rem(4.7);
+				}
+				img {
+					@include pc {
+						width: rem(36.91);
+						height: rem(36.91);
+					}
+					@include sp {
+						width: vw(36.91);
+						height: vw(36.91);
+					}
+				}
+			}
+		}
+	}
+	.out-tab {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: rem(5);
+		img {
+			display: block;
+			@include pc {
+				width: rem(36.91);
+				height: rem(36.91);
+			}
+			@include sp {
+				width: vw(36.91);
+				height: vw(36.91);
+			}
+		}
+	}
+}

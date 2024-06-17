@@ -1,0 +1,106 @@
+@font-face {
+	font-family: "Gothic Std";
+	font-weight: 600;
+	src: url("/assets/fonts/AP-OTF-A1GothicStd-Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Gothic Std";
+	font-weight: 500;
+	src: url("/assets/fonts/AP-OTF-A1GothicStd-Medium.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Gothic Std";
+	font-weight: 400;
+	src: url("/assets/fonts/AP-OTF-A1GothicStd-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Gothic Std";
+	font-weight: 300;
+	src: url("/assets/fonts/AP-OTF-A1GothicStd-Light.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Gothic StdN";
+	font-weight: 600;
+	src: url("/assets/fonts/AP-OTF-A1GothicStdN-Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Gothic StdN";
+	font-weight: 500;
+	src: url("/assets/fonts/AP-OTF-A1GothicStdN-Medium.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Gothic StdN";
+	font-weight: 400;
+	src: url("/assets/fonts/AP-OTF-A1GothicStdN-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Gothic StdN";
+	font-weight: 300;
+	src: url("/assets/fonts/AP-OTF-A1GothicStdN-Light.otf") format("opentype");
+}
+
+.is-color-blue {
+	color: $baseColor;
+}
+
+@for $i from 0 through 40 {
+	.fs-#{$i} {
+		font-size: $i / 10 + rem;
+	}
+}
+
+@for $i from 0 through 40 {
+	@include sp {
+		.fs-sp-#{$i} {
+			font-size: $i / $sp-artboard * 100 + vw;
+		}
+	}
+}
+
+.fw-light {
+	font-weight: 300;
+}
+.fw-regular {
+	font-weight: 400;
+}
+.fw-medium {
+	font-weight: 500;
+}
+.fw-bold {
+	font-weight: 600;
+}
+
+@for $i from 0 through 40 {
+	.fh-#{$i} {
+		line-height: #{$i} / 10;
+	}
+}
+
+@for $i from 0 through 40 {
+	.ls-#{$i} {
+		line-height: #{$i} / 1000 * 1em;
+	}
+}
+
+.ta-c {
+	text-align: center;
+}
+
+.ta-l {
+	text-align: left;
+}
+
+.ta-r {
+	text-align: right;
+}
+
+.font-accent {
+	font-family: $accent-font;
+}

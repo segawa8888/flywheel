@@ -1,0 +1,34 @@
+.u-lead01 {
+	@include font-pc(20, 30, -30, 700);
+	@include font-sp(16, 30, -30, 700);
+}
+
+.u-lead02 {
+	@include font-pc(20, 30, -30, 700);
+	@include font-sp(18, 33, 0, 700);
+}
+
+.u-lead03 {
+	@include font-pc(26, 33, 0, 600);
+	@include font-sp(18, 33, 0, 600);
+}
+
+.u-lead04 {
+	@include font-pc(20, 20, -20, 500);
+	@include font-sp(16, 28, -40, 500);
+}
+
+.u-lead05 {
+	@include font-pc(60, 60, -20, 600);
+	@include font-sp(38, 60, -20, 600);
+}
+
+.u-lead06 {
+	@include font-pc(20, 20, -30, 600);
+	@include font-sp(18, 18, -30, 600);
+}
+
+.u-lead07 {
+	@include font-pc(20, 20, 30, 600);
+	@include font-sp(16, 16, 30, 600);
+}

@@ -1,0 +1,153 @@
+.p-fv__top {
+	@include pc {
+		margin-top: rem(207);
+	}
+	@include sp {
+		margin-top: vw(134);
+	}
+}
+
+.p-fv__contents {
+	text-align: center;
+	text-align: center;
+}
+
+.p-fv__tittle {
+	@include pc {
+		@include font-pc(36, 36, 130, 400);
+	}
+	@include sp {
+		@include font-sp(17, 21, 60, 400);
+	}
+}
+
+.p-fv__image {
+	margin-left: auto;
+	margin-right: auto;
+	@include pc {
+		width: rem(530.44);
+		margin-top: rem(39);
+	}
+	@include sp {
+		margin-top: vw(14);
+		width: vw(252);
+	}
+}
+.p-fv__subtittle__wrap {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	@include pc {
+		margin-top: rem(74.4);
+		width: rem(554);
+	}
+	@include sp {
+		margin-top: vw(59.4);
+		width: vw(240);
+	}
+}
+
+.p-fv__subtittle {
+	text-align: center;
+	background-color: #fff;
+	position: relative;
+	z-index: 2;
+	border: 1px solid $baseColor;
+	width: rem(554);
+	padding: rem(6) rem(17);
+	@include pc {
+		@include font-pc(36, 36, -50, 600);
+		height: rem(48);
+		width: rem(554);
+	}
+	@include sp {
+		@include font-sp(22, 25, 0, 600);
+		width: vw(240);
+		padding: vw(8);
+		height: vw(66);
+	}
+}
+
+.p-fv__text {
+	@include pc {
+		margin-top: rem(75);
+		@include font-pc(20, 36, -30, 500);
+	}
+	@include sp {
+		@include font-sp(16, 28, -40, 500);
+		margin-top: vw(50);
+	}
+}
+
+.p-fv__items {
+	@include pc {
+		margin-top: rem(25);
+		display: flex;
+		justify-content: center;
+	}
+	@include sp {
+		margin-top: vw(56);
+	}
+}
+
+.p-fv__item {
+	border: 1px solid $baseColor;
+	text-align: center;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@include pc {
+		width: rem(200);
+		height: 50px;
+		@include font-pc(16, 16, 0, 600);
+	}
+	@include sp {
+		width: vw(185);
+		height: vw(45);
+		margin-left: auto;
+		margin-right: auto;
+		@include font-sp(15, 15, 0, 600);
+	}
+
+	a {
+		width: 100%;
+		height: inherit;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			background-color: $baseColor;
+			color: #fff;
+		}
+	}
+}
+
+.p-fv__item:nth-child(n + 2) {
+	@include pc {
+		margin-left: rem(80);
+	}
+	@include sp {
+		margin-top: vw(20);
+	}
+}
+
+.p-fv__items:after {
+	position: absolute;
+	content: "";
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1px;
+	background-color: $baseColor;
+	bottom: auto;
+	@include pc {
+		height: rem(79);
+		margin-top: rem(124.5);
+	}
+
+	@include sp {
+		height: vw(106);
+		margin-top: vw(70);
+	}
+}

@@ -1,0 +1,37 @@
+.c-lists {
+    display: flex;
+    @include pc {
+        gap:0 rem(33);
+        justify-content: center;
+    }
+    @include sp {
+        flex-wrap:wrap;
+        gap:vw(7);
+    }
+}
+
+.c-list {
+    border: 1px solid $baseColor;
+    @include font-pc(16, 16, -40, 600);
+    @include font-sp(14, 14, -40, 600);
+    
+    a {
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3;
+        @include pc {
+            width: rem(200);
+            height:rem(45);
+            &:hover {
+                background-color: $baseColor;
+                color:#fff;
+            }
+        }
+        @include sp {
+            width:vw(160);
+            height:vw(45);
+        }
+    }
+}

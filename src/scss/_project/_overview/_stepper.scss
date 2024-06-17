@@ -1,0 +1,231 @@
+.p-stepper__top {
+    @include pc {
+        padding-top: rem(125);
+    }
+    @include sp {
+        padding-top: vw(125);
+    }
+		
+}
+
+.p-stepper__section-tittle {
+    @include pc {
+        width:rem(385.32)
+    }
+    @include sp {
+        width:vw(290);
+    }
+		&.is-reverse-elm {
+			&.white {
+				&::before {
+				 background-color: #fff !important;
+				}
+			};
+		}
+}
+
+.p-stepper__section-tittle:before {
+  @include pc {
+    width:rem(385.32)
+}
+@include sp {
+    width:vw(285);
+}
+}
+
+.p-stepper .p-section__logo {
+	path.rect {
+		transition: all 0.8s;
+	}
+	&.is-reverse-elm.white {
+		
+		path, rect {
+			fill: #fff;
+		}
+	}
+  @include sp {
+    margin-right: vw(7.9);
+  }
+}
+
+.p-stepper__container {
+    @include pc {
+        margin-top: rem(124.6);
+    }
+    @include sp {
+        margin-top: vw(75);
+    }
+}
+
+.p-stepper__inner {
+    @include pc {
+        max-width: rem(745);
+    }
+}
+
+.p-stepper__item {
+    position: relative;
+    display: flex;
+		transition: all 0.2s;
+    @include pc {
+        gap:0 rem(40);
+    }
+    @include sp {
+        gap:0 vw(17);
+    }
+
+  
+    &:before {
+      content: "";
+      border: 1px solid $baseColor;
+      border-radius: 50%;
+      // background-color: $baseColor;
+      z-index:2;
+      @include pc {
+        width:rem(100);
+        height:rem(100);
+        flex:none;
+      }
+      @include sp {
+        width:vw(65);
+        height:vw(65);
+      }
+    }
+  
+    &:not(:last-child) {
+      &:after {
+        content:'';
+        position: absolute;
+        z-index: 1;
+        width: 1px;
+        left: 0;
+        top: rem(100);
+			
+        height: calc(100% - 10rem);
+        background-color: $baseColor;
+        @include pc {
+            transform: translateX(rem(50));
+        }
+        @include sp {
+            transform: translateX(8.27vw);
+						top: vw(65);
+						height: calc(100% - 17vw);
+        }
+      }
+      @include pc {
+        padding-bottom: rem(118);
+      }
+      @include sp {
+        padding-bottom: vw(64);
+      }
+    }
+		&.white {
+			&:before {
+				border: 1px solid #fff;
+			}
+			&:not(:last-child) {
+				&:after {
+					background-color: #fff;
+				}
+			}
+		}
+  }
+
+
+  .p-stepper__number {
+    position: absolute;
+    z-index:3;
+    @include pc {
+        top:rem(41);
+        left:rem(31.5);
+        @include font-pc(24, 24, 0, 600);
+    }
+@include sp {
+    top:vw(24);
+    left:vw(20.5);
+    @include font-sp(16, 20, 0, 600);
+}
+  }
+  
+  .p-stepper__tittle {
+    @include pc {
+        @include font-pc(26, 26, 0, 600);
+    }
+    @include sp {
+        @include font-sp(18, 19, 0, 600);
+    }
+  }
+
+  
+  .p-stepper__text {
+    @include pc {
+        margin-top: rem(24);
+        @include font-pc(16, 26, 0, 400);
+    }
+    @include sp {
+        margin-top: vw(12);
+        @include font-sp(14, 24, 0, 400);
+    }
+  }
+  
+  .p-stepper__content {
+    @include sp {
+        max-width: vw(245);
+    }
+  }
+
+  .p-stepper__wrapper {
+    @include pc {
+        margin-top: rem(175);
+    }
+    @include sp {
+        margin-top: vw(85.5);
+    }
+  }
+
+  .p-stepper__lead {
+    @include pc {
+        @include font-pc(28, 28, -40, 600);
+    }
+    @include sp {
+        @include font-sp(20, 30, -40, 600);
+    }
+  }
+
+  .p-stepper__desc {
+    @include pc {
+        margin-top: rem(60);
+        @include font-pc(16, 26, 0, 600);
+    }
+    @include sp {
+        @include font-sp(14, 24, 0, 600);
+        margin-top: vw(23);
+        padding-left: vw(30);
+        padding-right: vw(30);
+    }
+  }
+
+  .p-stepper__btn {
+    @include pc {
+        margin-top: rem(48);
+    }
+    @include sp {
+        margin-top: vw(40);
+    }
+		a {
+			&:hover {
+				background-color: #fff !important;
+			}
+		}
+  }
+
+  .p-stepper__menus {
+    @include pc {
+        padding-top: rem(210);
+        padding-bottom: rem(200);
+    }
+    @include sp {
+        padding-top: vw(100);
+        padding-bottom: vw(110);
+    }
+  }

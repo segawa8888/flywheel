@@ -1,0 +1,105 @@
+.p-top-kvBottom {
+	position: relative;
+	@include pc {
+		height: rem(3000);
+	}
+	@include sp {
+		height: vw(2000);
+	}
+	.max-inner {
+		position: sticky;
+		top: 0;
+		height: 100vh;
+	}
+	.max-inner-inner {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		transform: translateY(-50%);
+		@include pc {
+			height: rem(770);
+		}
+		@include sp {
+			height: vw(705);
+			max-height: 90vh;
+		}
+	}
+}
+
+.p-top-kvBottom-mainText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	word-break: break-all;
+	white-space: nowrap;
+	p {
+		background-color: $baseColor;
+	}
+	@include font-pc(36, 45, 0, 700);
+	@include font-sp(26, 34, 0, 700);
+	@include pc {
+		padding: 0 rem(10);
+	}
+	@include sp {
+		padding: 0 vw(10);
+	}
+}
+
+.p-top-kvBottom-text {
+	position: absolute;
+	@include font-pc(18, 21, -60, 700);
+	@include font-sp(16, 21, -60, 700);
+	@include sp {
+		width: 100%;
+	}
+	span {
+		display: inline-block;
+	}
+	&.tetx01 {
+		@include pc {
+			right: calc(50% + 22rem);
+			top: rem(100);
+		}
+		@include sp {
+			top: vw(68);
+			padding-left: vw(22);
+			left: 0;
+		}
+	}
+	&.tetx02 {
+		@include pc {
+			left: calc(50% + 28.5rem);
+			top: rem(268);
+		}
+		@include sp {
+			text-align: right;
+			top: vw(114);
+			padding-right: vw(20);
+		}
+	}
+	&.tetx03 {
+		@include pc {
+			right: calc(50% + 28.5rem);
+			top: rem(467);
+		}
+		@include sp {
+			top: vw(480);
+			padding-left: vw(20);
+		}
+	}
+	&.tetx04 {
+		@include pc {
+			left: calc(50% + 20rem);
+			top: rem(619);
+		}
+		@include sp {
+			text-align: right;
+			top: vw(532);
+			padding-right: vw(30);
+		}
+	}
+}
+

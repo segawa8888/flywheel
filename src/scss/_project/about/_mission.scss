@@ -1,0 +1,80 @@
+.p-mission__logo {
+    margin-left: auto;
+    margin-right: auto;
+    @include pc {
+        width:rem(560);
+        margin-top: rem(80);
+    }
+    @include sp {
+        width:vw(271);
+        margin-top: vw(75);
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.p-mission__lead {
+    @include font-pc(26, 26, -100, 600);
+    @include font-sp(20, 20, -100, 600);
+    @include pc {
+        margin-top: rem(60);
+    }
+    @include sp {
+        margin-top: vw(30);
+    }
+}
+
+.p-mission__tittle__wrap {
+	position: relative;
+	display: inline-block;
+	@include pc {
+		margin-top: rem(40);
+	}
+	@include sp {
+		margin-top: vw(30);
+	}
+}
+
+.p-mission__tittle {
+	z-index: 10;
+	text-align: left;
+		// text-align: center;
+		background-color: #fff;
+		border: 1px solid $baseColor;
+	
+	position: relative;
+    @include font-pc(36, 36, 0, 600);
+    @include font-sp(22, 22, -20, 600);
+   
+    @include pc {
+        max-width: rem(507);
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: rem(6);
+        padding-bottom: rem(6);
+				height: rem(52);
+    }
+    @include sp {
+        max-width: vw(300);
+        padding:vw(6) 0 vw(3) 0;
+
+				height: vw(35);
+    }
+}
+
+.p-mission__wrapper {
+    @include pc {
+        margin-top: rem(160);
+        padding-bottom: rem(190);
+    }
+    @include sp {
+        margin-top: vw(100);
+        padding-bottom: vw(120);
+    }
+}
+
+.p-mission__text {
+    @include font-pc(24, 48, -40, 600);
+    @include font-sp(18, 36, -40, 600);
+}

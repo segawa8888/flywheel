@@ -1,0 +1,111 @@
+<%- include(`${ROOT}_include/_img`) %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% var meta={ path: "../",title: 'ニュース一覧' , description: 'description' , keywords: 'keywords' , og : { url: ``, iamge: '' } } -%>
+  <%- include(`${ROOT}_common/_head`, { meta: meta }) %>
+</head>
+
+<body>
+  <%- include(`${ROOT}_common/_header.ejs`, {path: meta.path}) %>
+  <!-- contents start -->
+  <div id="mainContents" class="topics sub">
+    <section class="pt-160 pb-sp-30">
+      <div class="max-inner">
+        <div class="p-news-title__wrap posi-relative">
+          <h1 class="u-title ta-c mb-100 mb-sp-40">ニュース</h1>
+
+          <div class="c-search posi-pc-absolute mb-sp-90">
+            <form action="" class="d-flex align-center">
+              <button type="submit" class="c-search-submit">
+                <%- img("search-icon", "検索アイコン", "common", "svg") %>
+              </button>
+              <div class="flex-auto">
+                <input type="text">
+              </div>
+            </form>
+          </div>
+        </div>
+        <ul class="mx-auto pt-10 d-pc-flex flex-wrap c-category-news">
+          <li class="c-category-news-item mb-sp-20 is-active">
+            <a href="" class="d-block ta-c">
+              <span>ALL</span>
+            </a>
+          </li>
+          <li class="c-category-news-item mb-sp-20">
+            <a href="" class="d-block ta-c">
+              <span>お知らせ</span>
+            </a>
+          </li>
+          <li class="c-category-news-item mb-sp-20">
+            <a href="" class="d-block ta-c">
+              <span>プレスリリース</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="c-news-wrap mt-0 pt-120 pb-100 pt-sp-20 pb-sp-60">
+      <div class="max-inner">
+        <p class="ta-c mb-30 fs-20 fw-bold fs-sp-16">「検索キーワード検索」の検索結果 0件</p>
+        <p class="ta-c fs-15 fs-sp-14">検索したワードの記事が見つかりませんでした。<br>
+          別のワードに変換してもう一度試してみてください。</p>
+      </div>
+    </div>
+
+    <section class="c-news-wrap mt-0 pt-100 pb-0 pt-sp-20">
+      <div class="max-inner">
+        <h2 class="fs-24 mb-40 mb-sp-50 ta-sp-c">最新ニュース</h2>
+        <ul class="c-news mb-0 mb-sp-30">
+          <li class="pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("noimg", "ダミー画像", "common", "jpg") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-8">2022年7月12日</p>
+              <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5">プレスリリース</p>
+              </div>
+              <p class="c-news-title">日経産業新聞にて当社の「Conata™ Discovery Planner」が紹介されました</p>
+            </a>
+          </li>
+          <li class="pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy-blog01", "ダミー画像", "common", "png") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-8">2022年7月12日</p>
+              <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5">ニュース</p>
+              </div>
+              <p class="c-news-title">Google 主催の『Born Digital Summit』に当社データサイエンティスト川端が登壇します</p>
+            </a>
+          </li>
+          <li class="pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy-blog02", "ダミー画像", "common", "png") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-8">2022年7月12日</p>
+              <div class="c-news-tag mb-10 mb-sp-17 d-flex">
+                <p class="mr-5 is-bg-base-blue pl-13 pr-13 is-text-white mb-5">ニュース</p>
+              </div>
+              <p class="c-news-title">【報道資料】フライウィール、データ・AIから最適な品揃えと適正在庫を両立させる 「Conata™ Demand Planner」を提供開始</p>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+  </div>
+  <!-- contents end -->
+
+  <%- include(`${ROOT}_common/_footer.ejs`,{path: meta.path}) %>
+  <%- include(`${ROOT}_common/_script.ejs`, {path: meta.path}) %>
+</body>
+
+</html>

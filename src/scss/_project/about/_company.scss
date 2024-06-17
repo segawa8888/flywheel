@@ -1,0 +1,71 @@
+.p-company__inner {
+    @include pc {
+        max-width: rem(911);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p-company__tittle {
+    @include font-pc(26, 40, 0, 600);
+    @include font-sp(22, 40, 0, 600);
+}
+
+.p-company__table tr:nth-child(n+2) th {
+    @include pc {
+        padding-top: rem(15);
+    }
+    @include sp {
+        padding-top: vw(15);
+    }
+}
+
+.p-company__table tr:nth-child(n+2) td {
+    @include pc {
+        padding-top: rem(15);
+    }
+    @include sp {
+        padding-top: vw(15);
+    }
+}
+
+.p-company__table {
+    width: 100%;
+}
+
+.p-company__table tr {
+    border-bottom: 1px solid $baseColor;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    @include pc {
+        gap:0 rem(200);
+    }
+    @include sp {
+        gap:0 vw(28);
+    }
+}
+
+.p-company__table th {
+    @include font-pc(15, 30, 0, 600);
+    @include font-sp(15, 30, 0, 600);
+    @include pc {
+        min-width:rem(75);
+        padding-bottom: rem(15);
+    }
+    @include sp {
+        min-width: vw(75);
+        padding-bottom: vw(15);
+    }
+}
+
+.p-company__table td {
+    @include font-pc(15, 30, 0, 400);
+    @include font-sp(15, 30, 0, 400);
+    @include pc {
+        padding-bottom: rem(15);
+    }
+    @include sp {
+        padding-bottom: vw(15);
+    }
+}

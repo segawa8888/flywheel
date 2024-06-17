@@ -1,0 +1,93 @@
+.c-case-wrap {
+	@include pc {
+		padding-top: rem(130);
+		padding-bottom: rem(106);
+	}
+	@include sp {
+		padding-top: vw(120);
+		padding-bottom: vw(120);
+	}
+}
+.c-case {
+	@include pc {
+		margin-left: rem(-30);
+		margin-right: rem(-30);
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	@include sp {
+		padding-left: vw(38);
+		padding-right: vw(38);
+	}
+	li {
+		@include pc {
+			width: rem(346);
+			margin: 0 rem(30);
+		}
+	}
+	a {
+		transition: all 0.8s;
+		&:hover {
+			opacity: 0.8;
+			.c-case__img {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
+.c-case__img {
+	overflow: hidden;
+	img {
+		transition: all 0.2s;
+		display: block;
+		object-fit: cover;
+		@include pc {
+			width: rem(346);
+			height: rem(259);
+		}
+		@include sp {
+			width: vw(300);
+			height: vw(225);
+		}
+	}
+}
+
+.c-case__logo {
+	img {
+		object-fit: contain;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		@include pc {
+			width: rem(259);
+			height: rem(96);
+		}
+		@include sp {
+			width: vw(180);
+			height: vw(50);
+		}
+	}
+}
+
+.c-case__company {
+	@include font-pc(16, 30, 0, 500);
+	@include font-sp(14, 30, 0, 500);
+}
+
+.c-case__title {
+	@include font-pc(18, 26, 0, 600);
+	@include font-sp(16, 23, 0, 600);
+}
+
+.c-case__head {
+	@include font-pc(34, 34, 0, 600);
+	@include font-sp(22, 22, 0, 600);
+}
+
+.c-case__faq {
+	@include font-pc(22, 22, 0, 500);
+	@include font-sp(18, 18, 0, 500);
+}

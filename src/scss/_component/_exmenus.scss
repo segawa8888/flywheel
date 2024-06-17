@@ -1,0 +1,60 @@
+.c-exmenus {
+    background-color:$baseColor;
+}
+
+.c-exmenus__inner {
+    max-width: rem(956);
+}
+
+.c-exmenus__tittle {
+    @include pc {
+        @include font-pc(26, 26, 0, 600);
+    }
+
+    @include sp {
+        @include font-sp(20, 20, 0, 600);
+    }
+}
+
+.c-exmenus__items {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    @include pc {
+        margin-top: rem(65);
+        gap:rem(36) rem(52);
+        justify-content: center;
+    }
+    @include sp {
+        margin-top: vw(48);
+        gap:vw(10) vw(9);
+    }
+}
+
+.c-exmenus__item {
+    @include font-pc(20, 20, -80, 600);
+    @include font-sp(14, 15, 0, 600);
+
+    a {
+        display: block;
+        height:inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        @include pc {
+        width: rem(284);
+        height: rem(50);
+    }
+    @include sp {
+        width: vw(164);
+        height:vw(50);
+    }
+    &:hover {
+        background-color: $baseColor;
+        color:#fff;
+        border:1px solid #fff;
+        transition: 0.3s;
+    }
+    }
+}

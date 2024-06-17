@@ -1,0 +1,18 @@
+.c-tag {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.c-tag-item {
+	background: $baseColor;
+	color: #fff;
+	text-align: center;
+	@include font-pc(15, 30, 10, 500);
+	@include font-sp(12, 18, 10, 500);
+	@include pc {
+		padding: rem(0) rem(25);
+	}
+	@include sp {
+		padding: vw(2) rem(7);
+	}
+}

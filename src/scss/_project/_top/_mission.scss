@@ -1,0 +1,105 @@
+.p-top-mission {
+	@include pc {
+		padding-bottom: rem(200);
+	}
+	@include sp {
+		padding-bottom: vw(120);
+	}
+}
+
+.p-top-mission__logo {
+	img {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: rem(560);
+		height: rem(295);
+		@include sp {
+			width: vw(271);
+			height: vw(143);
+		}
+	}
+}
+
+.p-top-mission__head {
+	@include font-pc(26, 27, -100, 600);
+	@include font-sp(20, 27, -100, 600);
+}
+.p-top-mission__mission__wrap {
+	@include pc {
+	}
+	@include sp {
+		margin-bottom: vw(357);
+	}
+}
+.p-top-mission__mission {
+	z-index: 10;
+	position: relative;
+	background: #fff;
+	position: relative;
+	display: inline-block;
+	border: solid 1px $baseColor;
+	@include font-pc(36, 36, 0, 600);
+	@include font-sp(22, 33, -40, 600);
+	background-color: #fff;
+	@include pc {
+		padding: rem(5) rem(20);
+		height: rem(48);
+	}
+	@include sp {
+		padding: vw(5);
+		height: vw(30);
+	}
+	& > span {
+	}
+}
+
+.p-top-mission__bar {
+	width: 1px;
+	background-color: $baseColor;
+	text-align: center;
+	@include pc {
+		height: rem(106);
+	}
+	@include sp {
+		display: none;
+	}
+}
+
+.p-top-misiion__text {
+	@include font-pc(24, 30, 0, 600);
+	@include font-sp(18, 28, -40, 600);
+	@include pc {
+		margin-bottom: rem(168);
+	}
+	@include sp {
+		margin-bottom: vw(50);
+	}
+	.white-bg {
+		display: inline-block;
+		background-color: #fff;
+		padding: rem(0) rem(10);
+		@include pc {
+			background-color: #fff;
+			margin-bottom: rem(20);
+		}
+		@include sp {
+			padding: vw(5) vw(10);
+			margin-bottom: vw(10);
+		}
+	}
+}
+
+.p-top-mission__btns {
+	@include pc {
+		display: flex;
+		justify-content: center;
+	}
+	a {
+		@include pc {
+			margin: 0 rem(40);
+		}
+		&:first-child {
+		}
+	}
+}

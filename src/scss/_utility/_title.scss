@@ -1,0 +1,44 @@
+.u-title {
+	@include font-pc(42, 60, -40, 700);
+	@include font-sp(28, 60, -40, 700);
+}
+
+.u-title02 {
+	@include font-pc(42, 60, -40, 700);
+	@include font-sp(28, 42, -40, 700);
+}
+
+.u-title-small {
+	@include font-pc(24, 60, 0, 700);
+	@include font-sp(28, 60, -40, 700);
+}
+
+.u-title-medium {
+	@include font-pc(42, 60, -40, 700);
+	@include font-sp(32, 60, -40, 700);
+}
+
+.u-title-case {
+	@include font-pc(30, 40, 0, 700);
+	@include font-sp(22, 35, 0, 700);
+}
+
+.u-title-article {
+	@include font-pc(17, 28, -20, 600);
+	@include font-sp(14, 26, -60, 600);
+}
+
+.u-title-sub {
+	@include font-pc(20, 20, 10, 600);
+	@include font-sp(16, 28, 10, 600);
+}
+
+.u-title__faq {
+	@include font-pc(26, 26, -40, 600);
+	@include font-sp(20, 20, -40, 600);
+}
+
+.u-title__solutions {
+	@include font-pc(42, 60, -40, 600);
+	@include font-sp(26, 26, -100, 600);
+}

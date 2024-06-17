@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>オファリング機能</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="description">
+  <meta name="keywords" content="keywords">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <!-- SNS OGP start -->
+  <meta property="og:title" content="オファリング機能">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="description">
+  <meta property="og:keywords" content="keywords">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <meta property="og:site_name" content="">
+  <meta property="fb:app_id" content="">
+  <!--twitter card-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@">
+
+  <!-- page css files start -->
+  <link rel="stylesheet" type="text/css" href="../..//assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../..//assets/css/style2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- page css files end -->
+
+  <!-- slick css -->
+  <link rel="stylesheet" type="text/css" href="../..//assets/css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="../..//assets/css/slick-theme.css" />
+</head>
+
+<body>
+  <header class="l-header" data-module="Header">
+    <div data-module="FadeInMV" class="fadeIn--fromBottom" data-delay="1">
+      <div class="l-header__inner fadeIn--fromTop" data-delay="1" data-module="FadeInMV">
+        <div class="l-header__logo">
+          <a href="../../" class="is-hover">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/assets/img/common/logo.png">
+              <source media="(max-width: 767px)" srcset="/assets/img/common/sp/logo.png">
+              <img src="/assets/img/common/logo.png" alt="FLYWHEEL" loading="lazy">
+            </picture>
+          </a>
+        </div>
+
+        <input id="header__menu" type="checkbox" style="display:none;">
+        <label for="header__menu" class="l-header__ham is-sp ml-auto">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="l-header__right ml-auto">
+          <ul class=" l-header__menu fs-13 fs-sp-16 mb-sp-45">
+            <li class="mr-32"><a href="../../">ホーム</a></li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-pointer-none">プロダクト</a>
+              <input type="checkbox" style="display: none;" id="menu1">
+              <label class="is-sp u-plus" for="menu1"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="../../conata/">Conata™の特徴</a></li>
+                <li><a href="../../conata/platform/">データ基盤</a></li>
+                <li><a href="../../conata/offering/">オファリング</a></li>
+                <li><a href="../../conata/faq/">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-header-hover">ソリューション</a>
+              <input type="checkbox" style="display: none;" id="menu4">
+              <label class="is-sp u-plus" for="menu4"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="../../solutions/">プロフェッショナルサービス</a></li>
+                <li><a href="javascript:void(0);" class="is-pointer-none">業界別ソリューション</a>
+                  <ul class="l-header__subMenu--02">
+                    <li><a href="../../solutions/ecommerce-retail-logistics/">EC・小売・流通</a></li>
+                    <li><a href="../../solutions/digital-contents/">メディア・エンターテイメント</a></li>
+                    <li><a href="../../solutions/traffic-Infrastructure/">交通インフラ</a></li>
+                    <li><a href="../../solutions/manufacture/">メーカー</a></li>
+                    <li><a href="../../solutions/financial/">金融</a></li>
+                    <li><a href="../../solutions/smart-cities/">Smart Cities</a></li>
+
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="mr-32"><a href="../../case/">導入事例</a></li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-header-hover">ニュースルーム</a>
+              <input type="checkbox" style="display: none;" id="menu6">
+              <label class="is-sp u-plus" for="menu6"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="../../newsrelease/">ニュース</a></li>
+                <li><a href="../../topics/">ブログ</a></li>
+                <li><a target="_blank" class="is-out-tab" href="../../https://datalab.flywheel.jp/">DataLab by FLYWHEEL</a></li>
+              </ul>
+            </li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-header-hover">会社情報</a>
+              <input type="checkbox" style="display: none;" id="menu2">
+              <label class="is-sp u-plus" for="menu2"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="../../about/company/">会社概要・アクセス</a></li>
+                <li><a href="../../about/message/">経営陣・メッセージ</a></li>
+                <li><a href="../../about/mission/">ミッション・バリュー</a></li>
+              </ul>
+            </li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-header-hover">採用情報</a>
+              <input type="checkbox" style="display: none;" id="menu3">
+              <label class="is-sp u-plus" for="menu3"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="../../careers">採用情報トップ</a></li>
+                <li><a href="../../careers/people/">PEOPLE</a></li>
+                <li><a href="../../careers/office/">OFFICE</a></li>
+                <li><a href="../../careers/culture/">CULTURE</a></li>
+                <li><a href="../../careers/benefit/">WORK STYLE</a></li>
+                <li><a href="../../careers/jobs/">JOB OPENING</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="l-header__btns fs-13 fs-sp-16">
+            <li class="mr-22">
+              <a class="l-header__btn u-hover" href="../../download/"><span>資料請求</span></a>
+            </li>
+            <li>
+              <a class="l-header__btn u-hover" href="../../contacts/"><span>お問い合わせ</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- contents start -->
+  <div id="mainContents" class="conata offering" style="overflow:inherit;">
+    <section class="pt-160 pb-100 pb-sp-20 mb-sp-50">
+      <div class="max-inner pl-26 pr-26">
+        <h1 class="u-title ta-c mb-80 mb-sp-40">オファリング</h1>
+        <p class="u-lead03 ta-c">Conata(コナタ)™のアウトプット機能</p>
+        <p class="u-lead04 ta-c mt-sp-10 mt-34">Conata の特徴であるオファリングでできることについてご紹介します。</p>
+      </div>
+    </section>
+
+    <section class="pt-110 pb-135 pt-sp-80 pb-sp-80 is-bg-base-blue is-text-white">
+      <div class="max-inner pr-sp-38 pl-sp-38">
+        <p class="u-text07 ta-c">データによるスピーディな課題解決を<br class="is-sp">可能にする機能群です。<br>ニーズに応じて組み合わせても、<br class="is-sp">単体でも活用することができます。</p>
+        <div class="p-conata__content mt-75 mt-sp-46">
+          <ul class="p-conata__items">
+            <li class="p-conata__item">
+              <i class="fa-solid fa-check" data-delay="0.4" data-module="FadeIn"></i>
+              <span data-module="FadeIn">計測</span>
+            </li>
+            <li class="p-conata__item">
+              <i class="fa-solid fa-check" data-delay="0.4" data-module="FadeIn"></i>
+              <span data-module="FadeIn">補完</span>
+            </li>
+            <li class="p-conata__item order-2">
+              <i class="fa-solid fa-check" data-delay="0.4" data-module="FadeIn"></i>
+              <span data-module="FadeIn">情報検索</span>
+            </li>
+            <li class="p-conata__item order-3">
+              <i class="fa-solid fa-check" data-delay="0.4" data-module="FadeIn"></i>
+              <span data-module="FadeIn">予測</span>
+            </li>
+            <li class="p-conata__item order-1">
+              <i class="fa-solid fa-check" data-delay="0.4" data-module="FadeIn"></i>
+              <span data-module="FadeIn">レコメンデーション</span>
+            </li>
+            <li class="p-conata__item" style="order:4;">
+              <i class="fa-solid fa-check" data-delay="0.4" data-module="FadeIn"></i>
+              <span data-module="FadeIn">シミュレーション</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-offering-service is-bg-blue">
+      <div class="p-offering-service__inner pt-125 pt-sp-95 pb-180 pb-sp-100 max-inner max-inner03">
+        <p class="u-text08 ta-c" style="margin-left: -10vw; margin-right: -10vw;">Conataは4つのカテゴリで<br class="is-sp">ソリューションを提供。さらに各機能<br class="is-sp">を組み合わせて<br class="is-pc">実施することも可能<br class="is-sp">です。幅広い、複数種の課題<br class="is-sp">をConata1つで解決します。</p>
+        <div class="p-section__contents mt-sp-40">
+          <div class="max-inner p-section__inner">
+            <div class="p-offering-service-list p-section__items">
+              <div class="p-offering-service-item p-section__item fadeOffering">
+                <div class="p-section__outer ml-sp-0 ml-100">
+                  <div class="p-section__icon p-section__icon1 ml-sp-12" data-module="FadeIn">
+                    <img src="../../assets/img/Offering/icon_marketing.svg" alt="marketing" loading="lazy">
+                  </div>
+                  <div class="ml-sp-24 ml-75">
+                    <h2 class="p-section__lead font-accent ls-04" data-delay="0.2" data-module="FadeIn">Marketing</h2>
+                    <p class="u-text05 mt-sp-5 mt-15" data-delay="0.4" data-module="FadeIn">最適化や配信管理の実現</p>
+                    <div class="is-pc">
+                      <p class="mt-sp-25 mt-40 u-text06" data-delay="0.4" data-module="FadeIn">データ解析をもとに最適化されたリアルタイムの配信基盤を提供します</p>
+                      <ul class="p-section__lists mt-sp-30 mt-40" data-delay="0.8" data-module="FadeIn">
+                        <li class="p-section__list">
+                          <h3 class="p-section__list-tittle">最適化</h3>
+                          <p class="p-section__list-text mt-sp-8">収益など、特定の目的を最大化</p>
+                        </li>
+                        <li class="p-section__list">
+                          <h3 class="p-section__list-tittle">配信管理</h3>
+                          <p class="p-section__list-text mt-sp-8">ターゲティング可能なリアルタイム配信管理</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="is-sp">
+                  <p class="mt-sp-12 u-text06">データ解析をもとに最適化されたリアルタイムの配信基盤を提供します</p>
+                  <ul class="p-section__lists mt-sp-26 mt-40">
+                    <li class="p-section__list">
+                      <h3 class="p-section__list-tittle">最適化</h3>
+                      <p class="p-section__list-text mt-sp-8">収益など、特定の目的を最大化</p>
+                    </li>
+                    <li class="p-section__list">
+                      <h3 class="p-section__list-tittle">配信管理</h3>
+                      <p class="p-section__list-text mt-sp-8">ターゲティング可能なリアルタイム配信管理</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="p-offering-service-item p-section__item">
+                <div class="p-section__outer ml-sp-0 ml-100">
+                  <div class="mr-78 ml-20 ml-sp-0">
+                    <h2 class="p-section__lead font-accent">Discovery</h2>
+                    <p class="u-text05 mt-sp-8 mt-15">レコメンデーションや<br class="is-sp">情報検索機能の実現</p>
+                    <div class="is-pc">
+                      <p class="mt-sp-25 mt-40 u-text06">データ同士のつながりを自動で発見しご提案します</p>
+                      <ul class="p-section__lists mt-sp-30 mt-40">
+                        <li class="p-section__list">
+                          <h3 class="p-section__list-tittle">レコメンデーション</h3>
+                          <p class="p-section__list-text mt-sp-8">おすすめを複数アルゴリズムで提供</p>
+                        </li>
+                        <li class="p-section__list">
+                          <h3 class="p-section__list-tittle">情報検索</h3>
+                          <p class="p-section__list-text mt-sp-8">語彙から発見を促す基盤の提供</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="p-section__icon p-section__icon2">
+                    <img src="../../assets/img/Offering/icon_discovery.svg" alt="Discovery" loading="lazy">
+                  </div>
+                </div>
+                <div class="is-sp">
+                  <p class="mt-sp-10 mt-40 u-text06">データ同士のつながりを自動で発見しご提案します</p>
+                  <ul class="p-section__lists mt-sp-26 mt-40">
+                    <li class="p-section__list">
+                      <h3 class="p-section__list-tittle">レコメンデーション</h3>
+                      <p class="p-section__list-text mt-sp-8">おすすめを複数アルゴリズムで提供</p>
+                    </li>
+                    <li class="p-section__list">
+                      <h3 class="p-section__list-tittle">情報検索</h3>
+                      <p class="p-section__list-text mt-sp-8">語彙から発見を促す基盤の提供</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="p-offering-service-item p-section__item">
+                <div class="p-section__outer ml-sp-0 ml-100">
+                  <div class="p-section__icon p-section__icon3 ml-sp-5 ml-20 mt-10">
+                    <img src="../../assets/img/Offering/icon_intelligence.svg" alt="Intelligence" loading="lazy">
+                  </div>
+                  <div class="ml-sp-23 ml-85">
+                    <h2 class="p-section__lead font-accent">Intelligence</h2>
+                    <p class="u-text05 mt-sp-7 mt-20">可視化・解析・予測分析の実現</p>
+                    <div class="is-pc">
+                      <p class="mt-sp-25 mt-40 u-text06">データの可視化から予測、シミュレーションを提供します</p>
+                      <ul class="p-section__lists mt-sp-30 mt-40">
+                        <li class="p-section__list">
+                          <h3 class="p-section__list-tittle">可視化</h3>
+                          <p class="p-section__list-text mt-sp-8">グラフや図、表などによるデータ可視化</p>
+                        </li>
+                        <li class="p-section__list">
+                          <h3 class="p-section__list-tittle">解析</h3>
+                          <p class="p-section__list-text mt-sp-8">シミュレーションや解析基盤を提供</p>
+                        </li>
+                        <li class="p-section__list">
+                          <h3 class="p-section__list-tittle">予測分析</h3>
+                          <p class="p-section__list-text mt-sp-8">関係性や因果関係からの予測や分析基盤の提供</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="is-sp">
+                  <p class="mt-sp-8 u-text06">データの可視化から予測、シミュレーションを提供します</p>
+                  <ul class="p-section__lists mt-sp-26 mt-40">
+                    <li class="p-section__list">
+                      <h3 class="p-section__list-tittle">可視化</h3>
+                      <p class="p-section__list-text mt-sp-8">グラフや図、表などによるデータ可視化</p>
+                    </li>
+                    <li class="p-section__list">
+                      <h3 class="p-section__list-tittle">解析</h3>
+                      <p class="p-section__list-text mt-sp-8">シミュレーションや解析基盤を提供</p>
+                    </li>
+                    <li class="p-section__list">
+                      <h3 class="p-section__list-tittle">予測分析</h3>
+                      <p class="p-section__list-text mt-sp-8">関係性や因果関係からの予測や分析基盤の提供</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="p-offering-service-item p-section__item">
+                <div class="p-section__outer ml-sp-0 ml-100">
+                  <div class="mr-38 ml-10 ml-sp-0">
+                    <h2 class="p-section__lead font-accent ls-04">Measurement</h2>
+                    <p class="u-text05 mt-sp-5 mt-15">計測・貢献分析・<br class="is-sp">情報補完の実現</p>
+                    <div class="is-pc">
+                      <p class="mt-sp-25 mt-40 u-text06">複数のデータを掛け合わせ、より高度な分析を実施します</p>
+                      <ul class="p-section__lists mt-sp-30 mt-40">
+                        <li class="p-section__list">
+                          <h3 class="p-section__list-tittle">計測</h3>
+                          <p class="p-section__list-text mt-sp-8">未取得な事象を数値として記録</p>
+                        </li>
+                        <li class="p-section__list">
+                          <h3 class="p-section__list-tittle">貢献分析</h3>
+                          <p class="p-section__list-text mt-sp-8">成果を計測し施策との因果を評価</p>
+                        </li>
+                        <li class="p-section__list">
+                          <h3 class="p-section__list-tittle">情報補完</h3>
+                          <p class="p-section__list-text mt-sp-8">既知情報から高精度に補間</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="p-section__icon p-section__icon4 mt-20">
+                    <img src="../../assets/img/Offering/icon_measurement.svg" alt="Measurement" loading="lazy">
+                  </div>
+                </div>
+                <div class="is-sp">
+                  <p class="mt-sp-10 u-text06">複数のデータを掛け合わせ、より高度な分析を実施します</p>
+                  <ul class="p-section__lists mt-sp-26 mt-40">
+                    <li class="p-section__list">
+                      <h3 class="p-section__list-tittle">計測</h3>
+                      <p class="p-section__list-text mt-sp-8">未取得な事象を数値として記録</p>
+                    </li>
+                    <li class="p-section__list">
+                      <h3 class="p-section__list-tittle">貢献分析</h3>
+                      <p class="p-section__list-text mt-sp-8">成果を計測し施策との因果を評価</p>
+                    </li>
+                    <li class="p-section__list">
+                      <h3 class="p-section__list-tittle">情報補完</h3>
+                      <p class="p-section__list-text mt-sp-8">既知情報から高精度に補間</p>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="p-conata__article pt-185 pt-sp-97">
+      <h2 class="p-conata__subtittle ta-c">オファリング活用例</h2>
+      <div class="max-inner max-inner03">
+        <div class="p-conata__article-wrapper">
+          <div class="p-conata__article-content">
+            <ul class="p-conata__article-items">
+              <li class="p-conata__article-item">
+                <div class="p-conata__article-wrap">
+                  <div class="p-conata__article__logo-wrap">
+                    <div class="p-conata__article-logo docomo-logo">
+                      <img src="../../assets/img/common/docomo.svg" alt="docomo">
+                    </div>
+                  </div>
+                  <div class="u-title-article mt-sp-15">
+                    <h3><span>NTTドコモ様</span><br>スーパー販促プログラム™ のご支援</h3>
+                  </div>
+                </div>
+                <ul class="p-category__lists mt-40 mt-sp-5">
+                  <li class="p-category__list">Marketing</li>
+                  <li class="p-category__list">Discovery</li>
+                  <li class="p-category__list">Intelligence</li>
+                  <li class="p-category__list">Measurement</li>
+                </ul>
+                <p class="p-conata__article-text mt-sp-26 mt-25 mb-28 mb-sp-18">ドコモ社内の複数の対向先システムから、数千万レベルの大量の顧客データを収集・統合してデータプラットフォーム化。顧客属性や購買履歴の解析を実施し、最終的に効果的なメッセージ・クーポン配信を実現しました。</p>
+                <a href="" class="p-conata__article-link">この事例をもっと詳しく見る</a>
+              </li>
+              <li class="p-conata__article-item">
+                <div class="p-conata__article-wrap">
+                  <div class="p-conata__article__logo-wrap">
+                    <div class="p-conata__article-logo askul-logo">
+                      <img src="../../assets/img/common/CCC_logo.svg" alt="ccc">
+                    </div>
+                  </div>
+                  <div class="u-title-article mt-sp-10">
+                    <h3><span>カルチュア・コンビニエンス・クラブ様</span><br>会員x店舗x商品データによる需要予測・AI自動発注システムを提供</h3>
+                  </div>
+                </div>
+                <ul class="p-category__lists mt-40 mt-sp-13">
+                  <li class="p-category__list">Discovery</li>
+                  <li class="p-category__list">Intelligence</li>
+                  <li class="p-category__list">Measurement</li>
+                </ul>
+                <p class="p-conata__article-text mt-sp-22 mt-20 mb-38 mb-sp-18 ls-01 ls-001">需要予測と発注システムをご提供。予測 →<br class="is-sp">解析 → ディスカバリーのループを回すこと<br class="is-sp">でAIが売れ行きを書店ごとに予測し、適性な<br class="is-sp">部数を自動発注するシステムを提供。年間約<br class="is-sp">7万タイトル発行される「新刊本」の約30%<br class="is-sp">ほどが売れ残り、出版社に返品されていまし<br class="is-sp">たが直営書店でのPoCで返品率が13%にまで<br class="is-sp">半減しました。</p>
+                <a href="" class="p-conata__article-link">この事例をもっと詳しく見る</a>
+              </li>
+              <li class="p-conata__article-item">
+                <div class="p-conata__article-wrap">
+                  <div class="p-conata__article__logo-wrap">
+                    <div class="p-conata__article-logo docomo-logo">
+                      <img src="../../assets/img/common/corp-logo.svg" alt="corp">
+                    </div>
+                  </div>
+                  <div class="u-title-article mt-sp-10">
+                    <h3><span>日本生活協同組合連合会様</span><br>情報検索技術で「レシピから食材を注文する仕組み」を実現</h3>
+                  </div>
+                </div>
+                <ul class="p-category__lists mt-40 mt-sp-13">
+                  <li class="p-category__list">Discovery</li>
+                  <li class="p-category__list">Intelligence</li>
+                  <li class="p-category__list">Measurement</li>
+                </ul>
+                <p class="p-conata__article-text mt-sp-22 mt-25 mb-28 mb-sp-18">事例文章入ります。事例文章入ります。事例文章入ります。事例文章入ります。事例文章入ります。事例文章入ります。事例文章入ります。事例文章入ります。事例文章入ります。事例文章入ります。事例文章入ります。事例文章入ります。事例文章入ります。事例文章入ります。事例文章入ります。事例文章入ります。事例文章入ります。</p>
+                <a href="" class="p-conata__article-link">この事例をもっと詳しく見る</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="p-conata__article-btn">
+        <a href="/download/" class="c-btn blue mx-auto">
+          <span>全ての事例を見る</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="p-top-cv is-bg-blue">
+      <div class="max-inner max-inner03 ta-c">
+        <p class="u-text04">Conataはこのオファリング機能と、<br class="is-sp">データ基盤を柔軟に組み合わせることで<br class="is-pc">
+          よりニーズに即したデータソリューションを可能にしています。</p>
+        <div class="mt-50 mt-sp-40">
+          <a href="/conata/platform/" class="c-btn blue mx-auto">
+            <span>データ基盤でできること</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="c-exmenus p-stepper__menus">
+      <h3 class="c-exmenus__tittle is-text-white ta-c">業界別活用例はこちら</h3>
+      <div class="c-exmenus__inner p-inner">
+        <ul class="c-exmenus__items">
+          <li class="c-exmenus__item">
+            <a href="">EC・小売・流通</a>
+          </li>
+          <li class="c-exmenus__item">
+            <a href="">メディア・<br class="is-sp">エンターテイメント</a>
+          </li>
+          <li class="c-exmenus__item">
+            <a href="">交通インフラ</a>
+          </li>
+          <li class="c-exmenus__item">
+            <a href="">メーカー</a>
+          </li>
+          <li class="c-exmenus__item">
+            <a href="">金融</a>
+          </li>
+          <li class="c-exmenus__item">
+            <a href="">Smart Cities</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="p-top-cv is-bg-blue">
+      <div class="max-inner ta-c">
+        <p class="mb-30 mb-sp-28">データ活用プラットフォームConataの<br>紹介資料・導入事例集はこちら</p>
+        <div class="mb-90 mb-sp-82">
+          <a href="/download/" class="c-btn cv blue mx-auto">
+            <span>資料請求</span>
+          </a>
+        </div>
+        <p class="mb-36 mb-sp-28">個別のご質問・ご相談はこちら</p>
+        <a href="/contact/" class="c-btn blue mx-auto">
+          <span class="">
+            お問い合わせ
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- contents end -->
+
+  <footer class="l-footer">
+    <div class="max-inner">
+      <div class="d-pc-flex justify-btw">
+        <div class="l-footer__left">
+          <ul class="l-footer__sns d-flex align-center mb-23 mb-sp-32">
+            <li>
+              <a href="https://www.linkedin.com/company/flywheel-jp/" target="_blank">
+                <picture>
+                  <source srcset="/assets/img/common/linkedin-icon.svg">
+                  <img src="/assets/img/common/linkedin-icon.svg" alt="LinkedIn" loading="lazy">
+                </picture>
+              </a>
+            </li>
+            <li class="ml-23 ml-sp-30">
+              <a href="https://twitter.com/flywheel_jp" target="_blank">
+                <picture>
+                  <source srcset="/assets/img/common/twitter-icon.svg">
+                  <img src="/assets/img/common/twitter-icon.svg" alt="Twitter" loading="lazy">
+                </picture>
+              </a>
+            </li>
+            <li class="ml-23 ml-sp-25">
+              <a href="https://www.facebook.com/flywheel.jp/" target="_blank">
+                <picture>
+                  <source srcset="/assets/img/common/facebook-icon.svg">
+                  <img src="/assets/img/common/facebook-icon.svg" alt="Facebook" loading="lazy">
+                </picture>
+              </a>
+            </li>
+          </ul>
+          <div class="d-pc-flex align-center mb-sp-40">
+            <p class="l-footer__copyright is-pc">© 2018 FLYWHEEL, Inc. All Rights Reserved</p>
+            <p class="ml-30 l-footer__link mb-sp-20 ml-sp-0"><a href="../../about/security/">セキュリティ</a></p>
+            <p class="ml-30 l-footer__link ml-sp-0"><a href="../../about/privacy-policy/">プライバシーポリシー</a></p>
+          </div>
+
+        </div>
+
+        <div class="l-footer__right mb-sp-40">
+          <picture>
+            <source srcset="/assets/img/common/footer-logo.png">
+            <img src="/assets/img/common/footer-logo.png" alt="ICMS-SR0363" loading="lazy">
+          </picture>
+
+        </div>
+        <p class="l-footer__copyright is-sp">© 2018 FLYWHEEL, Inc. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../..//assets/js/slick.min.js"></script>
+  <!-- <script src="./assets/js/webgl.js"></script> -->
+  <script src="../..//assets/js/lp.js"></script>
+  <script type="text/javascript" src="../..//assets/js/slick-main.js"></script>
+  <!-- page js files end -->
+  <script src="../..//assets/js/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lil-gui@0.17.0/dist/lil-gui.umd.min.js"></script>
+  <script src="../..//assets/js/controls.js"></script>
+  <script>
+    var showNum2 = 0;
+    window.addEventListener("scroll", function() {
+      var windowHeight = window.innerHeight;
+      var feature_section = document.querySelector('.p-offering-service');
+      var featureTop = feature_section.getBoundingClientRect().top;
+      var featureHeight = feature_section.getBoundingClientRect().height;
+      var ratio = featureTop / featureHeight * -1 * 100;
+      var before_showNum = showNum2;
+      if (featureTop < featureHeight) {
+        if (ratio > 60) {
+          showNum2 = 3;
+        } else if (ratio > 45) {
+          showNum2 = 2;
+        } else if (ratio > 25) {
+          showNum2 = 1;
+        } else {
+          showNum2 = 0;
+        }
+      }
+      if (before_showNum != showNum2) {
+        $(".fadeOffering").removeClass("fadeOffering");
+        document.querySelectorAll(".p-offering-service-item")[showNum2].classList.add("fadeOffering");
+      }
+    })
+  </script>
+</body>
+
+</html>

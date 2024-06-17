@@ -1,0 +1,199 @@
+<%- include(`${ROOT}_include/_img`) %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% var meta={ path: "../",title: 'ブログ一覧' , description: 'description' , keywords: 'keywords' , og : { url: ``, iamge: '' } } -%>
+  <%- include(`${ROOT}_common/_head`, { meta: meta }) %>
+</head>
+
+<body>
+  <%- include(`${ROOT}_common/_header.ejs`, {path: meta.path}) %>
+  <!-- contents start -->
+  <div id="mainContents" class="news sub">
+    <section class="pt-160 pb-sp-0">
+      <div class="max-inner">
+        <div class="p-news-title__wrap posi-relative">
+          <h1 class="u-title ta-c mb-30 mb-sp-40">ブログ</h1>
+
+          <div class="c-search posi-pc-absolute mb-sp-90">
+            <form action="" class="d-flex align-center">
+              <button type="submit" class="c-search-submit">
+                <%- img("search-icon", "検索アイコン", "common", "svg") %>
+              </button>
+              <div class="flex-auto">
+                <input type="text">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="c-news-wrap p-top-case mt-0 pt-100 pb-60 pt-sp-0 pb-sp-60">
+      <div class="max-inner">
+        <ul class="c-news mb-60 mb-sp-30">
+          <li class="pb-100 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy-blog03", "ダミー画像", "common", "png") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-5">2022年7月12日</p>
+              <div class="c-news-tag mb-7 mb-sp-17 d-flex">
+                <p class="mr-5 mb-5 mb-sp-0">カルチャー</p>
+              </div>
+              <p class="c-news-title">「All Hands」で振り返る2022年上半期〜組織と社員との関係の質にこだわる</p>
+            </a>
+          </li>
+          <li class="pb-100 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy-blog04", "ダミー画像", "common", "png") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-5">2022年7月12日</p>
+              <div class="c-news-tag mb-7 mb-sp-17 d-flex">
+                <p class="mr-5 mb-5 mb-sp-0">Conata(コナタ)™ | DX推進 |ソリューション</p>
+              </div>
+              <p class="c-news-title">１年で大手企業の新規事業をリリース、全員で価値に向き合うプロダクトマネジメントとは？（後編）</p>
+            </a>
+          </li>
+          <li class="pb-100 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy-blog04", "ダミー画像", "common", "png") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-5">2022年7月12日</p>
+              <div class="c-news-tag mb-7 mb-sp-17 d-flex">
+                <p class="mr-5 mb-5 mb-sp-0">Conata(コナタ)™ | DX推進 |ソリューション</p>
+              </div>
+              <p class="c-news-title">１年で大手企業の新規事業をリリース、全員で価値に向き合うプロダクトマネジメントとは？（前編）</p>
+            </a>
+          </li>
+          <li class="pb-100 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy-blog03", "ダミー画像", "common", "png") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-5">2022年7月12日</p>
+              <div class="c-news-tag mb-7 mb-sp-17 d-flex">
+                <p class="mr-5 mb-5 mb-sp-0">カルチャー</p>
+              </div>
+              <p class="c-news-title">「All Hands」で振り返る2022年上半期〜組織と社員との関係の質にこだわる</p>
+            </a>
+          </li>
+          <li class="pb-100 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy-blog04", "ダミー画像", "common", "png") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-5">2022年7月12日</p>
+              <div class="c-news-tag mb-7 mb-sp-17 d-flex">
+                <p class="mr-5 mb-5 mb-sp-0">Conata(コナタ)™ | DX推進 |ソリューション</p>
+              </div>
+              <p class="c-news-title">１年で大手企業の新規事業をリリース、全員で価値に向き合うプロダクトマネジメントとは？（後編）</p>
+            </a>
+          </li>
+          <li class="pb-100 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy-blog04", "ダミー画像", "common", "png") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-5">2022年7月12日</p>
+              <div class="c-news-tag mb-7 mb-sp-17 d-flex">
+                <p class="mr-5 mb-5 mb-sp-0">Conata(コナタ)™ | DX推進 |ソリューション</p>
+              </div>
+              <p class="c-news-title">１年で大手企業の新規事業をリリース、全員で価値に向き合うプロダクトマネジメントとは？（前編）</p>
+            </a>
+          </li>
+          <li class="pb-100 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy-blog03", "ダミー画像", "common", "png") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-5">2022年7月12日</p>
+              <div class="c-news-tag mb-7 mb-sp-17 d-flex">
+                <p class="mr-5 mb-5 mb-sp-0">カルチャー</p>
+              </div>
+              <p class="c-news-title">「All Hands」で振り返る2022年上半期〜組織と社員との関係の質にこだわる</p>
+            </a>
+          </li>
+          <li class="pb-100 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy-blog04", "ダミー画像", "common", "png") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-5">2022年7月12日</p>
+              <div class="c-news-tag mb-7 mb-sp-17 d-flex">
+                <p class="mr-5 mb-5 mb-sp-0">Conata(コナタ)™ | DX推進 |ソリューション</p>
+              </div>
+              <p class="c-news-title">１年で大手企業の新規事業をリリース、全員で価値に向き合うプロダクトマネジメントとは？（後編）</p>
+            </a>
+          </li>
+          <li class="pb-100 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy-blog04", "ダミー画像", "common", "png") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-5">2022年7月12日</p>
+              <div class="c-news-tag mb-7 mb-sp-17 d-flex">
+                <p class="mr-5 mb-5 mb-sp-0">Conata(コナタ)™ | DX推進 |ソリューション</p>
+              </div>
+              <p class="c-news-title">１年で大手企業の新規事業をリリース、全員で価値に向き合うプロダクトマネジメントとは？（前編）</p>
+            </a>
+          </li>
+          <li class="pb-100 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy-blog03", "ダミー画像", "common", "png") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-5">2022年7月12日</p>
+              <div class="c-news-tag mb-7 mb-sp-17 d-flex">
+                <p class="mr-5 mb-5 mb-sp-0">カルチャー</p>
+              </div>
+              <p class="c-news-title">「All Hands」で振り返る2022年上半期〜組織と社員との関係の質にこだわる</p>
+            </a>
+          </li>
+          <li class="pb-100 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy-blog04", "ダミー画像", "common", "png") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-5">2022年7月12日</p>
+              <div class="c-news-tag mb-7 mb-sp-17 d-flex">
+                <p class="mr-5 mb-5 mb-sp-0">Conata(コナタ)™ | DX推進 |ソリューション</p>
+              </div>
+              <p class="c-news-title">１年で大手企業の新規事業をリリース、全員で価値に向き合うプロダクトマネジメントとは？（後編）</p>
+            </a>
+          </li>
+          <li class="pb-100 pb-sp-70">
+            <a href="/case/case-adera/">
+              <div class="c-news-img mb-5 mb-sp-10">
+                <%- img("dummy-blog04", "ダミー画像", "common", "png") %>
+              </div>
+              <p class="c-news-date mb-10 mb-sp-5">2022年7月12日</p>
+              <div class="c-news-tag mb-7 mb-sp-17 d-flex">
+                <p class="mr-5 mb-5 mb-sp-0">Conata(コナタ)™ | DX推進 |ソリューション</p>
+              </div>
+              <p class="c-news-title">１年で大手企業の新規事業をリリース、全員で価値に向き合うプロダクトマネジメントとは？（前編）</p>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="c-pagenation-news font-accent">
+          <li class="prev"><a href=""></a></li>
+          <li class="current"><a href="">1</a></li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li class="next"><a href=""></a></li>
+        </ul>
+
+
+      </div>
+    </section>
+  </div>
+  <!-- contents end -->
+
+  <%- include(`${ROOT}_common/_footer.ejs`,{path: meta.path}) %>
+  <%- include(`${ROOT}_common/_script.ejs`, {path: meta.path}) %>
+</body>
+
+</html>

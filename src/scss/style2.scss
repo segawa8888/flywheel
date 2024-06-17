@@ -1,0 +1,286 @@
+@import "_resource/_init";
+.p-top-mission {
+	overflow: hidden !important;
+}
+.p-top-mission__mission__wrap {
+	
+	max-width: 100vw;
+	// @include sp {
+	// 	height: vw(100) !important;
+	// }
+	
+	
+}
+
+.p-top-mission__mission {
+	padding: 0;
+	& > span {
+		line-height: 1;
+		display: block;
+		background-color: #fff;
+		@include pc {
+			padding: rem(5) rem(20);
+			height: rem(48);
+		}
+		@include sp {
+			padding: vw(5);
+			height: vw(30);
+		}
+	}
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height: 100%;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top: 170%;
+    opacity: 0;
+  }
+}
+
+.p-top-feature .section_inner {
+	@include sp {
+		position: relative;
+		top: inherit
+	}
+}
+.p-top-feature {
+	@include sp {
+		height: auto;
+	}
+}
+.p-top-feature__list {
+	@include sp {
+		height: auto;
+	}
+}
+
+.p-top-feature__item {
+	@include sp {
+		position: relative;
+		top: inherit;
+		bottom: inherit;
+		left: inherit;
+		right: inherit;
+		opacity: 1;
+	}
+}
+
+.p-top-kvBottom {
+
+	@include sp {
+		height: 200vh;
+	}
+}
+
+.p-top-kvBottom .max-inner-inner {
+	@include sp {
+		height: 90vh;
+	}
+}
+
+.p-top-feature__title__inner {
+	border: none;
+	position: relative;
+	.underbar {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background-color: $baseColor;
+	}
+}
+
+.l-header__right {
+	@include sp {
+	height: 100vh;
+	background-color: #fff;
+	}
+}
+
+[data-module="FadeIn"],[data-module="FadeInMV"],[data-module="FadeInKadai"] {
+	&.fadeIn {
+		&--list {
+			opacity: 1;
+			&:before {
+				display: none;
+			}
+			&:not(:last-child):after {
+				max-height: 0;
+				
+			}
+			.p-stepper__content {
+				
+				opacity: 0;
+				transform: translateX(-100%);
+			}
+			.p-stepper__number {
+				opacity: 0;
+				
+			}
+			&.fadeIn {
+				opacity: 1;
+				.p-stepper__number_wrap {
+					.cover1:before {
+						animation: draw 0.3s linear 0.5s forwards;
+					}
+					.cover2:before {
+						animation: draw 0.3s ease-out 0.8s forwards;
+					}
+				}
+				.p-stepper__number {
+					opacity: 1;
+					transition: all 0.5s 1s;
+				}
+				.p-stepper__content {
+					transition: all 0.5s 1.5s;
+					transform: translateX(0%);
+					opacity: 1;
+				}
+				&:not(:last-child):after {
+					max-height: 100%;
+					transition: all 0.5s 2s;
+				}
+			
+			}
+		}
+		&-fromLeft {
+			transform: translateX(-40%);
+		}
+		&--widthText {
+			width: 0;
+			display: inline-block;
+			& > span {
+				display: block;
+				z-index: -1;
+				transition: all 1s 1s !important;
+				opacity: 0;
+				transform: translateY(110%);
+			}
+			&.fadeIn {
+				width: 100%;
+				& > span {
+					
+					opacity: 1;
+					transform: translateY(0%);
+				}
+			}
+		}
+	}
+}
+
+.p-stepper__item.white {
+	.p-stepper__number_wrap {
+		border-color: #fff;
+		transition: all 0.2s;
+	}
+	.p-stepper__number {
+		transition: color 0.2s !important;
+	}
+}
+.p-stepper__number_wrap {
+	border: 1px solid $baseColor;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	transition: all 0.5 2s;
+	
+	@include pc {
+		width:rem(100);
+		height:rem(100);
+	}
+	@include sp {
+		width:vw(65);
+		height:vw(65);
+	}
+	.cover1,
+	.cover2 {
+		position: absolute;
+		overflow: hidden;
+		width: 50%;
+		height: 100%;
+	}
+	.cover1 {
+		left: 50%;
+	}
+	.cover1:before,
+	.cover2:before {
+		position: absolute;
+		
+		content: "";
+	}
+	.cover1:before {
+		width: 100%;
+		height: 200%;
+		background: transparent; /* 背景色に合わせて変更してください */
+		transform-origin: 0 25%;
+	}
+	.cover2:before {
+		left: -10%;
+		width: 110%;
+		height: 120%;
+		background: transparent; /* 背景色に合わせて変更してください */
+		transform-origin: 100% 40%;
+	}
+}
+
+
+@keyframes draw {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+
+.p-conata__item {
+	i {
+		overflow: inherit !important;
+	}
+}
+
+.p-fv__subtittle__wrap {
+	overflow: hidden;
+}
+
+.p-stepper__content {
+	flex: 1;
+}
+
+.p-service__top {
+	@include sp {
+		height: auto;
+	}
+	.p-service__list {
+		@include sp {
+			height: auto;
+		}
+	}
+	.p-service__contents {
+		@include sp {
+			position: relative;
+			opacity: 1;
+			top: inherit;
+			left: inherit;
+			bottom: inherit;
+			right: inherit;
+			margin-bottom: vw(80);
+		}
+	}
+
+}
+.p-merit__top {
+	margin-top: 0;
+}

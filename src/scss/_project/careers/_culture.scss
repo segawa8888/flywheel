@@ -1,0 +1,211 @@
+.p-culture {
+    @include pc {
+        padding-top: rem(160);
+        padding-bottom: rem(160);
+    }
+    @include sp {
+        padding-top: vw(120);
+        padding-bottom: vw(55);
+    }
+}
+
+.p-culture-value {
+    @include pc {
+        padding-top:rem(106);
+        padding-bottom:rem(86);
+    }
+    @include sp {
+        padding-top: vw(60);
+        padding-bottom: vw(70);
+    }
+}
+
+.p-culture__tittle {
+    @include font-pc(43, 52, -20, 600);
+    @include font-sp(24, 34, 0, 600);
+}
+
+.p-culture__wrapper {
+    @include pc {
+        padding-top: rem(145);
+    }
+}
+
+.p-culture-slider {
+    @include pc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:0 rem(30);
+    }
+}
+
+.p-culture-slider__item {
+    @include pc {
+        width:rem(325);
+        height:rem(243);
+    }
+    @include sp {
+        margin-right:vw(10);
+        width: vw(270);
+        height:vw(201.88);
+    }
+
+    img {
+        height:100%;
+    }
+}
+
+.p-culture-slider
+.slick-list {
+    @include sp {
+        padding-right: vw(57);
+        margin-left: vw(28);
+    }
+}
+
+
+.p-culture-slider
+.slick-dots li {
+    background-color: #fff;
+    border:1px solid $baseColor;
+    border-radius: 50%;
+    margin: 0;
+    @include pc {
+        width:rem(14);
+        height:rem(14);
+    }
+    @include sp {
+        width:vw(12);
+        height:vw(12);
+    }
+}
+
+.p-culture-slider
+.slick-dots li:nth-child(n+2) {
+    @include pc {
+        margin-left: rem(16);
+    }
+    @include sp {
+        margin-left: vw(13);
+    }
+}
+
+.p-culture-slider
+.slick-dots
+.slick-active {
+    background-color: $baseColor;
+}
+
+.p-culture-slider
+.slick-dots {
+    @include pc {
+        bottom:rem(-78);
+    }
+    @include sp {
+        bottom:vw(-44.4);
+    }
+}
+
+.p-culture-slider
+.slide-arrow {
+    background-color: transparent;
+    border:1px solid $baseColor;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    @include pc {
+        bottom:rem(-84);
+        width:rem(46);
+        height:rem(46);
+    }
+    @include sp {
+        bottom:vw(-44.4);
+        height:vw(30);
+        width:vw(30);
+    }
+}
+
+.p-culture-slider
+.prev-arrow {
+    @include pc {
+        left:35%;
+    }
+    @include sp {
+        left:vw(56);
+    }
+}
+
+.p-culture-slider
+.next-arrow {
+    @include pc {
+        right:35%;
+    }
+    @include sp {
+        right:vw(56);
+    }
+}
+
+.p-culture-slider
+.prev-arrow:before{
+    content: "\f104";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-weight: 700;
+    @include sp {
+        font-size: vw(10);
+    }
+}
+
+.p-culture-slider
+.next-arrow:before{
+    content: "\f105";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-weight: 700;
+    @include sp {
+        font-size: vw(10);
+    }
+}
+
+.p-culture__text {
+    @include font-pc(16, 30, 0, 400);
+    @include font-sp(14, 28, 40, 400);
+    @include pc {
+        text-align: center;
+    }
+    @include sp {
+    }
+}
+
+.p-culture__week {
+    @include pc {
+        margin-top: rem(180);
+    }
+    @include sp {
+        margin-top: vw(93);
+    }
+}
+
+.p-culture__week-img {
+    margin-left: auto;
+    margin-right: auto;
+    @include pc {
+        width:rem(325);
+    }
+    @include sp {
+        width:vw(270);
+    }
+}

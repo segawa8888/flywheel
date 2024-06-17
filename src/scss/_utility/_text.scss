@@ -1,0 +1,69 @@
+.u-text {
+    @include font-pc(15, 30, -20, 400);
+    @include font-sp(14, 28, -20, 400);
+}
+
+.u-text01 {
+    @include font-pc(18, 36, 10, 500);
+    @include font-sp(14, 28, 10, 500);
+}
+
+.u-text02 {
+    @include font-pc(18, 36, 0, 500);
+    @include font-sp(14, 28, -10, 500);
+}
+
+.u-text03 {
+    @include font-pc(18, 36, -10, 500);
+    @include font-sp(14, 28, -80, 500); 
+}
+
+.u-text04 {
+    @include font-pc(20, 36, 0, 500);
+    @include font-sp(16, 28, 0, 500);
+}
+
+.u-text05 {
+    @include font-pc(24, 24, 10, 600);
+    @include font-sp(18, 26, 10, 600);
+}
+
+.u-text06 {
+    @include font-pc(20, 20, 20, 500);
+    @include font-sp(16, 28, 20, 500);
+}
+
+.u-text07 {
+    @include font-pc(20, 40, 20, 400);
+    @include font-sp(16, 30, -20, 400);
+}
+
+.u-text08 {
+    @include font-pc(20, 40, 20, 600);
+    @include font-sp(18, 30, 30, 600);
+}
+
+.u-text09 {
+    @include font-pc(17, 30, 0, 400);
+    @include font-sp(17, 30, 0, 400);
+}
+
+.u-text10 {
+    @include font-pc(18, 36, 0, 500);
+    @include font-sp(14, 32, -10, 500);
+}
+
+.u-text11 {
+    @include font-pc(20, 36, 0, 400);
+    @include font-sp(16, 30, -40, 400);
+}
+
+.u-text12 {
+    @include font-pc(20, 36, 0, 400);
+    @include font-sp(16, 29, 0, 400);
+}
+
+.u-text13 {
+    @include font-pc(24, 46, -30, 600);
+    @include font-sp(16, 32, -30, 600);
+}

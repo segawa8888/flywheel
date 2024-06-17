@@ -1,0 +1,52 @@
+.p-section__tittle {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include pc {
+        @include font-pc(30, 30 , 0, 400);
+    }
+    @include sp {
+        @include font-sp(22, 22 , 0, 400);
+        width:vw(267.76);
+    }
+		&.is-reverse-text {
+			&.white {
+				&::before {
+				 background-color: #fff;
+				}
+			};
+		}
+}
+
+.p-section__tittle:before {
+    position:absolute;
+    content:'';
+    background-color: $baseColor;
+    height:1px;
+    bottom:rem(-8);
+    @include pc {
+        width:rem(355.5);
+    }
+
+    @include sp {
+        width:vw(267.76);
+    }
+}
+
+.p-section__logo {
+    @include pc {
+        width:rem(195.32);
+        margin-right:rem(10);
+    }
+    @include sp {
+        width:vw(145);
+        margin-right: vw(9.6);
+    }
+}
+
+.p-section__logo img {
+    width:100%;
+}

@@ -1,0 +1,50 @@
+.l-footer {
+	@include pc {
+		padding-top: rem(264);
+		padding-bottom: rem(50);
+	}
+	@include sp {
+		padding-top: vw(165);
+		padding-bottom: vw(45);
+	}
+}
+.l-footer__copyright {
+	@include font-pc(17, 17, 0, 400);
+	@include font-sp(12, 12, 0, 400);
+	@include sp {
+		text-align: center;
+	}
+}
+
+.l-footer__link {
+	@include font-pc(17, 17, 0, 400);
+	@include font-sp(14, 17, -100, 400);
+	@include sp {
+		text-align: center;
+	}
+	transition: all 0.2s;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.l-footer__sns {
+	@include sp {
+		justify-content: center;
+	}
+	img {
+		@include sp {
+			object-fit: contain;
+			width: vw(28);
+			height: vw(28);
+		}
+	}
+	transition: all 0.2s;
+	a {
+		&:hover {
+			@include pc {
+				opacity: 0.8;
+			}
+		}
+	}
+}

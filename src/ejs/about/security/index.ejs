@@ -1,0 +1,47 @@
+<%- include(`${ROOT}_include/_img`) %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% var meta={ path: "../../",title: 'セキュリティ' , description: 'description' , keywords: 'keywords' , og : { url: ``, iamge: '' } } -%>
+  <%- include(`${ROOT}_common/_head`, { meta: meta }) %>
+</head>
+
+<body>
+  <%- include(`${ROOT}_common/_header.ejs`, {path: meta.path}) %>
+  <!-- contents start -->
+  <div id="mainContents" class="policy sub">
+    <section class="pt-160 pb-sp-20">
+      <div class="ml-sp-37 mr-sp-37">
+        <h1 class="u-title02 ta-c">セキュリティ</h1>
+      </div>
+      <div class="p-policy__wrapper">
+        <div class="p-policy__inner">
+          <div class="p-policy__content">
+            <ul class="p-policy__items">
+              <li class="p-policy__item pl-sp-28 pr-sp-28">
+                <h2 class="p-policy__tittle">情報 セキュリティ 方針　第1版</h2>
+                <p class="p-policy__text mt-30">私たち株式会社フライウィールは、データ及び人工知能を活用したサービスソリューションの提供を通じて、お客様、社員とその家族などすべてのステークホルダーの期待に応え、社会に貢献することを使命と考えています。<br><br>
+                    当社の事業活動において、お客様からお預かりする個人情報を含む多くの情報資産を活用しており、すべてのステークホルダーの期待に応えるためには、これらの情報資産を保護する事は、経営上の最重要課題であると認識しています。<br><br>
+                    よって、私たちは、情報セキュリティ基本方針を策定し、本基本方針に基づいて、ISMS（情報セキュリティマネジメントシステム）を構築・運用し、当社を取り巻く環境の変化を踏まえ、継続的改善に全社を挙げて取り組むことをここに宣言します。<br><br>
+                    さらに、当社、以下のセキュリティ目的を設定し、この目的を達成するための諸施策を確実に実施します。<br><br>
+                    ・お客様との契約及び法的または規制要求事項を尊重し遵守する。<br>
+                    ・情報 セキュリティ 事故を未然に防止する。<br>
+                    ・万一情報 セキュリティ 事故が発生した場合、影響を最小限にする。<br><br>以上</p>
+              </li>
+            </ul>
+            <p class="p-policy__text p-policy__last-text pr-sp-28 pl-sp-28">2020年4月1日<br>
+                株式会社フライウィール<br>
+                代表取締役社長　横山　直人</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- contents end -->
+
+  <%- include(`${ROOT}_common/_footer.ejs`,{path: meta.path}) %>
+  <%- include(`${ROOT}_common/_script.ejs`, {path: meta.path}) %>
+</body>
+
+</html>

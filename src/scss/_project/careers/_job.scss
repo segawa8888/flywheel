@@ -1,0 +1,20 @@
+.p-job {
+    @include pc {
+        padding-top: rem(117);
+        padding-bottom: rem(116);
+    }
+    @include sp {
+        padding-top: vw(90);
+        padding-bottom: vw(90);
+    }
+}
+
+.p-job__tittle {
+	@include font-pc(30, 30, -10, 600);
+	@include font-sp(24, 24, -10, 600);
+}
+
+.p-job__text {
+    @include font-pc(20, 36, -20, 500);
+    @include font-sp(16, 30, -20, 500);
+}

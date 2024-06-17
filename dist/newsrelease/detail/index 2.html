@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ニュース詳細</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="description">
+  <meta name="keywords" content="keywords">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <!-- SNS OGP start -->
+  <meta property="og:title" content="ニュース詳細">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="description">
+  <meta property="og:keywords" content="keywords">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <meta property="og:site_name" content="">
+  <meta property="fb:app_id" content="">
+  <!--twitter card-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@">
+
+  <!-- page css files start -->
+  <link rel="stylesheet" type="text/css" href="../..//assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../..//assets/css/style2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- page css files end -->
+
+  <!-- slick css -->
+  <link rel="stylesheet" type="text/css" href="../..//assets/css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="../..//assets/css/slick-theme.css" />
+</head>
+
+<body>
+  <header class="l-header" data-module="Header">
+    <div data-module="FadeInMV" class="fadeIn--fromBottom" data-delay="1">
+      <div class="l-header__inner fadeIn--fromTop" data-delay="1" data-module="FadeInMV">
+        <div class="l-header__logo">
+          <a href="../../" class="is-hover">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/assets/img/common/logo.png">
+              <source media="(max-width: 767px)" srcset="/assets/img/common/sp/logo.png">
+              <img src="/assets/img/common/logo.png" alt="FLYWHEEL" loading="lazy">
+            </picture>
+          </a>
+        </div>
+
+        <input id="header__menu" type="checkbox" style="display:none;">
+        <label for="header__menu" class="l-header__ham is-sp ml-auto">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="l-header__right ml-auto">
+          <ul class=" l-header__menu fs-13 fs-sp-16 mb-sp-45">
+            <li class="mr-32"><a href="../../">ホーム</a></li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-pointer-none">プロダクト</a>
+              <input type="checkbox" style="display: none;" id="menu1">
+              <label class="is-sp u-plus" for="menu1"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="../../conata/">Conata™の特徴</a></li>
+                <li><a href="../../conata/platform/">データ基盤</a></li>
+                <li><a href="../../conata/offering/">オファリング</a></li>
+                <li><a href="../../conata/faq/">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-header-hover">ソリューション</a>
+              <input type="checkbox" style="display: none;" id="menu4">
+              <label class="is-sp u-plus" for="menu4"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="../../solutions/">プロフェッショナルサービス</a></li>
+                <li><a href="javascript:void(0);" class="is-pointer-none">業界別ソリューション</a>
+                  <ul class="l-header__subMenu--02">
+                    <li><a href="../../solutions/ecommerce-retail-logistics/">EC・小売・流通</a></li>
+                    <li><a href="../../solutions/digital-contents/">メディア・エンターテイメント</a></li>
+                    <li><a href="../../solutions/traffic-Infrastructure/">交通インフラ</a></li>
+                    <li><a href="../../solutions/manufacture/">メーカー</a></li>
+                    <li><a href="../../solutions/financial/">金融</a></li>
+                    <li><a href="../../solutions/smart-cities/">Smart Cities</a></li>
+
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="mr-32"><a href="../../case/">導入事例</a></li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-header-hover">ニュースルーム</a>
+              <input type="checkbox" style="display: none;" id="menu6">
+              <label class="is-sp u-plus" for="menu6"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="../../newsrelease/">ニュース</a></li>
+                <li><a href="../../topics/">ブログ</a></li>
+                <li><a target="_blank" class="is-out-tab" href="../../https://datalab.flywheel.jp/">DataLab by FLYWHEEL</a></li>
+              </ul>
+            </li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-header-hover">会社情報</a>
+              <input type="checkbox" style="display: none;" id="menu2">
+              <label class="is-sp u-plus" for="menu2"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="../../about/company/">会社概要・アクセス</a></li>
+                <li><a href="../../about/message/">経営陣・メッセージ</a></li>
+                <li><a href="../../about/mission/">ミッション・バリュー</a></li>
+              </ul>
+            </li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-header-hover">採用情報</a>
+              <input type="checkbox" style="display: none;" id="menu3">
+              <label class="is-sp u-plus" for="menu3"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="../../careers">採用情報トップ</a></li>
+                <li><a href="../../careers/people/">PEOPLE</a></li>
+                <li><a href="../../careers/office/">OFFICE</a></li>
+                <li><a href="../../careers/culture/">CULTURE</a></li>
+                <li><a href="../../careers/benefit/">WORK STYLE</a></li>
+                <li><a href="../../careers/jobs/">JOB OPENING</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="l-header__btns fs-13 fs-sp-16">
+            <li class="mr-22">
+              <a class="l-header__btn u-hover" href="../../download/"><span>資料請求</span></a>
+            </li>
+            <li>
+              <a class="l-header__btn u-hover" href="../../contacts/"><span>お問い合わせ</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- contents start -->
+  <div id="mainContents" class="topics sub">
+    <section class="pt-200 mb-75">
+      <div class="max-inner max-inner02">
+        <p class="u-title ta-c mb-80 mb-sp-40">ニュース</p>
+
+        <h1 class="c-news-article__title mb-0">【報道資料】フライウィール、データ・AIから最適な品揃えと適正在庫を両立させる「Conata™ Demand Planner」を提供開始</h1>
+
+        <div class="d-flex flex-wrap align-center mb-30">
+          <p class="c-news-article__date pt-20">2022年6月29日</p>
+          <div class="d-flex c-news-article__tags ml-30 ml-sp-7 mr-30 mr-sp-0 pt-20">
+            <span class="is-bg-base-blue is-text-white pl-7 pr-7">プレスリリース</span>
+          </div>
+          <p class="d-flex c-news-article__tags2 pt-20 mt-sp-10">Conata(コナタ)™｜DX推進｜ソリューション｜小売・流通向けソリューション</p>
+        </div>
+
+        <ul class="d-flex c-news-article-share align-center">
+          <li class="">
+            <a href="http://twitter.com/share?text=&url=https//example.com" target="_blank">
+              <picture>
+                <source srcset="/assets/img/common/twitter-icon.svg">
+                <img src="/assets/img/common/twitter-icon.svg" alt="Twitter" loading="lazy">
+              </picture>
+            </a>
+          </li>
+          <li class="ml-23 ml-sp-20">
+            <a href="https://www.facebook.com/sharer.php?u=https//example.com" target="_blank">
+              <picture>
+                <source srcset="/assets/img/common/facebook-icon.svg">
+                <img src="/assets/img/common/facebook-icon.svg" alt="Facebook" loading="lazy">
+              </picture>
+            </a>
+          </li>
+          <li class="ml-23 ml-sp-20">
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=" target="_blank">
+              <picture>
+                <source srcset="/assets/img/common/linkedin-icon.svg">
+                <img src="/assets/img/common/linkedin-icon.svg" alt="LinkedIn" loading="lazy">
+              </picture>
+            </a>
+          </li>
+          <li class="ml-25 ml-sp-20">
+            <a href="http://b.hatena.ne.jp/entry/{URLEncodedPermalink}" data-hatena-bookmark-title="{Title}" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加" target="_blank">
+              <picture>
+                <source srcset="/assets/img/common/hatena.svg">
+                <img src="/assets/img/common/hatena.svg" alt="hatena" loading="lazy">
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="pb-sp-20">
+      <div class="max-inner max-inner02">
+        <article class="c-news-article__body">
+          <h2>セクションタイトルパーツですセクションタイトルパーツですセクションタイトル</h2>
+          <p>本文テキストパーツです。<a href="">文中リンクのスタイル</a>、<strong>文中強調のスタイル</strong>も用意します。<br>
+            先行事例における成功のポイントは、データ活用にあります。CCC では約 7,000 万人の会員データ、約 800 店舗、約450万タイトルが組み合わさった桁違いに多量なデータが保管されています。Conata™ Demand Planner ではまず、その多様かつ大量のデータを当社の独自技術（オントロジー技術など）でデジタル空間に再現し、意味や関係性を抽出できるようにします。<br><br>
+            そのデータから AI（人工知能）が書店ごとに売れ行きを予測し、適正部数と品揃えを導き出します。更に、CCC 自動発注システムと連動させ、人手では困難だった「各書店のニーズに基づいて最適な量を最適なタイミングで配本できる仕組み」を新たに作り出しました。</p>
+          <picture>
+            <source srcset="/assets/img/common/noimg.jpg">
+            <img src="/assets/img/common/noimg.jpg" alt="ダミー画像" loading="lazy">
+          </picture>
+          <p>キャプションが入ります キャプションが入ります。</p>
+          <hr><br><br>
+          <video src="/assets/img/common/dummy.mp4" controls></video>
+          <p>キャプションが入ります キャプションが入ります。</p>
+          <ul>
+            <li>約450万タイトルが組み合わさった桁違いに多量なデータが保管されています。Conata™ Demand Planner ではまず、その多様かつ大量のデータを当社の独自技術（オントロジー技術など）でデジタル空間に再現し、意味や関係性を抽出できるようにします。</li>
+            <li>データから AI（人工知能）が書店ごとに売れ行きを予測し、適正部数と品揃えを導き出します。更に、CCC 自動発注システムと連動させ、人手では困難だった「各書店のニーズに基づいて最適な量を最適なタイミングで配本できる仕組み」を新たに作り出しました。</li>
+          </ul>
+          <ol>
+            <li>約450万タイトルが組み合わさった桁違いに多量なデータが保管されています。Conata™ Demand Planner ではまず、その多様かつ大量のデータを当社の独自技術（オントロジー技術など）でデジタル空間に再現し、意味や関係性を抽出できるようにします。</li>
+            <li>データから AI（人工知能）が書店ごとに売れ行きを予測し、適正部数と品揃えを導き出します。更に、CCC 自動発注システムと連動させ、人手では困難だった「各書店のニーズに基づいて最適な量を最適なタイミングで配本できる仕組み」を新たに作り出しました。</li>
+          </ol><br><br>
+          <p>
+            <span class="alignleft">
+              <picture>
+                <source srcset="/assets/img/common/noimg.jpg">
+                <img src="/assets/img/common/noimg.jpg" alt="ダミー画像" loading="lazy">
+              </picture>
+            </span>
+            左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。
+          </p>
+
+          <p>
+            <span class="alignright">
+              <picture>
+                <source srcset="/assets/img/common/noimg.jpg">
+                <img src="/assets/img/common/noimg.jpg" alt="ダミー画像" loading="lazy">
+              </picture>
+            </span>
+            左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。左画像の2段組みパーツです。スマホの場合は1列になります。
+          </p>
+        </article>
+      </div>
+
+    </section>
+
+    <div class="mb-30 mt-40 mb-sp-50">
+      <div class="max-inner">
+        <div class="c-pagenation d-flex justify-btw align-center">
+          <div class="prev">
+            <a href="" class="d-flex align-center">
+              <span class="c-pagenation-arrow"></span>
+              <span class="flex-auto ml-30 is-pc">DOOHのプログラマティック広告配信を実現<br>株式会社 大阪メトロ アドエラ</span>
+            </a>
+          </div>
+
+          <div class="ta-c c-pagenation-undo mt-25">
+            <a class="" href="/newsrelease/">
+              <p class="c-pagenation-undo__icon mb-10 mb-sp-5">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </p>
+              <p>一覧に戻る</p>
+            </a>
+          </div>
+
+          <div class="next">
+            <a href="" class="d-flex align-center">
+              <span class="flex-auto mr-30 is-pc">日本最大級B2B卸サイト パーソナライズ化の検証で売上が4倍に株式会社オークファン</span>
+              <span class="c-pagenation-arrow"></span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- contents end -->
+
+  <footer class="l-footer">
+    <div class="max-inner">
+      <div class="d-pc-flex justify-btw">
+        <div class="l-footer__left">
+          <ul class="l-footer__sns d-flex align-center mb-23 mb-sp-32">
+            <li>
+              <a href="https://www.linkedin.com/company/flywheel-jp/" target="_blank">
+                <picture>
+                  <source srcset="/assets/img/common/linkedin-icon.svg">
+                  <img src="/assets/img/common/linkedin-icon.svg" alt="LinkedIn" loading="lazy">
+                </picture>
+              </a>
+            </li>
+            <li class="ml-23 ml-sp-30">
+              <a href="https://twitter.com/flywheel_jp" target="_blank">
+                <picture>
+                  <source srcset="/assets/img/common/twitter-icon.svg">
+                  <img src="/assets/img/common/twitter-icon.svg" alt="Twitter" loading="lazy">
+                </picture>
+              </a>
+            </li>
+            <li class="ml-23 ml-sp-25">
+              <a href="https://www.facebook.com/flywheel.jp/" target="_blank">
+                <picture>
+                  <source srcset="/assets/img/common/facebook-icon.svg">
+                  <img src="/assets/img/common/facebook-icon.svg" alt="Facebook" loading="lazy">
+                </picture>
+              </a>
+            </li>
+          </ul>
+          <div class="d-pc-flex align-center mb-sp-40">
+            <p class="l-footer__copyright is-pc">© 2018 FLYWHEEL, Inc. All Rights Reserved</p>
+            <p class="ml-30 l-footer__link mb-sp-20 ml-sp-0"><a href="../../about/security/">セキュリティ</a></p>
+            <p class="ml-30 l-footer__link ml-sp-0"><a href="../../about/privacy-policy/">プライバシーポリシー</a></p>
+          </div>
+
+        </div>
+
+        <div class="l-footer__right mb-sp-40">
+          <picture>
+            <source srcset="/assets/img/common/footer-logo.png">
+            <img src="/assets/img/common/footer-logo.png" alt="ICMS-SR0363" loading="lazy">
+          </picture>
+
+        </div>
+        <p class="l-footer__copyright is-sp">© 2018 FLYWHEEL, Inc. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../..//assets/js/slick.min.js"></script>
+  <!-- <script src="./assets/js/webgl.js"></script> -->
+  <script src="../..//assets/js/lp.js"></script>
+  <script type="text/javascript" src="../..//assets/js/slick-main.js"></script>
+  <!-- page js files end -->
+  <script src="../..//assets/js/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lil-gui@0.17.0/dist/lil-gui.umd.min.js"></script>
+  <script src="../..//assets/js/controls.js"></script>
+</body>
+
+</html>

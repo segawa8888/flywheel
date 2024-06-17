@@ -1,0 +1,74 @@
+.p-top-blog {
+	.max-inner {
+		@include pc {
+			padding: 0 !important;
+			max-width: rem(1366);
+		}
+		@media screen and (max-width: $pcvw + px) {
+			max-width: inherit !important;
+		}
+	}
+}
+.p-top-blog__contents-title {
+	@include font-pc(46, 54, 0, 600);
+	@include font-sp(30, 34, 0, 600);
+}
+
+.p-top-blog__contents {
+	@include pc {
+		width: 50%;
+		padding: rem(80) rem(60) rem(70);
+	}
+	@include sp {
+		padding: vw(60) vw(19);
+	}
+}
+
+.p-top-blog__list {
+	background-color: #fff;
+	@include pc {
+		padding: rem(8) rem(26) rem(26);
+	}
+	@include sp {
+		padding: vw(20) vw(15) vw(26);
+	}
+}
+
+.p-top-blog__item {
+	border-bottom: solid 1px $baseColor;
+	transition: all 0.2s;
+	@include pc {
+		padding: rem(26) 0 rem(26);
+	}
+	@include sp {
+		padding: vw(20) 0;
+	}
+	&:hover {
+		@include pc {
+			opacity: 0.8;
+		}
+	}
+}
+
+.p-top-blog__date {
+	@include font-pc(22, 30, 20, 400);
+	@include font-sp(16, 30, 20, 400);
+}
+
+.p-top-blog__tag {
+	@include font-pc(15, 20, -100, 600);
+	@include font-sp(13, 20, -100, 600);
+	padding: rem(3) rem(10) rem(2);
+	@include sp {
+		padding: vw(3) vw(10) vw(1);
+	}
+}
+
+.p-top-blog__title {
+	@include font-pc(18, 28, 0, 500);
+	@include font-sp(14, 21, 0, 500);
+	text-align: left;
+	@include pc {
+		min-height:rem(66);
+	}
+}

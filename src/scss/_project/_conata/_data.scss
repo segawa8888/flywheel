@@ -1,0 +1,293 @@
+.p-conata__head {
+	@include font-pc(20, 40, 0, 500);
+	@include font-sp(16, 30, 0, 500);
+}
+
+.p-conata__article {
+	.max-inner {
+		@include pc {
+			max-width: rem(904);
+		}
+	}
+}
+
+.p-conata__items {
+	display: flex;
+	flex-wrap: wrap;
+
+	@include pc {
+		justify-content: center;
+	}
+
+	.fa-check {
+		@include sp {
+			margin-right: vw(5.1);
+			width: vw(16.12);
+		}
+	}
+}
+
+.p-conata__item {
+	@include font-pc(26, 30, 0, 400);
+	@include font-sp(20, 25, 0, 400);
+}
+
+.p-conata__content {
+	@include pc {
+		max-width: rem(612.05);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.data {
+	.p-conata__items {
+		@include pc {
+			gap: rem(24) rem(60);
+			justify-content: left;
+		}
+		@include sp {
+			gap: vw(13) vw(37.5);
+		}
+	}
+
+	.p-conata__item {
+		@include pc {
+			min-width: rem(130);
+		}
+		@include sp {
+			min-width: vw(126.28);
+		}
+	}
+}
+
+.order-1 {
+	@include pc {
+		order: 1;
+	}
+}
+
+.order-2 {
+	@include pc {
+		order: 2;
+	}
+}
+
+.order-3 {
+	@include pc {
+		order: 3;
+	}
+}
+
+.order-4 {
+	@include pc {
+		order: 4;
+	}
+}
+
+.p-conata__subtittle {
+	@include font-pc(34, 34, 0, 600);
+	@include font-sp(22, 22, 0, 600);
+}
+
+.p-conata__text {
+	@include font-pc(16, 16, -80, 400);
+	@include font-sp(14, 28, -80, 400);
+	@include sp {
+		margin-top: vw(48);
+	}
+}
+
+.p-section__lead {
+	@include font-pc(60, 67, -20, 600);
+	@include font-sp(34, 38, -20, 600);
+}
+
+.p-section__subtittle {
+	@include font-pc(26, 27, 0, 600);
+	@include font-sp(18, 18, 0, 600);
+}
+
+.p-section__sub {
+	@include font-pc(24, 24, 10, 600);
+	@include font-sp(18, 30, -20, 600);
+}
+
+.p-section__text {
+	@include font-pc(18, 36, 20, 500);
+	@include font-sp(16, 30, 0, 500);
+}
+
+.p-modeling__image {
+	margin-left: auto;
+	margin-right: auto;
+	@include pc {
+		width: rem(442.95);
+	}
+	@include sp {
+		width: vw(253.2);
+	}
+}
+
+.p-governance__image {
+	margin-left: auto;
+	margin-right: auto;
+	@include pc {
+		width: rem(657.95);
+	}
+	@include sp {
+		width: vw(336.45);
+	}
+}
+
+.p-conata__article-items {
+	@include pc {
+		margin-top: rem(152);
+	}
+	@include sp {
+		margin-top: vw(60.2);
+	}
+}
+
+.p-conata__article-wrap {
+	@include pc {
+		display: flex;
+		align-items: center;
+		gap: 0 rem(22);
+	}
+}
+
+.p-conata__article__logo-wrap {
+	@include pc {
+		min-width: rem(189);
+	}
+}
+
+.p-conata__article-item:nth-child(n + 2) {
+	@include pc {
+		margin-top: rem(110);
+	}
+	@include sp {
+		margin-top: vw(90);
+	}
+}
+
+.docomo-logo {
+	@include pc {
+		width: rem(141.9);
+	}
+	@include sp {
+		width: vw(141.9);
+	}
+}
+
+.askul-logo {
+	@include pc {
+		width: rem(157);
+	}
+	@include sp {
+		width: vw(157);
+	}
+}
+
+.p-conata__article-item,
+.u-title__article {
+	span {
+		border-bottom: 1px solid $baseColor;
+	}
+}
+
+.p-conata__article-text {
+	@include font-pc(16, 30, 10, 400);
+	@include font-sp(14, 24, 10, 400);
+}
+
+.p-conata__article-link {
+	@include font-pc(16, 23, 0, 600);
+	@include font-sp(16, 23, 0, 600);
+	border-bottom: 1px solid $baseColor;
+	@include pc {
+		display: block;
+		margin-top: rem(28);
+		padding-bottom: rem(3);
+		min-width: rem(208.5);
+		width: rem(208.5);
+		margin-left: auto;
+		margin-right: rem(20);
+	}
+
+	@include sp {
+		margin-top: vw(30);
+		padding-bottom: vw(5);
+	}
+}
+
+.p-conata__article-btn {
+	@include pc {
+		margin-top: rem(110);
+		margin-bottom: rem(200);
+	}
+	@include sp {
+		margin-top: vw(80);
+		margin-bottom: vw(116);
+	}
+}
+
+.p-section__wrap {
+	@include pc {
+		display: flex;
+		align-items: center;
+		gap: 0 rem(57.7);
+		max-width: rem(1023.41);
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: rem(110);
+	}
+}
+
+.p-ontology__image {
+	@include pc {
+		width: rem(493.7);
+		flex: none;
+	}
+	@include sp {
+		margin-right: vw(-19);
+		margin-left: vw(-19);
+	}
+}
+
+.data 
+.p-section__list{
+	margin-left: 0;
+}
+
+.p-section__list span {
+	@include sp {
+		margin-left: vw(25);
+	}
+}
+
+.p-section__list {
+	@include font-pc(20, 30, 0, 600);
+	@include font-sp(16, 24, 0, 600);
+
+	.fa-play {
+		@include pc {
+			margin-right: rem(13);
+			font-size: rem(15);
+			margin-top: rem(7);
+		}
+		@include sp {
+			margin-right: vw(13);
+		}
+	}
+}
+
+.p-section__list:nth-child(n + 2) {
+	@include pc {
+		margin-top: rem(14);
+	}
+	@include sp {
+		margin-top: vw(12);
+	}
+}

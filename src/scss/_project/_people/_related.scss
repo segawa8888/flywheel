@@ -1,0 +1,103 @@
+.p-people-related__title {
+	@include font-pc(24, 27, 0, 700);
+	@include font-sp(18, 27, 0, 700);
+}
+.p-people-related {
+	@include sp {
+		padding: 0 vw(27);
+	}
+}
+.p-people-related__swiper {
+	position: relative;
+
+	.c-news {
+		margin: 0;
+		flex-wrap: nowrap;
+		padding: 0;
+	}
+
+	.c-news li {
+		margin: 0;
+		flex-shrink: 0;
+	}
+	.swiper-pagination-bullet {
+		width: rem(14);
+		height: rem(14);
+		margin: 0 rem(8) !important;
+		background-color: #fff;
+		border: solid 1px $baseColor;
+		opacity: 1;
+	}
+	.swiper-pagination-bullet-active {
+		background-color: $baseColor;
+	}
+	.swiper-button-next:after,
+	.swiper-rtl .swiper-button-prev:after {
+		content: "";
+		width: rem(8);
+		height: rem(8);
+		transform: rotate(45deg);
+		border-top: solid 2px $baseColor;
+		border-right: solid 2px $baseColor;
+	}
+	.swiper-button-prev:after,
+	.swiper-rtl .swiper-button-next:after {
+		content: "";
+		width: rem(8);
+		height: rem(8);
+		padding-left: rem(8);
+		transform: rotate(-45deg);
+		border-top: solid 2px $baseColor;
+		border-left: solid 2px $baseColor;
+	}
+	.swiper-button-next,
+	.swiper-rtl .swiper-button-prev {
+		@include pc {
+			right: rem(-70) !important;
+		}
+		@include sp {
+			right: rem(-15) !important;
+		}
+	}
+	.swiper-button-prev,
+	.swiper-rtl .swiper-button-next {
+		@include pc {
+			left: rem(-70) !important;
+		}
+		@include sp {
+			left: rem(-15) !important;
+		}
+	}
+	@media screen and (max-width: 1400px) and (min-width: 768px) {
+		.swiper-button-next,
+		.swiper-rtl .swiper-button-prev {
+			right: rem(10) !important;
+		}
+		.swiper-button-prev,
+		.swiper-rtl .swiper-button-next {
+			left: rem(10) !important;
+		}
+	}
+	.swiper-button-next,
+	.swiper-rtl .swiper-button-prev,
+	.swiper-button-prev,
+	.swiper-rtl .swiper-button-next {
+		top: 30%;
+		width: rem(46);
+		height: rem(46);
+		border: solid 1px $baseColor;
+		border-radius: 100%;
+		background-color: #fff;
+		transition: all 0.2s;
+		@include sp {
+			width: vw(30);
+			height: vw(30);
+		}
+		&:hover {
+			background-color: $baseColor;
+			&::after {
+				border-color: #fff;
+			}
+		}
+	}
+}

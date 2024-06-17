@@ -1,0 +1,10 @@
+.p-top-cv {
+	@include pc {
+		padding-top: rem(190);
+		padding-bottom: rem(190);
+	}
+	@include sp {
+		padding-top: vw(100);
+		padding-bottom: vw(100);
+	}
+}

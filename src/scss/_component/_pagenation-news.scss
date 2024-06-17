@@ -1,0 +1,85 @@
+.c-pagenation-news {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	li {
+		&.current {
+			a {
+				background-color: $baseColor;
+				color: #fff;
+				pointer-events: none;
+			}
+		}
+		span,
+		a {
+			display: block;
+			border: solid 1px $baseColor;
+			border-radius: 100%;
+			width: rem(46);
+			height: rem(46);
+			position: relative;
+			transition: all 0.2s;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@include font-sp(12, 17, 0, 600);
+			@include pc {
+				margin: 0 rem(5);
+			}
+			@include sp {
+				width: vw(30);
+				height: vw(30);
+				margin: 0 vw(3);
+			}
+			&:hover {
+				@include pc {
+					background-color: $baseColor;
+					color: #fff;
+					&::before {
+						border-color: #fff;
+					}
+				}
+			}
+		}
+	}
+	.prev,
+	.next {
+		a {
+			&::before {
+				content: "";
+				position: absolute;
+				transition: all 0.2s;
+				width: rem(8);
+				height: rem(8);
+				border-top: solid 2px $baseColor;
+				border-right: solid 2px $baseColor;
+				top: 50%;
+				left: 48%;
+				transform: translate(-50%, -50%) rotate(45deg);
+			}
+		}
+	}
+	.prev {
+		@include pc {
+			margin-right: rem(25);
+		}
+		@include sp {
+			margin-right: vw(17);
+		}
+		a {
+			&::before {
+				left: 55%;
+				transform: translate(-50%, -50%) rotate(-135deg);
+			}
+		}
+	}
+	.next {
+		@include pc {
+			margin-left: rem(30);
+		}
+		@include sp {
+			margin-left: vw(17);
+		}
+	}
+}

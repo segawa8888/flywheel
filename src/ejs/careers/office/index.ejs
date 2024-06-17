@@ -1,0 +1,61 @@
+<%- include(`${ROOT}_include/_img`) %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% var meta={ path: "../../",title: 'OFFICE' , description: 'description' , keywords: 'keywords' , og : { url: ``, iamge: '' } } -%>
+  <%- include(`${ROOT}_common/_head`, { meta: meta }) %>
+</head>
+
+<body>
+  <%- include(`${ROOT}_common/_header.ejs`, {path: meta.path}) %>
+  <!-- contents start -->
+
+  <section class="pt-160 pb-sp-20">
+    <div class="max-inner">
+      <h1 class="u-title-medium ta-c mb-10 mb-sp-0">OFFICE</h1>
+      <p class="mb-92 mb-sp-40 ta-c u-lead01">オフィス</p>
+      </div>
+      </section>
+
+    <section class="p-base-office">
+        <h2 class="p-office__tittle ta-c mb-sp-30 mb-60">本拠点</h2>
+        <div class="p-office__inner">
+        <div class="p-office-slider">
+            <div class="p-office-slider__item">
+                <%- img("base-office", "base-office", "office", "jpg") %>
+            </div>
+            <div class="p-office-slider__item">
+                <%- img("base-office2", "base-office2", "office", "jpg") %>
+            </div>
+            <div class="p-office-slider__item">
+                <%- img("base-office3", "base-office3", "office", "jpg") %>
+            </div>
+        </div>
+        <p class="p-office__text pl-28 pr-28">半蔵門にあるシェアオフィスを本拠点としています。<br class="is-pc">最寄の半蔵門駅から徒歩数分の立地でアクセスが良く、出社の際にも便利な立地に位置しています。<br class="is-pc">オフィスはフリーアドレスとし、用途に合わせてミーティングルームやフォンブースを利用することが可能です。<br class="is-pc">シェアオフィスの共有設備・サービスを利用することができます。<br class="is-pc">コーヒー・紅茶等のドリンク各種無料サービス、16:00以降のビールサーバー無料開放に加えて、<br class="is-pc">シェアオフィス入居企業で構成されるコミュニティへの参加やマザールーム、<br class="is-pc">キャッシュレス無人コンビニが完備されており、充実した環境で仕事をすることができます。<br class="is-pc">また、書籍購入支援制度で購入した書籍は社内ライブラリに所蔵されるため、<br class="is-pc">全社員にナレッジ習得の機会が生まれています。<br class="is-pc">エンジニア勉強会では、この書籍が題材として使われることもあり、<br class="is-pc">エンジニア 同士のコミュニケーションのきっかけを創り出しています。</p>
+        </div>
+    </section>
+
+    <section class="p-satellite-office">
+        <h2 class="p-office__tittle ta-c mb-sp-30 mb-60">サテライトオフィス</h2>
+        <div class="p-office__inner">
+        <div class="p-office-slider">
+            <div class="p-office-slider__item">
+                <%- img("satellite-office", "satellite-office", "office", "jpg") %>
+            </div>
+            <div class="p-office-slider__item">
+                <%- img("satellite-office2", "satellite-office2", "office", "jpg") %>
+            </div>
+            <div class="p-office-slider__item">
+                <%- img("satellite-office3", "satellite-office3", "office", "jpg") %>
+            </div>
+        </div>
+        <p class="p-office__text ls-01 pl-28 pr-28">各地にあるシェアオフィスの他拠点をリモートワーク時のサテライトオフィスとして利用することができます。<br class="is-pc">家ではなく、普段と違う場所・雰囲気で仕事をすることによって<br class="is-pc">リフレッシュ・リラックスして仕事に取り組むことができ、業務効率アップを図ることが可能です。</p>
+        </div>
+    </section>
+    <!-- contents end -->
+    <%- include(`${ROOT}_common/_footer.ejs`,{path: meta.path}) %>
+    <%- include(`${ROOT}_common/_script.ejs`, {path: meta.path}) %>
+</body>
+
+</html>

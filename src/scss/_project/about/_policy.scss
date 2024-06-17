@@ -1,0 +1,64 @@
+.p-policy__wrapper {
+    @include pc {
+        margin-top: rem(139);
+    }
+    @include sp {
+        margin-top: vw(100);
+    }
+}
+
+.p-policy__inner {
+    @include pc {
+        max-width: rem(910);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p-policy__tittle {
+    @include font-pc(20, 30, 0, 600);
+    @include font-sp(18, 30, 0, 600);
+}
+
+.p-policy__text {
+    @include font-pc(15, 30, -20, 400);
+    @include font-sp(15, 30, -20, 400);
+}
+
+.p-policy__item:nth-child(n+2) {
+    @include pc {
+        margin-top: rem(80);
+    };
+    @include sp {
+        margin-top: vw(80);
+    }
+}
+
+.p-policy-link {
+    @include pc {
+        margin-top: rem(20);
+    }
+    @include sp {
+        margin-top: vw(31);
+    }
+    a {
+        @include font-pc(15, 30, 0, 600);
+        @include font-sp(15, 30, 0, 600);
+        border-bottom: 1px solid $baseColor;
+        @include pc {
+            padding-bottom: rem(2.5);
+        }
+        @include sp {
+            padding-bottom: vw(2.5);
+        }
+    }
+}
+
+.p-policy__last-text {
+    @include pc {
+        margin-top: rem(92);
+    }
+    @include sp {
+        margin-top: vw(108);
+    }
+}

@@ -1,0 +1,25 @@
+.p-offering-service {
+	height: rem(4000);
+}
+
+.p-offering-service__inner {
+	position: sticky;
+	top: 0;
+}
+.p-offering-service-list {
+	position: relative;
+	height: rem(500);
+}
+
+.p-offering-service-item  {
+	position: absolute;
+	margin-top: 0 !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: all 0.8s;
+	&.fadeOffering {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,44 @@
+<%- include(`${ROOT}_include/_img`) %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% var meta={ path: "../",title: 'お問い合わせ' , description: 'description' , keywords: 'keywords' , og : { url: ``, iamge: '' } } -%>
+  <%- include(`${ROOT}_common/_head`, { meta: meta }) %>
+</head>
+
+<body>
+  <%- include(`${ROOT}_common/_header.ejs`, {path: meta.path}) %>
+  <!-- contents start -->
+  <div id="mainContents" class="dl sub">
+    <section class="pt-160 pb-sp-20 p-form">
+      <div class="max-inner max-inner02">
+        <h1 class="u-title ta-c mb-100 mb-sp-40">お問い合わせ</h1>
+        <p class="p-form-lead mb-90 mb-sp-70">下記よりお問い合わせ項目をお選びください。<br>
+          必要に応じ当社よりご返信させていただきます。営業目的でのお問合せはご遠慮ください。<br>
+          ご入力いただきました個人情報については、<br class="is-sp">ご本人の同意がない限り、プライバシーポリシーに<br class="is-sp">定める目的以外に個人情報を利用することは<br class="is-sp">ございません。<br><br>
+
+          詳しくは「<a href="/about/privacy-policy/">プライバシーポリシー</a>」を<br class="is-sp">ご確認ください。</p>
+        <div>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "7085172",
+              formId: "e34b7d5c-b69e-4a13-8ae4-5b5d527916f0"
+            });
+          </script>
+        </div>
+        <div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- contents end -->
+
+  <%- include(`${ROOT}_common/_footer.ejs`,{path: meta.path}) %>
+  <%- include(`${ROOT}_common/_script.ejs`, {path: meta.path}) %>
+</body>
+
+</html>

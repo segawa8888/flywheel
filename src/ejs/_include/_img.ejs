@@ -1,0 +1,16 @@
+<%
+img = function(filename, alt="",dir='module',extension='jpg',sp = false){
+  if (sp){
+    return `<picture>
+      <source media="(min-width: 768px)" srcset="/assets/img/${dir}/${filename}.${extension}">
+      <source media="(max-width: 767px)" srcset="/assets/img/${dir}/sp/${filename}.${extension}">
+      <img src="/assets/img/${dir}/${filename}.${extension}" alt="${alt}" loading="lazy">
+      </picture>`;
+  }else{
+    return `<picture>
+      <source srcset="/assets/img/${dir}/${filename}.${extension}">
+      <img src="/assets/img/${dir}/${filename}.${extension}" alt="${alt}" loading="lazy">
+    </picture>`;
+  }
+}
+%>

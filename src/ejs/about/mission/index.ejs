@@ -1,0 +1,144 @@
+<%- include(`${ROOT}_include/_img`) %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% var meta={ path: "../../",title: 'ミッション・バリュー' , description: 'description' , keywords: 'keywords' , og : { url: ``, iamge: '' } } -%>
+  <%- include(`${ROOT}_common/_head`, { meta: meta }) %>
+</head>
+
+<body>
+  <%- include(`${ROOT}_common/_header.ejs`, {path: meta.path}) %>
+  <!-- contents start -->
+  <div id="mainContents" class="about sub">
+		<div class="webgl-container__wrap">
+			<div id="webgl-container"></div>
+		</div>
+    <section class="pt-160 pb-sp-20 ta-c">
+      <div class="ml-sp-37 mr-sp-37">
+        <h1 class="u-title02 ta-c">ミッション・バリュー</h1>
+
+        <div class="p-mission__logo ta-c fadeIn--fromBottom" data-module="FadeIn">
+            <%- img("logo", "FLYWHEEL", "common", "svg", true) %>
+        </div>
+        <p class="p-mission__lead ta-c fadeIn--fromBottom" data-module="FadeIn"><span class="fadeIn--fromTop" data-module="FadeIn">私たちのミッション</span></p>
+        <div class="p-mission__tittle__wrap">
+					<p class="p-mission__tittle fadeIn--widthText ta-c" data-webgl=true data-module="FadeIn">
+
+						<span>データを人々のエネルギーに</span>
+					</p>
+				</div>
+      </div>
+    </section>
+
+    <section class="p-mission__wrapper">
+        <div class="p-mission__inner pl-sp-23 pr-sp-23">
+            <p class="p-mission__text ta-c">データは<br>
+                人々が持つ価値を最大化する<br>
+                新しいエネルギーだと<br>
+                私たちは考えています。<br><br>
+                
+                本来不必要な作業を効率化し<br>
+                生産性を向上させ<br>
+                より創造的な価値を創り出すための<br>
+                まさに「エネルギー」になるのです。<br><br>
+                
+                FLYWHEEL（フライウィール）は<br>
+                日本語で、はずみ車という意味です。<br><br>
+                
+                私たちは、企業や人々がデータや<br>
+                人工知能をより積極的に活用し<br>
+                仕事や作業の効率化を加速する<br>
+                「はずみ車」になりたいと考えています。<br><br>
+                
+                30年後、子供たちの世代が、<br>
+                衰退ではなく成長する環境の中で、<br>
+                やりたいことに挑戦できる<br>
+                社会を作るために<br>
+                データとAIで変革を起こせると、<br>
+                私たちは信じています。</p>
+        </div>
+    </section>
+
+    <section class="p-people-value is-bg-base-blue is-text-white">
+        <div class="p-people-value__inner">
+            <p class="p-people-value__head font-accent ta-c">OUR VALUES</p>
+            <h2 class="p-people-value__tittle font-accent ta-c">ENERGIZE YOURSELVES<br>
+                WITH VALUES</h2>
+                <p class="p-people-value__subtittle ta-c">バリューをあなたのエネルギーに</p>
+                <div class="p-people-value__content">
+                    <ul class="p-people-value__items">
+                        <li class="p-people-value__item">
+                            <div class="p-people-value__item-icon p-people-value__item-icon1" data-module="FadeIn">
+                                <%- img("icon_value", "Believe in Data", "value", "svg") %>
+                            </div>
+                            <p class="p-people-value__item-text font-accent" data-delay="0.5" data-module="FadeIn">Believe in Data</p>
+                        </li>
+                        <li class="p-people-value__item">
+                            <div class="p-people-value__item-icon p-people-value__item-icon2" data-module="FadeIn">
+                                <%- img("icon_value2", " Focus", "value", "svg") %>
+                            </div>
+                            <p class="p-people-value__item-text font-accent" data-delay="0.5" data-module="FadeIn">Focus on Impact and<br>
+                                Decide What You Do Not Do</p>
+                        </li>
+                        <li class="p-people-value__item">
+                            <div class="p-people-value__item-icon p-people-value__item-icon3" data-module="FadeIn">
+                                <%- img("icon_value3", "Move", "value", "svg") %>
+                            </div>
+                            <p class="p-people-value__item-text font-accent" data-delay="0.5" data-module="FadeIn">Move Fast and<br>
+                                Break Things</p>
+                        </li>
+                        <li class="p-people-value__item">
+                            <div class="p-people-value__item-icon p-people-value__item-icon4" data-module="FadeIn">
+                                <%- img("icon_value4", "Respect", "value", "svg") %>
+                            </div>
+                            <p class="p-people-value__item-text font-accent white-space-no" data-delay="0.5" data-module="FadeIn">Respect Open<br> 
+                                Communications and Feedback</p>
+                        </li>
+                        <li class="p-people-value__item">
+                            <div class="p-people-value__item-icon p-people-value__item-icon5" data-module="FadeIn">
+                                <%- img("icon_value5", "One for All,All for One Goal", "value", "svg") %>
+                            </div>
+                            <p class="p-people-value__item-text font-accent" data-delay="0.5" data-module="FadeIn">One for All,<br> 
+                                All for One Goal</p>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <p class="p-people-value__text ta-c">ミッション実現と自己実現のため、<br class="is-sp">フライウィール社員が大切にしている<br class="is-sp">価値観であり行動指針です。</p>
+    </section>
+
+  </div>
+  <!-- contents end -->
+
+  <%- include(`${ROOT}_common/_footer.ejs`,{path: meta.path}) %>
+  <%- include(`${ROOT}_common/_script.ejs`, {path: meta.path}) %>
+	<script>
+		const $wrapper = document.getElementById('webgl-container');
+		const artwork = new Artwork({
+		$wrapper: $wrapper,
+		page: 'other',
+		});
+
+		var webGL_status = 0, scroll, pos, pos_bottom;
+		window.addEventListener('scroll', () => {
+		scroll = window.scrollY;
+		windowHeight = window.innerHeight;
+		section = document.querySelector('.p-mission__wrapper');
+		pos = section.getBoundingClientRect().top + scroll;
+		pos_bottom = section.getBoundingClientRect().top + section.offsetHeight / 3 + scroll;
+
+		if (scroll > pos - windowHeight * 1 / 3 && scroll < pos_bottom + windowHeight / 2) {
+			if (webGL_status !== 1) {
+				artwork.emit('SHOW');
+				webGL_status = 1;
+				}
+			} else  {
+				artwork.emit('DISAPPEAR');
+				webGL_status = 2;
+			}
+		});
+	</script>
+</body>
+
+</html>

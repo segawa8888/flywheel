@@ -1,0 +1,197 @@
+.p-people-message {
+    @include pc {
+        padding-top: rem(140);
+    }
+    @include sp {
+        padding-top: vw(100);
+    }
+}
+
+.p-people-message__inner {
+    @include pc {
+        max-width: rem(968);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include sp {
+        padding-right: vw(19);
+        padding-left: vw(19);
+    }
+}
+
+.p-people-message__tittle {
+    @include font-pc(42, 42, 0, 600);
+    @include font-sp(24, 24, 0, 600);
+}
+
+.p-people-message-slider__item {
+    @include sp {
+        padding-left: vw(10);
+        padding-right: vw(10);
+    }
+}
+
+.p-people-message__video {
+    @include pc {
+        width:rem(796);
+        height:rem(448);
+
+    }
+    @include sp {
+        width: vw(270);
+        height:vw(160);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.slick-track {
+    @include pc {
+        text-align: center;
+    }
+}
+
+.p-people-message-slider
+.slick-dots {
+    @include pc {
+        bottom:rem(170);
+    }
+    @include sp {
+        bottom:vw(200);
+    }
+}
+
+.p-people-message-slider
+.slick-dots li {
+    background-color: #fff;
+    border:1px solid $baseColor;
+    border-radius: 50%;
+    margin: 0;
+    @include pc {
+        width:rem(14);
+        height:rem(14);
+    }
+    @include sp {
+        width:vw(12);
+        height:vw(12);
+    }
+}
+
+.p-people-message-slider
+.slick-dots li:nth-child(n+2) {
+    @include pc {
+        margin-left: rem(16);
+    }
+    @include sp {
+        margin-left: vw(13);
+    }
+}
+
+.p-people-message-slider
+.slick-dots
+.slick-active {
+    background-color: $baseColor;
+}
+
+.slick-dots li button:before {
+    color:transparent;
+}
+
+.p-people-message-slider
+.slide-arrow {
+    background-color: transparent;
+    border:1px solid $baseColor;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    transform: translateY(-50%);
+    @include pc {
+        width:rem(46);
+        height:rem(46);
+        top:34%;
+    }
+    @include sp {
+        height:vw(30);
+        width:vw(30);
+        top:20%;
+    }
+    &:hover {
+        background-color: $baseColor;
+        color:#fff;
+    }
+}
+
+.p-people-message-slider
+.prev-arrow {
+    @include pc {
+        left:rem(0);
+    }
+    @include sp {
+        left:vw(-9);
+    }
+}
+
+.p-people-message-slider
+.next-arrow {
+    @include pc {
+        right:rem(0);
+    }
+    @include sp {
+        right:vw(-9);
+    }
+}
+
+.p-people-message-slider
+.prev-arrow:before{
+    content: "\f104";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-weight: 700;
+    @include sp {
+        font-size: vw(10);
+    }
+}
+
+.p-people-message-slider
+.next-arrow:before{
+    content: "\f105";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-weight: 700;
+    @include sp {
+        font-size: vw(10);
+    }
+}
+
+.p-people-message__text {
+    @include font-pc(18, 36, -20, 500);
+    @include font-sp(15, 26, -20, 500);
+}
+
+.p-growth__tittle {
+	@include font-pc(42, 42, 0, 600);
+	@include font-sp(24, 24, 0, 600);
+    @include pc {
+        margin-top: rem(230);
+    }
+    @include sp {
+        margin-top: vw(110);
+    }
+}
+
+.p-growth__text {
+    @include font-pc(20, 36, -20, 500);
+    @include font-sp(15, 28, -20, 500);
+}

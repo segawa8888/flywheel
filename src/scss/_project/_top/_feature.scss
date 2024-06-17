@@ -1,0 +1,156 @@
+.p-top-feature {
+	position: relative;
+	height: rem(4000);
+	.section_inner {
+		position: sticky;
+		top: 0;
+		@include pc {
+			padding: rem(110) 0 rem(285);
+		}
+		@include sp {
+			padding: vw(91) vw(28) vw(120);
+		}
+	}
+	.c-btn {
+		opacity: 0;
+		transition: all 1s;
+		&.show{
+			opacity: 1;
+		}
+	}
+}
+.p-top-feature__title {
+	@include pc {
+		margin-bottom: rem(120);
+	}
+}
+.p-top-feature__title__logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.8s;
+	&.move {
+		top: rem(-600);
+		left: 50%;
+		transform: translate(-50%) scale(3);
+		@include sp {
+			top: vw(-450);
+			transform: translate(-50%) scale(1.5);
+		}
+		img {
+			// width: 100%;
+			max-width: inherit;
+		}
+			
+	}
+}
+.p-top-feature__title__inner {
+	display: inline-block;
+	position: relative;
+	@include font-pc(30, 32, 0, 400);
+	@include font-sp(22, 24, 0, 400);
+	border-bottom: solid 1px $baseColor;
+	@include pc {
+		width: rem(300);
+	}
+	@include sp {
+		width: vw(222);
+	}
+	span {
+		display: inline-block;
+		vertical-align: top;
+		transition: all 0.8s ease 0s;
+    display: block;
+    text-align: right;
+	}
+	img {
+		display: inline-block;
+		object-fit: contain;
+		@include pc {
+			width: rem(195.32);
+			height: rem(32.27);
+		}
+		@include sp {
+			width: vw(145);
+			height: vw(23.96);
+		}
+	}
+}
+
+.p-top-feature__list {
+	height: rem(500);
+	position: relative;
+	@include sp {
+		height: vw(700);
+	}
+}
+
+.p-top-feature__item {
+
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	@include pc {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		margin-bottom: rem(180);
+		margin-left: rem(60);
+		margin-right: rem(12);
+	}
+	@include sp {
+		margin-bottom: vw(108);
+	}
+	&:last-child {
+		@include pc {
+			margin-bottom: rem(100);
+		}
+		@include sp {
+			margin-bottom: vw(71);
+		}
+	}
+	transition: all 0.2s;
+	&.fadeFeature {
+		pointer-events: inherit;
+		opacity: 1;
+	}
+}
+.p-top-feature__contents-num {
+	@include font-pc(24, 24, 0, 400);
+	@include font-sp(22, 24, 0, 400);
+}
+
+.p-top-feature__contents-title {
+	@include font-pc(48, 64, -60, 600);
+	@include font-sp(26, 39, -60, 600);
+}
+
+.p-top-feature__contents-text {
+	@include font-pc(18, 33, 0, 400);
+	@include font-sp(14, 25, 0, 400);
+}
+.p-top-feature__contents {
+	@include pc {
+		flex: 1;
+	}
+}
+
+.p-top-feature__img {
+	img {
+		display: block;
+		object-fit: contain;
+		@include pc {
+			width: rem(314.83);
+			height: rem(352.59);
+		}
+		@include sp {
+			margin-left: auto;
+			margin-right: auto;
+			width: vw(250);
+			height: vw(279.98);
+		}
+	}
+}

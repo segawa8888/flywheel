@@ -1,0 +1,15 @@
+.p-inner {
+    margin-left: auto;
+    margin-right: auto;
+    @include sp {
+        padding-left: vw(19); 
+        padding-right: vw(19);
+    }
+}
+
+.max-inner03 {
+    @include sp {
+        padding-right: vw(38);
+        padding-left: vw(38);
+    }
+}

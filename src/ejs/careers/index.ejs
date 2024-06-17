@@ -1,0 +1,258 @@
+<%- include(`${ROOT}_include/_img`) %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% var meta={ path: "../../",title: 'PEOPLE&TEAM' , description: 'description' , keywords: 'keywords' , og : { url: ``, iamge: '' } } -%>
+  <%- include(`${ROOT}_common/_head`, { meta: meta }) %>
+</head>
+
+<body>
+  <%- include(`${ROOT}_common/_header.ejs`, {path: meta.path}) %>
+  <!-- contents start -->
+  <div id="mainContents" class="people sub">
+    <section class="pt-160 pb-sp-20">
+      <div class="max-inner pl-sp-22 pr-sp-22">
+        <h1 class="u-title ta-c mb-10 mb-sp-0">採用情報</h1>
+        <div class="p-faq__content mt-90 mt-sp-63">
+            <ul class="c-lists">
+                <li class="c-list">
+                    <a href="/careers/people/">
+                        PEOPLE
+                    </a>
+                </li>
+                <li class="c-list">
+                    <a href="/careers/office/">
+                        OFFICE
+                    </a>
+                </li>
+                <li class="c-list">
+                    <a href="/careers/culture/">
+                        CULTURE
+                    </a>
+                </li>
+                <li class="c-list">
+                    <a href="/careers/benefit/">
+                        WORK STYLE
+                    </a>
+                </li>
+                <li class="c-list">
+                    <a href="/careers/jobs/">
+                        JOB OPENING
+                    </a>
+                </li>
+            </ul>
+            <div class="p-follow__wrapper mt-sp-80 mt-89">
+                <p class="u-text09 ta-c">Follow us!</p>
+                <ul class="l-footer__sns d-flex align-center justify-center mb-23 mb-sp-32 mt-20">
+                    <li>
+                        <a href="https://twitter.com/flywheel_jp" target="_blank">
+                            <%- img("twitter-icon", "Twitter", "common", "svg") %>
+                          </a>
+                    </li>
+                    <li class="ml-23 ml-sp-30">
+                        <a href="https://www.facebook.com/flywheel.jp/" target="_blank">
+                            <%- img("facebook-icon", "Facebook", "common", "svg") %>
+                          </a>
+                    </li>
+                    <li class="ml-23 ml-sp-25">
+                      <a href="https://www.linkedin.com/company/flywheel-jp/" target="_blank">
+                        <%- img("linkedin-icon", "LinkedIn", "common", "svg") %>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+      </div>
+    </section>
+
+    <section class="p-people-mission ml-sp-43 mr-sp-43 ta-c">
+        <p class="p-people__head mb-sp-14 mb-30">Our Mission</p>
+        <h2 class="p-people__tittle">ENERGIZE PEOPLE’S <br>
+            LIVES WITH DATA</h2>
+            <p class="p-people__subtittle">データを人々のエネルギーに</p>
+    </section>
+
+    <section class="p-people-value is-bg-base-blue is-text-white">
+        <div class="p-people-value__inner">
+            <p class="p-people-value__head font-accent ta-c">OUR VALUES</p>
+            <h2 class="p-people-value__tittle font-accent ta-c">ENERGIZE YOURSELVES<br>
+                WITH VALUES</h2>
+                <p class="p-people-value__subtittle ta-c">バリューをあなたのエネルギーに</p>
+                <div class="p-people-value__content">
+                    <ul class="p-people-value__items">
+                        <li class="p-people-value__item">
+                            <div class="p-people-value__item-icon p-people-value__item-icon1">
+                                <%- img("icon_value", "Believe in Data", "value", "svg") %>
+                            </div>
+                            <p class="p-people-value__item-text font-accent">Believe in Data</p>
+                        </li>
+                        <li class="p-people-value__item">
+                            <div class="p-people-value__item-icon p-people-value__item-icon2">
+                                <%- img("icon_value2", " Focus", "value", "svg") %>
+                            </div>
+                            <p class="p-people-value__item-text font-accent">Focus on Impact and<br>
+                                Decide What You Do Not Do</p>
+                        </li>
+                        <li class="p-people-value__item">
+                            <div class="p-people-value__item-icon p-people-value__item-icon3">
+                                <%- img("icon_value3", "Move", "value", "svg") %>
+                            </div>
+                            <p class="p-people-value__item-text font-accent">Move Fast and<br>
+                                Break Things</p>
+                        </li>
+                        <li class="p-people-value__item">
+                            <div class="p-people-value__item-icon p-people-value__item-icon4">
+                                <%- img("icon_value4", "Respect", "value", "svg") %>
+                            </div>
+                            <p class="p-people-value__item-text font-accent white-space-no">Respect Open<br> 
+                                Communications and Feedback</p>
+                        </li>
+                        <li class="p-people-value__item">
+                            <div class="p-people-value__item-icon p-people-value__item-icon5">
+                                <%- img("icon_value5", "One for All,All for One Goal", "value", "svg") %>
+                            </div>
+                            <p class="p-people-value__item-text font-accent">One for All,<br> 
+                                All for One Goal</p>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <p class="p-people-value__text ta-c">ミッション実現と自己実現のため、<br class="is-sp">
+            フライウィール社員が大切にしている<br class="is-sp">
+            価値観であり行動指針です。</p>
+    </section>
+
+    <section class="p-people-message">
+        <h2 class="p-people-message__tittle ta-c mb-sp-53 mb-40">MESSAGE</h2>
+        <div class="p-people-message__inner">
+        <div class="p-people-message-slider">
+            <div class="p-people-message-slider__item">
+                <video src="../../static/webgl/video1.mp4" class="p-people-message__video" controls></video>
+                <h3 class="u-lead06 mb-sp-30 mb-25 pt-100 pt-sp-95 ta-c">会社紹介・採用資料</h3>
+                <p class="p-people-message__text ta-c">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<br>
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+            </div>
+            <div class="p-people-message-slider__item">
+                <video src="../../static/webgl/video1.mp4" class="p-people-message__video" controls></video>
+                <h3 class="u-lead06 mb-sp-30 mb-25 pt-100 pt-sp-95 ta-c">会社紹介・採用資料</h3>
+                <p class="p-people-message__text ta-c">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<br>
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+            </div>
+            <div class="p-people-message-slider__item">
+                <video src="../../static/webgl/video1.mp4" class="p-people-message__video" controls></video>
+                <h3 class="u-lead06 mb-sp-30 mb-25 pt-100 pt-sp-95 ta-c">会社紹介・採用資料</h3>
+                <p class="p-people-message__text ta-c">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<br>
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+            </div>
+            <div class="p-people-message-slider__item">
+                <video src="../../static/webgl/video1.mp4" class="p-people-message__video" controls></video>
+                <h3 class="u-lead06 mb-sp-30 mb-25 pt-100 pt-sp-95 ta-c">会社紹介・採用資料</h3>
+                <p class="p-people-message__text ta-c">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<br>
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+            </div>
+            <div class="p-people-message-slider__item">
+                <video src="../../static/webgl/video1.mp4" class="p-people-message__video" controls></video>
+                <h3 class="u-lead06 mb-sp-30 mb-25 pt-100 pt-sp-95 ta-c">会社紹介・採用資料</h3>
+                <p class="p-people-message__text ta-c">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<br>
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+            </div>
+            <div class="p-people-message-slider__item">
+                <video src="../../static/webgl/video1.mp4" class="p-people-message__video" controls></video>
+                <h3 class="u-lead06 mb-sp-30 mb-25 pt-65 pt-sp-80 ta-c">会社紹介・採用資料</h3>
+                <p class="p-people-message__text ta-c">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<br>
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+            </div>
+        </div>
+            <h2 class="p-growth__tittle ta-c">GROWTH BY FLYWHEEL</h2>
+            <p class="p-growth__text mt-50 mt-sp-30 ta-c">データが真の意味で<br class="is-sp">
+                社会的エネルギーになる未来を創りたい。<br>
+                ここで働く一人ひとりが社会の「はずみ車」<br class="is-sp">
+                として発展を推し進めながら、<br>
+                フライウィールで共に<br class="is-sp">
+                進化・成長していきましょう。</p>
+    </div>
+    </section>
+
+    <section class="p-people-company">
+        <div class="p-people-company__inner">
+            <div class="p-people-company__content">
+                <ul class="p-people-company__items">
+                    <li class="p-people-company__item">
+                        <div class="p-people-company__img is-pc">
+                            <%- img("people-img", "people", "people", "jpg") %>
+                        </div>
+                        <div class="p-people-company__img is-sp">
+                            <%- img("people-img-sp", "people", "people", "jpg") %>
+                        </div>
+                        <div class="p-people-company__wrap mt-sp-25">
+                            <h3 class="p-people-company__tittle">PEOPLE</h3>
+                            <p class="p-people-company__text mt-20">フライウィールには、機械学習・自然言語処理分野等、先端情報技術者を筆頭に、様々なデータの専門家が集いミッションフォーカスで挑戦を続けています。<br class="is-pc">それぞれがどのような志で入社し、そしていまどんな情熱を持って働いているのか。個性豊かな社員が本音で語ります。</p>
+                            <a href="/careers/people/" class="c-btn blue mx-auto mt-45 mt-sp-30">
+                                <span>社員インタビューを見る</span>
+                              </a>
+                        </div>
+                    </li>
+                    <li class="p-people-company__item">
+                        <div class="p-people-company__img order-2 is-pc">
+                            <%- img("people-office", "OFFICE", "people", "jpg") %>
+                        </div>
+                        <div class="p-people-company__img is-sp">
+                            <%- img("people-office-img-sp", "OFFICE", "people", "jpg") %>
+                        </div>
+                        <div class="p-people-company__wrap mt-sp-25 order-1">
+                            <h3 class="p-people-company__tittle">OFFICE</h3>
+                            <p class="p-people-company__text mt-20">充実の共有スペースも備えたシェアオフィス。<br>
+                                また、サテライトオフィスでのフレキシブルな働き方も可能です。</p>
+                            <a href="/careers/office/" class="c-btn blue mx-auto mt-40">
+                                <span>詳しく見る</span>
+                              </a>
+                        </div>
+                    </li>
+                    <li class="p-people-company__item">
+                        <div class="p-people-company__img">
+                            <%- img("people-culture", "CULTURE", "people", "jpg") %>
+                        </div>
+                        <div class="p-people-company__wrap mt-sp-25">
+                            <h3 class="p-people-company__tittle">CULTURE</h3>
+                            <p class="p-people-company__text mt-20">社員同士のコミュニケーションを重視した様々な施策を実施しています。<br></p>
+                            <a href="/careers/culture/" class="c-btn blue mx-auto mt-70 mt-sp-30">
+                                <span>詳しく見る</span>
+                              </a>
+                        </div>
+                    </li>
+                    <li class="p-people-company__item">
+                        <div class="p-people-company__img order-2 is-pc">
+                            <%- img("people-work-style", "people", "people", "jpg") %>
+                        </div>
+                        <div class="p-people-company__img is-sp">
+                            <%- img("people-work-style-sp", "work", "people", "jpg") %>
+                        </div>
+                        <div class="p-people-company__wrap mt-sp-25 order-1">
+                            <h3 class="p-people-company__tittle">WORK STYLE</h3>
+                            <p class="p-people-company__text mt-20">状況に応じて選択可能なハイブリッド型の働き方や<br class="is-pc">各種制度のご紹介です。<br></p>
+                            <a href="/careers/benefit/" class="c-btn blue mx-auto mt-40 mt-sp-30">
+                                <span>詳しく見る</span>
+                              </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-job is-bg-blue p-inner ta-c">
+        <h3 class="p-job__tittle">JOB OPENING</h3>
+        <p class="p-job__text mt-sp-25 mt-32">我々のミッションである<br class="is-sp">
+            「データを人々のエネルギーに」に共感し、<br>
+            私たちと一緒にフライウィールの未来を創っていく仲間を募集しています！</p>
+            <a href="/careers/jobs/" class="c-btn blue mt-50 mt-sp-38 mx-auto">
+                <span>募集職種を見る</span>
+            </a>
+    </section>
+    <!-- contents end -->
+    <%- include(`${ROOT}_common/_footer.ejs`,{path: meta.path}) %>
+    <%- include(`${ROOT}_common/_script.ejs`, {path: meta.path}) %>
+</body>
+
+</html>

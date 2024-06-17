@@ -1,0 +1,116 @@
+.p-professional {
+    @include pc {
+        padding-top: rem(100);
+        padding-bottom: rem(128);
+    }
+    @include sp {
+        padding-top: vw(115);
+        padding-bottom: vw(80);
+    }
+}
+
+.p-triangle {
+    position: relative;
+}
+
+.p-triangle::after {
+    content:'';
+    position: absolute;
+}
+
+.p-triangle-blue::after {
+    @include pc {
+        bottom:rem(-134);
+        border-right: 50vw solid transparent;
+        border-left: 50vw solid transparent;
+        border-top: rem(134) solid $baseColor2;
+        z-index:10;
+    }
+    @include sp {
+        bottom:vw(-65);
+        border-right: 50vw solid transparent;
+        border-left: 50vw solid transparent;
+        border-top: vw(65) solid $baseColor2;
+        z-index:10;
+    }
+}
+
+.p-triangle-white::after {
+    @include sp {
+        bottom:vw(-65);
+        border-right: 50vw solid transparent;
+        border-left: 50vw solid transparent;
+        border-top: vw(65) solid #fff; 
+          z-index:10;
+    }
+    @include pc {
+        bottom:rem(-134);
+        border-right: 50vw solid transparent;
+        border-left: 50vw solid transparent;
+        border-top: rem(134) solid #fff; 
+          z-index:10;
+    }
+}
+
+.p-professional__inner {
+    @include pc {
+        max-width: rem(1068);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p-professional__tittle {
+    @include font-pc(36, 36, 10, 600);
+    @include font-sp(22, 22, 10, 600);
+}
+
+.p-professional__lead {
+    @include font-pc(24, 34, 10, 600);
+    @include font-sp(18, 25, 10, 600);
+    @include pc {
+      min-width:rem(242);
+			padding-top: rem(5);
+    }
+}
+
+.p-professional__text {
+    @include font-pc(18, 36, 0, 400);
+    @include font-sp(15, 30, 0, 400);
+}
+
+.p-professional__item {
+    @include pc {
+        display: flex;
+        gap:0 rem(40);
+        padding:rem(60);
+    };
+    @include sp {
+        padding:vw(35) vw(28); 
+    }
+}
+
+.p-professional__item:nth-child(n+2) {
+    @include pc {
+        margin-top: rem(15);
+    }
+    @include sp {
+        margin-top: vw(25);
+    }
+}
+
+.p-professional__btn {
+    display: flex;
+    @include pc {
+        gap:0 rem(30);
+        margin-top: rem(20);
+    };
+    @include sp {
+        width:vw(250);
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap:wrap;
+        gap:vw(30) 0;
+        margin-top: vw(39);
+    }
+}

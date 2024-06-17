@@ -1,0 +1,25 @@
+.p-people-thumb {
+	img {
+		width: 100%;
+		display: block;
+	}
+}
+
+.p-people-author {
+	.c-news-article__author-img {
+		overflow: hidden;
+		@include pc {
+			width: rem(120);
+			height: rem(120);
+		}
+		img {
+			object-fit: cover;
+		}
+	}
+	@include sp {
+		align-items: flex-start !important;
+	}
+	p {
+		@include font-pc(16, 28, 10, 400);
+	}
+}

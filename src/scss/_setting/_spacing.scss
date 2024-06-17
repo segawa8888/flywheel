@@ -1,0 +1,94 @@
+.pt-200 {
+	padding-top: rem(200);
+}
+.pt-180 {
+	padding-top: rem(180);
+}
+.pt-170 {
+	padding-top: rem(170);
+}
+.pt-160 {
+	padding-top: rem(160);
+}
+.pt-150 {
+	padding-top: rem(150);
+}
+.pb-120 {
+	padding-bottom: rem(120);
+}
+.pb-150 {
+	padding-bottom: rem(150);
+}
+.pb-170 {
+	padding-bottom: rem(170);
+}
+
+@for $i from 0 through 100 {
+	.mb-#{$i} {
+		margin-bottom: $i / 10 + rem;
+	}
+	.mt-#{$i} {
+		margin-top: $i / 10 + rem;
+	}
+	.ml-#{$i} {
+		margin-left: $i / 10 + rem;
+	}
+	.mr-#{$i} {
+		margin-right: $i / 10 + rem;
+	}
+
+	.pb-#{$i} {
+		padding-bottom: $i / 10 + rem;
+	}
+	.pt-#{$i} {
+		padding-top: $i / 10 + rem;
+	}
+	.pl-#{$i} {
+		padding-left: $i / 10 + rem;
+	}
+	.pr-#{$i} {
+		padding-right: $i / 10 + rem;
+	}
+}
+
+@for $i from 0 through 100 {
+	@include sp {
+		.mb-sp-#{$i} {
+			margin-bottom: $i / $sp-artboard * 100 + vw;
+		}
+		.mt-sp-#{$i} {
+			margin-top: $i / $sp-artboard * 100 + vw;
+		}
+		.ml-sp-#{$i} {
+			margin-left: $i / $sp-artboard * 100 + vw;
+		}
+		.mr-sp-#{$i} {
+			margin-right: $i / $sp-artboard * 100 + vw;
+		}
+	}
+	@include sp {
+		.pb-sp-#{$i} {
+			padding-bottom: $i / $sp-artboard * 100 + vw;
+		}
+		.pt-sp-#{$i} {
+			padding-top: $i / $sp-artboard * 100 + vw !important;
+		}
+		.pl-sp-#{$i} {
+			padding-left: $i / $sp-artboard * 100 + vw;
+		}
+		.pr-sp-#{$i} {
+			padding-right: $i / $sp-artboard * 100 + vw;
+		}
+	}
+}
+
+.ml-auto {
+	margin-left: auto;
+}
+.mr-auto {
+	margin-right: auto;
+}
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}

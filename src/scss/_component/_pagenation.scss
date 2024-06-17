@@ -1,0 +1,85 @@
+.c-pagenation-arrow {
+	border: solid 1px $baseColor;
+	border-radius: 100%;
+	width: rem(46);
+	height: rem(46);
+	position: relative;
+	@include sp {
+		width: vw(27);
+		height: vw(27);
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		width: rem(8);
+		height: rem(8);
+		border-top: solid 2px $baseColor;
+		border-right: solid 2px $baseColor;
+		top: 50%;
+		left: 48%;
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+}
+
+.c-pagenation {
+	margin-left: auto;
+	margin-right: auto;
+	@include pc {
+		width: rem(1022);
+	}
+	@include sp {
+		width: vw(200);
+	}
+	.prev {
+		.c-pagenation-arrow {
+			&::before {
+				left: 55%;
+				transform: translate(-50%, -50%) rotate(-135deg);
+			}
+		}
+	}
+	.prev,
+	.next {
+		text-decoration: underline;
+
+		@include font-pc(15, 30, 0, 500);
+		transition: all 0.2;
+		@include pc {
+			width: rem(380);
+		}
+		&:hover {
+			@include pc {
+				opacity: 0.8;
+			}
+			.c-pagenation-arrow {
+				@include pc {
+					background-color: $baseColor;
+				}
+				&::before {
+					@include pc {
+						border-color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+.c-pagenation-undo {
+	@include font-pc(18, 30, 0, 500);
+	@include font-sp(14, 30, 0, 500);
+}
+
+.c-pagenation-undo__icon {
+	display: flex;
+	flex-wrap: wrap;
+	gap: rem(3);
+	width: rem(36);
+	margin: auto;
+	span {
+		display: block;
+		width: rem(10);
+		height: rem(10);
+		background-color: $baseColor;
+	}
+}

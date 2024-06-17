@@ -1,0 +1,97 @@
+.p-jobs {
+    @include pc {
+        padding-top: rem(140);
+    }
+    @include sp {
+        padding-top: vw(60);
+    }
+}
+
+.p-jobs__inner {
+    @include pc {
+        max-width: rem(904);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p-jobs__item {
+    @include pc {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap:wrap;
+    }
+}
+
+.p-jobs__item:nth-child(n+2) {
+    @include pc {
+        margin-top: rem(160);
+    }
+    @include sp {
+        margin-top: vw(110);
+    }
+}
+
+.p-jobs__tittle {
+    @include font-pc(38, 38, -10, 600);
+    @include font-sp(24, 34, -10, 600);
+    @include pc {
+        width: 100%;
+        margin-bottom: rem(39.6);
+    }
+}
+
+.p-jobs__img {
+    @include pc {
+        width: rem(380);
+    }
+    @include sp {
+        margin-top: vw(25);
+    }
+}
+
+.p-jobs__wrap {
+    @include pc {
+        width: rem(475);
+    }
+}
+
+.p-jobs__text {
+    @include font-pc(15, 30, -10, 400);
+    @include font-sp(15, 30, -10, 400);
+    @include sp {
+        margin-top: vw(22);
+    }
+}
+
+.p-jobs__btn {
+    @include pc {
+        margin-top: rem(47.4);
+    }
+    @include sp {
+        margin-top: vw(40);
+        text-align: center;
+    }
+
+    .c-btn {
+        @include sp {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .c-btn-icon {
+        @include pc {
+            margin-top: rem(17.6);
+            height:rem(50);
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @include sp {
+            margin-top: vw(20);
+        }
+    }
+}

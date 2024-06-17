@@ -1,0 +1,31 @@
+.people
+.c-lists {
+    justify-content: center;
+    @include pc {
+        max-width:rem(770);
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap:wrap;
+        justify-content: center;
+        gap:rem(30);
+    }
+    @include sp {
+        gap:vw(10) vw(7);
+    }
+}
+
+.people
+.c-list {
+    @include font-pc(16, 16, 0, 600);
+    @include font-sp(16, 16, 0, 600);
+
+    a {
+        @include pc {
+            width:rem(220);
+            height:rem(40);
+        }
+        @include sp {
+            height:vw(40);
+        }
+    }
+}

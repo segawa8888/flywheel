@@ -1,0 +1,29 @@
+.p-data {
+	height: rem(4000);
+}
+.p-data-inner {
+	position: sticky;
+	min-height: 100vh;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.p-data-list {
+	position: relative;
+	height: rem(750);
+	
+}
+
+.p-data-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: all 0.8s;
+	&.fadeData {
+		opacity: 1;
+	}
+}

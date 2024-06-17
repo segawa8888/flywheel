@@ -1,0 +1,43 @@
+.p-access__container {
+    @include pc {
+        margin-top: rem(100);
+        padding-top: rem(100);
+        padding-bottom: rem(96);
+    }
+    @include sp {
+        padding-top: vw(75);
+        padding-bottom: vw(80);
+        margin-top: vw(65);
+    }
+    .c-btn-icon {
+        @include sp {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+
+.p-access__inner {
+    @include pc {
+        max-width: rem(911);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p-access__tittle {
+    @include font-pc(26, 40, 0, 600);
+    @include font-sp(22, 40, 0, 600);
+}
+
+.p-access__map {
+    @include pc {
+        height:rem(366.43);
+        margin-top: rem(70);
+    }
+    @include sp {
+        margin-top: vw(34);
+        height:vw(237);
+    }
+}

@@ -1,0 +1,118 @@
+.p-top-kv {
+	height: 100vh;
+	position: relative;
+}
+
+.p-top-kv-contents {
+	opacity: 1;
+	position: fixed;
+	width: 100%;
+	top: 50%;
+	transition: all 0.5s;
+	transform: translateY(-50%);
+	text-align: center;
+	&.hideMVContents {
+		opacity: 0 !important;
+	}
+}
+
+.p-top-kv-text01 {
+	text-align: left;
+	@include font-pc(63, 70, 0, 700);
+	@include font-sp(34, 40, 0, 700);
+	display: inline-block;
+
+	@include pc {
+		padding: 0 rem(10);
+	}
+	@include sp {
+		padding: 0 vw(10);
+	}
+	
+	& > span {
+		display: inline-block;
+		border: solid 1px $baseColor;
+		background-color: #fff;
+		@include pc {
+			height: rem(66);
+		}
+		@include sp {
+			height: vw(38);
+		}
+		span {
+			display: block;
+		}
+	}
+}
+
+.p-top-kv-text02 {
+	text-align: left;
+	@include font-pc(36, 45, 0, 700);
+	@include font-sp(24, 33, 0, 700);
+	display: inline-block;
+	font-feature-settings: "palt";
+	@include pc {
+		padding: 0 rem(10);
+	}
+	@include sp {
+		padding: 0 vw(10);
+	}
+	
+	& > span {
+		display: inline-block;
+		border: solid 1px $baseColor;
+		background-color: #fff;
+		@include pc {
+			height: rem(48);
+		}
+		@include sp {
+			height: vw(32);
+		}
+		span {
+			display: block;
+		}
+	}
+}
+
+.p-top-kv-bar {
+	display: block;
+	position: sticky;
+	width: 1px;
+	left: 50%;
+	&::after {
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 1px;
+		opacity:0;
+		left: 0;
+		background-color: $baseColor;
+		animation: pathmove 2s ease-in-out infinite;
+	}
+	@include pc {
+		height: rem(106);
+		bottom: rem(50);
+	}
+	@include sp {
+		height: vw(106);
+		bottom: vw(-12);
+	}
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height: 100%;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top: 230%;
+    opacity: 0;
+  }
+}

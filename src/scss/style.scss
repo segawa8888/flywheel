@@ -1,0 +1,170 @@
+@import "_resource/_init";
+/*------------------------------
+
+  開発環境の初期化
+
+------------------------------*/
+html {
+	font-size: 62.5%;
+	@media screen and (max-width: $pcvw + px) {
+		font-size: 0.8vw;
+	}
+	@include sp {
+		font-size: 2.1vw;
+	}
+}
+// span {
+// 	line-height: 1;
+// }
+body {
+	font-family: $base-font;
+	color: $baseColor;
+	font-weight: 500;
+	@include font-pc(20, 36, -20, 500);
+	@include font-sp(16, 28, -20, 500);
+}
+a {
+	text-decoration: none;
+	color: $baseColor;
+}
+.is-pc {
+	@include sp {
+		display: none;
+	}
+}
+
+.is-sp {
+	@include pc {
+		display: none;
+	}
+}
+
+.is-hover {
+	transition: all 0.2s;
+	&:hover {
+		@include pc {
+			opacity: 0.8;
+		}
+	}
+}
+.max-inner {
+	box-sizing: content-box;
+	@include pc {
+		max-width: rem(1160);
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: rem(20);
+		padding-right: rem(20);
+	}
+}
+@import "_layout/**";
+@import "_utility/**";
+@import "_component/**";
+@import "_project/**";
+@import "_setting/_init";
+
+#webgl-container {
+	z-index: -1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.is-out-tab {
+	position: relative;
+	display: inline-block !important;
+	padding-right: rem(20) !important;
+	&::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: rem(20);
+		height: rem(20);
+		background: url("/assets/img/top/tab-icon.svg") no-repeat center center/ contain;
+	}
+}
+
+.is-pointer-none {
+	pointer-events: none;
+}
+
+.js-webGL-text {
+	position: relative;
+}
+
+#webgl-container {
+	@include sp {
+		max-width: 100vw;
+		overflow: hidden;
+	}
+}
+
+#mainContents {
+	&:not(.top) {
+		overflow: hidden;
+	}
+}
+
+.webgl-container__wrap {
+	max-width: 100vw;
+	overflow: hidden;
+}
+
+
+[data-module="FadeIn"],[data-module="FadeInMV"],[data-module="FadeInKadai"] {
+	opacity: 0;
+	overflow: hidden;
+	& > span {
+		display: inline-block;
+	}
+	&.fadeIn {
+		opacity: 1;
+		transform: translate(0, 0) !important;
+		filter: blur(0) !important;
+		&--fromLeft {
+			transform: translateX(-100%);
+		}
+		&--fromBottom {
+			transform: translateY(100%);
+		}
+		&--fromTop {
+			transform: translateY(-100%);
+		}
+		&--blur {
+			filter: blur(5px);
+		}
+		&--width {
+			width: 0;
+			display: inline-block;
+			&.fadeIn {
+				width: 100%;
+			}
+		}
+	}
+}
+[data-module="FadeInMV"] {
+	transition: all 0.8s;
+}
+
+.c-skip-btn {
+	position: absolute;
+	z-index: 1000;
+	display: none;
+	@include pc {
+		right: rem(54);
+		bottom: rem(54);
+	}
+	@include sp {
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: vw(50);
+	}
+	a {
+		@include font-pc(18, 21, 100, 500);
+		text-decoration: underline;
+	}
+
+}

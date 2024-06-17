@@ -1,0 +1,166 @@
+.p-base-office {
+    @include sp {
+        padding-top: vw(50);
+    }
+}
+
+.p-office__tittle {
+    @include font-pc(38, 38, 10, 600);
+    @include font-sp(22, 22, 10, 600);
+    @include pc {
+        margin-top: rem(146);
+    }
+}
+
+.p-office-slider__item {
+    @include pc {
+        margin: 0 rem(10);
+    }
+    @include sp {
+        margin: 0 vw(3.8);
+    }
+}
+
+.slick-slider {
+    text-align: center;
+}
+
+.p-office-slider
+.slick-dots li {
+    background-color: #fff;
+    border:1px solid $baseColor;
+    border-radius: 50%;
+    margin: 0;
+    @include pc {
+        width:rem(14);
+        height:rem(14);
+    }
+    @include sp {
+        width:vw(12);
+        height:vw(12);
+    }
+}
+
+.p-office-slider
+.slick-dots li:nth-child(n+2) {
+    @include pc {
+        margin-left: rem(16);
+    }
+    @include sp {
+        margin-left: vw(13);
+    }
+}
+
+.p-office-slider
+.slick-dots
+.slick-active {
+    background-color: $baseColor;
+}
+
+.p-office-slider
+.slick-dots {
+    @include pc {
+        bottom:rem(-78);
+    }
+    @include sp {
+        bottom:vw(-44.4);
+    }
+}
+
+.p-office-slider
+.slide-arrow {
+    background-color: transparent;
+    border:1px solid $baseColor;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    @include pc {
+        bottom:rem(-84);
+        width:rem(46);
+        height:rem(46);
+    }
+    @include sp {
+        bottom:vw(-44.4);
+        height:vw(30);
+        width:vw(30);
+    }
+    &:hover {
+        background-color: $baseColor;
+        color:#fff;
+    }
+}
+
+.p-office-slider
+.prev-arrow {
+    @include pc {
+        left:35%;
+    }
+    @include sp {
+        left:vw(56);
+    }
+}
+
+.p-office-slider
+.next-arrow {
+    @include pc {
+        right:35%;
+    }
+    @include sp {
+        right:vw(56);
+    }
+}
+
+.p-office-slider
+.prev-arrow:before{
+    content: "\f104";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-weight: 700;
+    @include sp {
+        font-size: vw(10);
+    }
+}
+
+.p-office-slider
+.next-arrow:before{
+    content: "\f105";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-weight: 700;
+    @include sp {
+        font-size: vw(10);
+    }
+}
+
+.p-office__text {
+    @include font-pc(15, 30, 0, 400);
+    @include font-sp(14, 28, 0, 400);
+    @include pc {
+        margin-top: rem(155);
+        text-align: center;
+    }
+    @include sp {
+        margin-top: vw(80);
+    }
+}
+
+.p-satellite-office {
+    @include pc {
+        margin-top: rem(190);
+    }
+    @include sp {
+        margin-top: vw(120);
+    }
+}

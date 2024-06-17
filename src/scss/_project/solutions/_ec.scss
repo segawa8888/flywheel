@@ -1,0 +1,194 @@
+.p-ec__container {
+    @include pc {
+        margin-bottom: rem(170);
+    }
+    @include sp {
+        margin-bottom: rem(80);
+    }
+}
+
+.p-image {
+    @include pc {
+        max-width: rem(912);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include sp {
+        height:vw(145);
+    }
+    img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.p-ec__inner {
+    @include pc {
+        max-width: rem(912);
+        margin-left: auto;
+        margin-right: auto; 
+    }
+}
+
+.p-ec__lead {
+    @include font-pc(20, 30, 0, 600);
+    @include font-sp(15, 26, 0, 600);
+}
+
+.p-ec__sub {
+    @include font-pc(15, 30, -20, 400);
+    @include font-sp(15, 30, -20, 400);
+}
+
+.p-ec__contents {
+    @include pc {
+        margin-top: rem(90);
+    }
+    @include sp {
+        margin-top: vw(60);
+    }
+}
+
+
+.p-ec__list-content {
+    @include pc {
+        padding: rem(40) rem(116) rem(40) rem(40);
+    }
+    @include sp {
+        padding:vw(43) vw(23);
+    }
+}
+
+.p-ec__lists {
+    @include pc {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        margin-right: auto;
+    }
+}
+
+.p-ec__list {
+    @include font-pc(18, 26, -30, 600);
+}
+
+.p-ec__list:nth-child(n+2) {
+    @include pc {
+        margin-top: rem(25);
+    }
+    @include sp {
+        margin-top: vw(20);
+    }
+}
+
+.p-ec__list-box:first-child
+.p-ec__list:nth-child(n+2) {
+    @include pc {
+        margin-top: rem(25);
+    }
+}
+
+.p-ec__list-box {
+    @include pc {
+        text-align: left;
+    }
+}
+
+.p-ec__item {
+    @include pc {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        max-width: rem(912);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include sp {
+        padding-left: vw(28);
+        padding-right: vw(28);
+    }
+    .c-btn {
+        @include pc {
+            margin-left: initial;
+        }
+    }
+}
+
+.p-ec__item:nth-child(2) {
+    @include pc {
+        max-width: rem(968);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p-ec__item:nth-child(n+2) {
+    @include pc {
+        margin-top: rem(140);
+    }
+    @include sp {
+        margin-top: vw(105);
+    }
+}
+
+.p-ec__image {
+    @include pc {
+        width:rem(350);
+        margin-top: rem(30);
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.p-ec__wrap {
+    @include pc {
+        width: rem(520);
+    }
+    @include sp {
+        margin-top: vw(10);
+    }
+}
+
+.p-ec__case {
+    text-transform: uppercase;
+    @include font-pc(18, 20, 30, 600);
+    @include font-sp(13, 15, 30, 600);
+    @include pc {
+        width:100%;
+    }
+    span {
+        @include font-pc(34, 38, 0, 400);
+        @include font-sp(35, 39, 0, 400);
+        @include pc {
+            margin-left: rem(12);
+        }
+        @include sp {
+            margin-left: vw(8);
+        }
+    }
+}
+
+.p-ec__tittle {
+    @include font-pc(30, 44, -40, 600);
+    @include font-sp(22, 32, -40, 600);
+    @include pc {
+        margin-top: rem(20);
+    }
+}
+
+.p-ec__text {
+    @include font-pc(15, 30, -60, 400);
+    @include font-sp(14, 28, -60, 400);
+    @include sp {
+        margin-top: vw(35);
+    }
+}
+
+.p-ec__wrap 
+.p-ec__text {
+    @include pc {
+        width: rem(491);
+    }
+}

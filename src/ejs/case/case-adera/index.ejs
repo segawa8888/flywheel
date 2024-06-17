@@ -1,0 +1,164 @@
+<%- include(`${ROOT}_include/_img`) %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% var meta={ path: "../../",title: '導入事例一覧' , description: 'description' , keywords: 'keywords' , og : { url: ``, iamge: '' } } -%>
+  <%- include(`${ROOT}_common/_head`, { meta: meta }) %>
+</head>
+
+<body>
+  <%- include(`${ROOT}_common/_header.ejs`, {path: meta.path}) %>
+  <!-- contents start -->
+  <div id="mainContents" class="case sub">
+    <section class="pt-160">
+      <div class="max-inner max-inner02 pt-sp-25">
+        <h2 class="u-title-small ta-c mb-90 mb-sp-80">導入事例</h2>
+        <div class="d-flex align-center mb-30 mb-sp-20">
+          <div class="p-case-logo">
+            <%- img("dummy_logo02", "ロゴ", "common", "png") %>
+          </div>
+          <p class="p-case-company ml-36">アスクル株式会社</p>
+        </div>
+        <h1 class="u-title-case mb-27">需要予測技術により売上改善の予測モデルを開発</h1>
+        <ul class="c-tag mb-55 mb-sp-40">
+          <li class="c-tag-item mr-15 mb-7"><span>Marketing</span></li>
+          <li class="c-tag-item mr-15 mb-7"><span>Marketing</span></li>
+          <li class="c-tag-item mr-15 mb-7"><span>Measurement</span></li>
+          <li class="c-tag-item mr-15 mb-7"><span>Intelligence</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="is-bg-blue p-case-article__head pt-60 pb-60 pt-sp-51 pb-sp-55">
+      <div class="max-inner max-inner02">
+        <div class="d-pc-flex align-center">
+          <div class="p-case-article__img mb-sp-30">
+            <%- img("dummy02", "ダミー画像", "common", "png") %>
+          </div>
+          <div class="ml-50 ml-sp-0 flex-auto">
+            <h2 class="mb-40 p-case-article__catch">“AIとデータを扱う上での知識が豊富で<br>その実施にあたるエンジニアのスキルが<br>高い点も評価しています”</h2>
+            <p class="mb-30 p-case-article__company">アスクル株式会社<br>テクノロジスティクス本部 先端テクノロジーマネージャー</p>
+            <p class="p-case-article__person">小池 和弘 氏</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-case-article__body pt-70 pb-120 pt-sp-40 pb-sp-50">
+      <div class="max-inner max-inner02">
+        <h3 class="p-case-article__title-head mb-10 mb-sp-1">導入のきっかけ</h3>
+        <p class="p-case-article__title mb-60 mb-sp-35">レコメンドエンジンの好実績を踏まえ<br>新たな課題もフライウィールに協業を依頼</p>
+        <div class="p-case-article__body-text pb-30">
+          <p>「ASKUL」はアスクル株式会社（以下、アスクル）が運営する、事業所向け（BtoB）ECです。今回、ASKULで販売する商品の一部のカテゴリーについて、売上予測アルゴリズム開発をフライウィールに依頼しました。</p>
+          <p>すでに個人向けECのLOHACOでは、フライウィールのレコメンドエンジンを導入し、大幅なパフォーマンス改善や機能追加を実現してきました。今まで協業した経験から、大規模データを取り扱う技術が高く、予測技術の精度が優れていることは、すでに理解していました。また、密なコミュニケーションやクライアントニーズにあわせた柔軟性も特徴だと考えていました。</p>
+          <p>今回のプロジェクトに求められる売上予測は難易度が高く、ユニークな事例のため、ニーズに合った解決策を一緒に考えられる協働先を探した時に、フライウィールなら一緒に課題に取り組めるのではないかと考え、連絡をとりました。</p>
+        </div>
+        <div class="pb-120 pb-sp-60">
+          <%- img("dummy02", "ダミー画像", "common", "png") %>
+        </div>
+
+        <h3 class="p-case-article__title-head mb-10">お客様からのコメント</h3>
+        <p class="p-case-article__title mb-60 mb-sp-45">AIとデータを扱う上での知識が豊富で、<br>その実施にあたるエンジニアのスキルが高い点も評価しています</p>
+        <div class="p-case-article__body-text p-case-article__body-text--02">
+
+          <p><b>なぜフライウィールを選んだのでしょうか？</b>レコメンドエンジンにおいてすでに実績をもっていることが魅力でした。また、AIとデータを扱う上での知識が豊富で、その実施にあたるエンジニアのスキルが高い点も評価しています。</p>
+          <p><b>フライウィールとの取り組みでどんな変化がおこりましたか？</b>どうしてもアルゴリズム及びロジックなどに目が行きがちで、実運用にどうつなぎ込むかに壁を感じていました。フライウィールをパートナーとすることで、壁に対するブレイクスルーが見えてきています。プロジェクト進行に関する方法論、スピード感は参考となりました。</p>
+          <p><b>今後フライウィールとどんなことに取り組んでいきたいですか？</b>在庫非在庫のデータ利活用を反映させた、アスクル・シミュレーターのプラットフォームを作成してもらうことで、プロジェクトのスタートラインがこれで整備できました。新しいモデルを続々、プラットフォームへと追加していくので、フライウィールには引き続き協力をお願いしたいです。</p>
+          <p><b>その他、メッセージあればお願い致します</b>自身や自分のチームとフライウィールには、プロジェクトを進める上での相性の良さが感じられました。新しく取りかかる仕事の楽しさを感じながら、プロジェクトを進めることができました。</p>
+        </div>
+        <div class="mt-70 mb-40 mb-sp-15">
+          <%- img("dummy02", "ダミー画像", "common", "png") %>
+        </div>
+        <div class="p-case-article__body-text p-case-article__body-text--03">
+          <p>掲載日： 2021年7月28日</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="is-bg-blue pt-60 pb-80 pt-sp-60 pb-sp-60">
+      <div class="max-inner max-inner02">
+        <div class="p-case-logo mb-20 mb-sp-5">
+          <%- img("dummy_logo02", "ロゴ", "common", "png") %>
+        </div>
+        <p class="p-case-article__bottom-company mb-10 mb-sp-25">アスクル株式会社 / ASKUL(アスクル)</p>
+        <p class="p-case-article__bottom-text mb-25 mb-sp-40">「ASKUL」はアスクル株式会社が運営する、事業所向け（BtoB）ECです。事務用品をはじめ、製造現場で必要な工具や、医療・介護用品まで、充実した品揃えを最短当日または翌日以降にお届けします。</p>
+        <a href="" class="c-btn mb-70 mx-sp-auto mb-sp-75">
+          <span class="fw-bold">企業ページ</span>
+          <span class="out-tab">
+            <%- img("tab-icon", "外部タブアイコン", "top", "svg") %>
+          </span>
+        </a>
+
+        <div class="d-flex align-center">
+          <div class="p-case-article__bottom-detail-img">
+            <%- img("dummy-person", "ダミー", "common", "png") %>
+          </div>
+          <div class="p-case-article__bottom-detail-text flex-auto ml-32 ml-sp-20">
+            <p>アスクル株式会社<br>
+              テクノロジスティクス本部 先端テクノロジーマネージャー</p><br>
+            <p>小池 和弘 氏</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="p-top-cv">
+      <div class="max-inner ta-c">
+        <p class="mb-30 mb-sp-28">データ活用プラットフォームConataの<br>紹介資料・導入事例集はこちら</p>
+        <div class="mb-60 mb-sp-10">
+          <a href="/download/" class="c-btn cv blue mx-auto">
+            <span>資料請求</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-30 mb-sp-50">
+      <div class="max-inner">
+        <div class="c-pagenation d-flex justify-btw align-center">
+          <div class="prev">
+            <a href="" class="d-flex align-center">
+              <span class="c-pagenation-arrow"></span>
+              <span class="flex-auto ml-30 is-pc">DOOHのプログラマティック広告配信を実現<br>株式会社 大阪メトロ アドエラ</span>
+            </a>
+          </div>
+
+          <div class="ta-c c-pagenation-undo mt-25">
+            <a class="" href="/case/">
+              <p class="c-pagenation-undo__icon mb-10 mb-sp-5">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </p>
+              <p>一覧に戻る</p>
+            </a>
+          </div>
+
+          <div class="next">
+            <a href="" class="d-flex align-center">
+              <span class="flex-auto mr-30 is-pc">日本最大級B2B卸サイト パーソナライズ化の検証で売上が4倍に株式会社オークファン</span>
+              <span class="c-pagenation-arrow"></span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- contents end -->
+
+  <%- include(`${ROOT}_common/_footer.ejs`,{path: meta.path}) %>
+  <%- include(`${ROOT}_common/_script.ejs`, {path: meta.path}) %>
+</body>
+
+</html>

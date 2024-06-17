@@ -1,0 +1,42 @@
+.p-people-mission {
+    @include pc {
+        padding-top: rem(223);
+        padding-bottom: rem(253);
+    }
+    @include sp {
+        padding-top: vw(75);
+        padding-bottom: vw(110.5);
+    }
+}
+
+.p-people__head {
+    @include font-pc(26, 27, 20, 600);
+    @include font-sp(16, 16, 20, 600);
+    @include pc {
+        text-transform: uppercase;
+    }
+}
+
+.p-people__tittle {
+    @include font-pc(60, 68, -20, 600);
+    @include font-sp(30, 33, -20, 600);
+}
+
+.p-people__subtittle {
+    @include font-pc(36, 36, 0, 600);
+    @include font-sp(22, 22, -20, 600);
+    border: 1px solid $baseColor;
+    @include pc {
+        margin-top: rem(65);
+        max-width: rem(487);
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: rem(6);
+        padding-bottom: rem(6);
+    }
+    @include sp {
+        max-width: vw(296);
+        padding:vw(5) 0 vw(2) 0;
+        margin-top: vw(26.6);
+    }
+}

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>トップページ</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="description">
+  <meta name="keywords" content="keywords">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <!-- SNS OGP start -->
+  <meta property="og:title" content="トップページ">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="description">
+  <meta property="og:keywords" content="keywords">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <meta property="og:site_name" content="">
+  <meta property="fb:app_id" content="">
+  <!--twitter card-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@">
+
+  <!-- page css files start -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/style2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- page css files end -->
+
+  <!-- slick css -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/slick-theme.css" />
+</head>
+
+<body>
+  <!-- <script>
+    window.isWebGLDev = true;
+  </script> -->
+  <header class="l-header" data-module="Header">
+    <div data-module="FadeInMV" class="fadeIn--fromBottom" data-delay="1">
+      <div class="l-header__inner fadeIn--fromTop" data-delay="1" data-module="FadeInMV">
+        <div class="l-header__logo">
+          <a href="" class="is-hover">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/assets/img/common/logo.png">
+              <source media="(max-width: 767px)" srcset="/assets/img/common/sp/logo.png">
+              <img src="/assets/img/common/logo.png" alt="FLYWHEEL" loading="lazy">
+            </picture>
+          </a>
+        </div>
+
+        <input id="header__menu" type="checkbox" style="display:none;">
+        <label for="header__menu" class="l-header__ham is-sp ml-auto">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="l-header__right ml-auto">
+          <ul class=" l-header__menu fs-13 fs-sp-16 mb-sp-45">
+            <li class="mr-32"><a href="">ホーム</a></li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-pointer-none">プロダクト</a>
+              <input type="checkbox" style="display: none;" id="menu1">
+              <label class="is-sp u-plus" for="menu1"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="conata/">Conata™の特徴</a></li>
+                <li><a href="conata/platform/">データ基盤</a></li>
+                <li><a href="conata/offering/">オファリング</a></li>
+                <li><a href="conata/faq/">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-header-hover">ソリューション</a>
+              <input type="checkbox" style="display: none;" id="menu4">
+              <label class="is-sp u-plus" for="menu4"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="solutions/">プロフェッショナルサービス</a></li>
+                <li><a href="javascript:void(0);" class="is-pointer-none">業界別ソリューション</a>
+                  <ul class="l-header__subMenu--02">
+                    <li><a href="solutions/ecommerce-retail-logistics/">EC・小売・流通</a></li>
+                    <li><a href="solutions/digital-contents/">メディア・エンターテイメント</a></li>
+                    <li><a href="solutions/traffic-Infrastructure/">交通インフラ</a></li>
+                    <li><a href="solutions/manufacture/">メーカー</a></li>
+                    <li><a href="solutions/financial/">金融</a></li>
+                    <li><a href="solutions/smart-cities/">Smart Cities</a></li>
+
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="mr-32"><a href="case/">導入事例</a></li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-header-hover">ニュースルーム</a>
+              <input type="checkbox" style="display: none;" id="menu6">
+              <label class="is-sp u-plus" for="menu6"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="newsrelease/">ニュース</a></li>
+                <li><a href="topics/">ブログ</a></li>
+                <li><a target="_blank" class="is-out-tab" href="https://datalab.flywheel.jp/">DataLab by FLYWHEEL</a></li>
+              </ul>
+            </li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-header-hover">会社情報</a>
+              <input type="checkbox" style="display: none;" id="menu2">
+              <label class="is-sp u-plus" for="menu2"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="about/company/">会社概要・アクセス</a></li>
+                <li><a href="about/message/">経営陣・メッセージ</a></li>
+                <li><a href="about/mission/">ミッション・バリュー</a></li>
+              </ul>
+            </li>
+            <li class="mr-32"><a href="javascript:void(0);" class="is-header-hover">採用情報</a>
+              <input type="checkbox" style="display: none;" id="menu3">
+              <label class="is-sp u-plus" for="menu3"></label>
+              <ul class="l-header__subMenu">
+                <li><a href="careers">採用情報トップ</a></li>
+                <li><a href="careers/people/">PEOPLE</a></li>
+                <li><a href="careers/office/">OFFICE</a></li>
+                <li><a href="careers/culture/">CULTURE</a></li>
+                <li><a href="careers/benefit/">WORK STYLE</a></li>
+                <li><a href="careers/jobs/">JOB OPENING</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="l-header__btns fs-13 fs-sp-16">
+            <li class="mr-22">
+              <a class="l-header__btn u-hover" href="download/"><span>資料請求</span></a>
+            </li>
+            <li>
+              <a class="l-header__btn u-hover" href="contacts/"><span>お問い合わせ</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- contents start -->
+  <div id="mainContents" class="top">
+    <div class="webgl-container__wrap">
+      <div id="webgl-container"></div>
+    </div>
+
+    <div class="c-skip-btn">
+      <a href="javascript:void(0);">SKIP</a>
+    </div>
+    <!-- ここに書く-->
+    <div style="position: relative;">
+      <div class="p-top-kv">
+        <div class="p-top-kv-contents" style="opacity: 1;">
+          <p class="p-top-kv-text01 mb-40 mb-sp-17"><span class="fadeIn--width ta-c" data-module="FadeInMV"><span class="fadeIn--fromBottom" data-module="FadeInMV" data-delay="0.5">GROWTH BY DATA</span></span></p><br>
+          <p class="p-top-kv-text02"><span class="fadeIn--width ta-c" data-module="FadeInMV"><span class="fadeIn--fromBottom" data-module="FadeInMV" data-delay="0.5">データで成長を約束する。</span></span></p>
+        </div>
+        <!-- <span class="p-top-kv-bar" data-module="FadeInMV" data-delay="1.5"></span> -->
+      </div>
+      <div class="p-top-kvBottom">
+        <div class="max-inner">
+          <div class="max-inner-inner">
+            <div class="p-top-kvBottom-mainText">
+              <p class="fadeIn--width" data-module="FadeInKadai" data-delay="0.2"><span class="fadeIn--fromBottom" data-module="FadeInKadai" data-delay="0.8">こんな課題はありませんか？</span></p>
+            </div>
+            <p class="p-top-kvBottom-text tetx01 fadeIn--blur" data-module="FadeInKadai" data-delay="1.0" data-timing="1"><span>「DXがわからない」</span></p>
+            <p class="p-top-kvBottom-text tetx02 fadeIn--blur" data-module="FadeInKadai" data-delay="1.2" data-timing="1"><span>「部門間でデータが連携されていない」</span></p>
+            <p class="p-top-kvBottom-text tetx03 fadeIn--blur" data-module="FadeInKadai" data-delay="1.4" data-timing="1"><span>「データ活用する目的がわからない」</span></p>
+            <p class="p-top-kvBottom-text tetx04 fadeIn--blur" data-module="FadeInKadai" data-delay="1.6" data-timing="1"><span>「人の手に頼った業務が多い」</span></p>
+
+          </div>
+        </div>
+
+      </div>
+      <span class="p-top-kv-bar" data-module="FadeInMV" data-delay="1.5"></span>
+    </div>
+
+    <section class="p-top-catch">
+      <div>
+        <h2 class="p-top-catch__logo ta-c fadeIn--fromBottom" data-module="FadeIn">
+          <div data-module="FadeIn" class="fadeIn--fromTop" style="display: none;">
+            <picture>
+              <source srcset="/assets/img/top/catch.svg">
+              <img src="/assets/img/top/catch.svg" alt="CONATA" loading="lazy">
+            </picture>
+          </div>
+        </h2>
+        <p class="p-top-catch__heading pb-25 ta-c mb-25 pb-sp-15 mb-sp-18 fadeIn--fromBottom" data-module="FadeIn"><span class="fadeIn--fromTop" data-module="FadeIn">データ活用プラットフォーム</span></p>
+        <p class="p-top-catch__text fs-20 ta-c fadeIn--fromBottom" data-module="FadeIn"><span class="fadeIn--fromTop" data-module="FadeIn">Conata(コナタ)™ は組織を超えた<br class="is-sp">データ連携によって<br class="is-pc">データドリブンな<br class="is-sp">事業運営と意思決定を実現します</span></p>
+      </div>
+    </section>
+
+    <section class="p-top-feature">
+      <div class="max-inner section_inner">
+        <h2 class="p-top-feature__title ta-c mb-sp-41">
+          <span class="p-top-feature__title__inner pb-10 pb-sp-7">
+            <div class="p-top-feature__title__logo move">
+              <div data-module="FadeIn">
+                <picture>
+                  <source srcset="/assets/img/top/catch.svg">
+                  <img src="/assets/img/top/catch.svg" alt="CONATA" loading="lazy">
+                </picture>
+              </div>
+            </div>
+            <span class="ml-6 ml-sp-10 fadeIn--fromBottom" data-module="FadeIn"><span class="fadeIn--fromTop" data-module="FadeIn">の特徴</span></span>
+            <span class="underbar" data-module="FadeIn"></span>
+          </span>
+
+        </h2>
+
+        <div class="p-top-feature__list">
+          <div class="p-top-feature__item fadeFeature">
+            <div class="p-top-feature__img mb-sp-30" data-module="FadeIn">
+              <picture>
+                <source srcset="/assets/img/top/feature01.svg">
+                <img src="/assets/img/top/feature01.svg" alt="CONATA" loading="lazy">
+              </picture>
+            </div>
+            <div class="p-top-feature__contents">
+              <div class="fadeIn--fromTop" data-module="FadeIn">
+                <div class="fadeIn--fromBottom" data-module="FadeIn">
+                  <p class="p-top-feature__contents-num font-accent mb-20 mb-sp-13">01</p>
+                  <h3 class="p-top-feature__contents-title mb-30 mb-sp-20">企業内・企業間に点在する<br>膨大なデータを<br class="is-sp">手間なく連携可能</h3>
+                </div>
+              </div>
+              <div class="fadeIn--fromTop" data-module="FadeIn">
+                <div class="fadeIn--fromBottom" data-timing="0.9" data-module="FadeIn">
+                  <p class="p-top-feature__contents-text">あらゆるクラウド システム、サーバー、ファイルタイプ、データ構造、データ量に<br class="is-pc">対応可能です。利用している環境のデータをそのまま連携できるため、作業負荷を<br class="is-pc">最小限にし、既存のシステムに影響を与えません。</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-top-feature__item">
+            <div class="p-top-feature__img mb-sp-30" data-module="FadeIn">
+              <picture>
+                <source srcset="/assets/img/top/feature02.svg">
+                <img src="/assets/img/top/feature02.svg" alt="CONATA" loading="lazy">
+              </picture>
+            </div>
+            <div class="p-top-feature__contents">
+              <div class="fadeIn--fromTop" data-module="FadeIn">
+                <div class="fadeIn--fromBottom" data-module="FadeIn">
+                  <p class="p-top-feature__contents-num font-accent mb-20 mb-sp-13">02</p>
+
+                  <h3 class="p-top-feature__contents-title mb-30 mb-sp-20">オントロジー化で<br>企業活動をデジタル空間に<br>再現・可視化</h3>
+                  <<<<<<< HEAD <p class="p-top-feature__contents-text">独自のオントロジー化により “デジタルツイン” として企業活動や<br class="is-pc">資産をデジタル上に再現します。今まで気がついていなかったデー<br class="is-pc">タのつながりを可視化やシミュレーションで評価し、最適な意思決<br class="is-pc">定を現実世界へ反映します。</p>
+                    =======
+                </div>
+              </div>
+              <div class="fadeIn--fromTop" data-module="FadeIn">
+                <div class="fadeIn--fromBottom" data-timing="0.9" data-module="FadeIn">
+                  <p class="p-top-feature__contents-text">
+                    独自のオントロジー化により “デジタルツイン” として企業活動や<br class="is-pc">資産をデジタル上に再現します。今まで気がついていなかったデー<br class="is-pc">タのつながりを可視化やシミュレーションで評価し、最適な意思決<br class="is-pc">定を現実世界へ反映します。
+                  </p>
+                </div>
+              </div>
+              >>>>>>> refs/remotes/origin/main
+            </div>
+          </div>
+
+          <div class="p-top-feature__item">
+            <div class="p-top-feature__img mb-sp-30" data-module="FadeIn">
+              <picture>
+                <source srcset="/assets/img/top/feature03.svg">
+                <img src="/assets/img/top/feature03.svg" alt="CONATA" loading="lazy">
+              </picture>
+            </div>
+            <div class="p-top-feature__contents">
+              <div class="fadeIn--fromTop" data-module="FadeIn">
+                <div class="fadeIn--fromBottom" data-module="FadeIn">
+                  <p class="p-top-feature__contents-num font-accent mb-20 mb-sp-13">03</p>
+                  <h3 class="p-top-feature__contents-title mb-30 mb-sp-20">さまざまな機能を組み<br class="is-sp">合わせて<br class="is-pc">ニーズに合わせた<br>ソリューションを提供</h3>
+                </div>
+              </div>
+              <div class="fadeIn--fromTop" data-module="FadeIn">
+                <div class="fadeIn--fromBottom" data-timing="0.9" data-module="FadeIn">
+                  <p class="p-top-feature__contents-text">需要予測やレコメンドなどの機能を組み合わせ、アジャイル手法を通じて<br class="is-pc">ソリューションを提供します。デジタルツイン上にデータを一度整備すれば、<br class="is-pc">複数の課題を低コストかつ短期間で解決することが可能です。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a href="/conata/" class="c-btn blue mx-auto">
+            <span>詳しく見る</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="p-top-cv is-bg-blue">
+      <div class="max-inner ta-c">
+        <p class="mb-30 mb-sp-28">データ活用プラットフォームConataの<br>紹介資料・導入事例集はこちら</p>
+        <div class="mb-90 mb-sp-82">
+          <a href="/download/" class="c-btn cv blue mx-auto">
+            <span>資料請求</span>
+          </a>
+        </div>
+        <p class="mb-36 mb-sp-28">データを活用した<br class="is-sp">マーケティング情報メディアはこちら</p>
+        <a href="" class="c-btn datalab mx-auto">
+          <span class="first">
+            <picture>
+              <source srcset="/assets/img/top/datalab.svg">
+              <img src="/assets/img/top/datalab.svg" alt="DataLab by FLYWHEEL" loading="lazy">
+            </picture>
+          </span>
+          <span class="last">
+            <picture>
+              <source srcset="/assets/img/top/datalab-white.svg">
+              <img src="/assets/img/top/datalab-white.svg" alt="DataLab by FLYWHEEL" loading="lazy">
+            </picture>
+          </span>
+          <span class="first">
+            <picture>
+              <source srcset="/assets/img/top/tab-icon.svg">
+              <img src="/assets/img/top/tab-icon.svg" alt="外部タブアイコン" loading="lazy">
+            </picture>
+          </span>
+          <span class="last">
+            <picture>
+              <source srcset="/assets/img/top/tab-icon-white.svg">
+              <img src="/assets/img/top/tab-icon-white.svg" alt="外部タブアイコン" loading="lazy">
+            </picture>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <section class="c-case-wrap p-top-case">
+      <div class="max-inner">
+        <h2 class="fs-34 ta-c mb-50 fs-sp-22 mb-sp-32">導入事例</h2>
+        <ul class="c-case mb-100">
+          <li class="mb-sp-80">
+            <a href="/case/case-adera/">
+              <div class="c-case__img mb-11 mb-sp-10">
+                <picture>
+                  <source srcset="/assets/img/common/dummy01.png">
+                  <img src="/assets/img/common/dummy01.png" alt="ダミー画像" loading="lazy">
+                </picture>
+              </div>
+              <div class="c-case__logo mb-11 mb-sp-10">
+                <picture>
+                  <source srcset="/assets/img/common/dummy_logo01.png">
+                  <img src="/assets/img/common/dummy_logo01.png" alt="ロゴ" loading="lazy">
+                </picture>
+              </div>
+              <p class="c-case__company mb-19 mb-sp-12">株式会社 大阪メトロ アドエラ</p>
+              <p class="c-case__title">DOOHのプログラマティック広告配信を実現</p>
+            </a>
+          </li>
+          <li class="mb-sp-80">
+            <a href="/case/case-adera/">
+              <div class="c-case__img mb-11 mb-sp-10">
+                <picture>
+                  <source srcset="/assets/img/common/dummy02.png">
+                  <img src="/assets/img/common/dummy02.png" alt="ダミー画像" loading="lazy">
+                </picture>
+              </div>
+              <div class="c-case__logo mb-11 mb-sp-10">
+                <picture>
+                  <source srcset="/assets/img/common/dummy_logo02.png">
+                  <img src="/assets/img/common/dummy_logo02.png" alt="ロゴ" loading="lazy">
+                </picture>
+              </div>
+              <p class="c-case__company mb-19 mb-sp-12">アスクル株式会社</p>
+              <p class="c-case__title">需要予測技術により売上改善の予測モデルを開発</p>
+            </a>
+          </li>
+          <li class="mb-sp-80">
+            <a href="/case/case-adera/">
+              <div class="c-case__img mb-11 mb-sp-10">
+                <picture>
+                  <source srcset="/assets/img/common/dummy03.png">
+                  <img src="/assets/img/common/dummy03.png" alt="ダミー画像" loading="lazy">
+                </picture>
+              </div>
+              <div class="c-case__logo mb-11 mb-sp-10">
+                <picture>
+                  <source srcset="/assets/img/common/dummy_logo03.png">
+                  <img src="/assets/img/common/dummy_logo03.png" alt="ロゴ" loading="lazy">
+                </picture>
+              </div>
+              <p class="c-case__company mb-19 mb-sp-12">株式会社オークファン</p>
+              <p class="c-case__title">日本最大級B2B卸サイトパーソナライズ化の検証で売上が4倍に</p>
+            </a>
+          </li>
+        </ul>
+
+        <a href="/case/" class="c-btn blue mx-auto">
+          <span>全ての導入事例を見る</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="c-partner">
+      <div class="max-inner ta-c">
+        <h2 class="c-partner__title mb-83 mb-sp-32">様々な業界のリーディングカンパニー<br class="is-sp">から信頼をいただいています。</h2>
+        <div class="c-partner__img01 mb-100 mb-sp-88">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/assets/img/top/partner-logo01.png">
+            <source media="(max-width: 767px)" srcset="/assets/img/top/sp/partner-logo01.png">
+            <img src="/assets/img/top/partner-logo01.png" alt="パートナーロゴ" loading="lazy">
+          </picture>
+        </div>
+        <p class="c-partner__text mb-54 mb-sp-40">パートナーとの連携で課題解決に向けた<br>最良のサービス／ソリューション<br class="is-sp">を提供します。</p>
+        <div class="c-partner__img02">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/assets/img/top/partner-logo02.png">
+            <source media="(max-width: 767px)" srcset="/assets/img/top/sp/partner-logo02.png">
+            <img src="/assets/img/top/partner-logo02.png" alt="パートナーロゴ" loading="lazy">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-top-mission">
+      <div class="max-inner ta-c">
+        <div class="p-top-mission__logo mb-0 mb-sp-88 fadeIn--fromBottom" data-module="FadeIn">
+          <div class="fadeIn--fromTop" data-module="FadeIn">
+            <picture>
+              <source srcset="/assets/img/top/mission_logo.png">
+              <img src="/assets/img/top/mission_logo.png" alt="FLYWHEEL" loading="lazy">
+            </picture>
+          </div>
+        </div>
+        <p class="p-top-mission__head mb-40 mb-sp-30 fadeIn--fromBottom" data-module="FadeIn"><span class="fadeIn--fromTop" data-module="FadeIn">私たちのミッション</span></p>
+        <div class="p-top-mission__mission__wrap mb-90" style="display: inline-block;position: relative;">
+          <h2 class="p-top-mission__mission" data-webgl=true data-module="FadeIn"><span data-module="FadeIn" data-delay="0.3" class="fadeIn--width"><span data-module="FadeIn" data-delay="0.5" class="fadeIn--fromBottom">データを人々のエネルギーに</span></span></h2>
+        </div>
+
+        <div class="p-top-mission__bar mb-83 mx-auto">
+
+        </div>
+
+        <p class="p-top-misiion__text"><span class="white-bg">データは</span><br>
+          <span class="white-bg">人々が持つ価値を最大化する</span><br>
+          <span class="white-bg">新しいエネルギーだと</span><br>
+          <span class="white-bg">私たちは考えています。</span><br><br>
+          <span class="white-bg">本来不必要な作業を効率化し</span><br>
+          <span class="white-bg">生産性を向上させ</span><br>
+          <span class="white-bg">より創造的な価値を創り出すための</span><br>
+          <span class="white-bg">まさに「エネルギー」になるのです。</span><br><br>
+          <span class="white-bg">FLYWHEEL（フライウィール）は</span><br>
+          <span class="white-bg">日本語で、はずみ車という意味です。</span><br><br>
+          <span class="white-bg">私たちは、企業や人々がデータや</span><br>
+          <span class="white-bg">人工知能をより積極的に活用し</span><br>
+          <span class="white-bg">仕事や作業の効率化を加速する</span><br>
+          <span class="white-bg">「はずみ車」になりたいと考えています。</span><br><br>
+          <span class="white-bg">30年後、子供たちの世代が、</span><br>
+          <span class="white-bg">衰退ではなく成長する環境の中で、</span><br>
+          <span class="white-bg">やりたいことに挑戦できる</span><br>
+          <span class="white-bg">社会を作るために</span><br>
+          <span class="white-bg">データとAIで変革を起こせると、</span><br>
+          <span class="white-bg">私たちは信じています。</span>
+        </p>
+      </div>
+      <div class="p-top-mission__btns">
+        <a href="/about/company/" class="c-btn blue mb-sp-22 mx-auto" data-timing="0.7" data-module="FadeIn">
+          <span data-module="FadeIn">会社情報を見る</span>
+        </a>
+        <a href="/careers/" class="c-btn blue mx-auto" data-timing="0.7" data-module="FadeIn">
+          <span data-module="FadeIn">採用情報を見る</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="p-top-blog">
+      <div class="max-inner ta-c">
+        <div class="p-top-blog__contents__list  d-pc-flex">
+          <div class="p-top-blog__contents is-bg-blue">
+            <h2 class="p-top-blog__contents-title ta-c font-accent mb-30 mb-sp-40">NEWS RELEASE</h2>
+            <ul class="p-top-blog__list mb-60 mb-sp-50">
+              <li class="p-top-blog__item">
+                <a href="/newsrelease/detail/">
+                  <div class="d-flex align-center mb-30 mb-sp-20">
+                    <p class="p-top-blog__date font-accent">2022.06.29</p>
+                    <p class="p-top-blog__tag ml-30 is-bg-base-blue is-text-white ml-sp-10">プレスリリース</p>
+                  </div>
+                  <p class="p-top-blog__title">日経産業新聞にて当社の「Conata™ Discovery Planner」が紹介されました</p>
+                </a>
+              </li>
+              <li class="p-top-blog__item">
+                <a href="/newsrelease/detail/">
+                  <div class="d-flex align-center mb-30 mb-sp-20">
+                    <p class="p-top-blog__date font-accent">2022.06.28 </p>
+                    <p class="p-top-blog__tag ml-30 is-bg-base-blue is-text-white ml-sp-10">お知らせ</p>
+                  </div>
+                  <p class="p-top-blog__title">Google 主催の『Born Digital Summit』に当社データサイエンティスト川端が登壇します</p>
+                </a>
+              </li>
+              <li class="p-top-blog__item">
+                <a href="/newsrelease/detail/">
+                  <div class="d-flex align-center mb-30 mb-sp-20">
+                    <p class="p-top-blog__date font-accent">2022.06.22</p>
+                    <p class="p-top-blog__tag ml-30 is-bg-base-blue is-text-white ml-sp-10">プレスリリース</p>
+                  </div>
+                  <p class="p-top-blog__title">日本経済新聞 電子版にて当社の「Conata™ Discovery Planner」が紹介されました</p>
+                </a>
+              </li>
+            </ul>
+            <a href="/newsrelease/" class=" mx-auto c-btn blue">
+              <span>ニュースを見る</span>
+            </a>
+          </div>
+          <div class="p-top-blog__contents is-bg-blue2">
+            <h2 class="p-top-blog__contents-title ta-c font-accent mb-30 mb-sp-40">BLOG</h2>
+            <ul class="p-top-blog__list mb-60 mb-sp-50">
+              <li class="p-top-blog__item">
+                <a href="/topics/detail/">
+                  <div class="d-flex align-center mb-30 mb-sp-20">
+                    <p class="p-top-blog__date font-accent">2022.06.21</p>
+                    <p class="p-top-blog__tag ml-30 is-bg-base-blue is-text-white ml-sp-10">ブログ</p>
+                  </div>
+                  <p class="p-top-blog__title">１年で大手企業の新規事業をリリース、全員で価値に向き合うプロダクトマネジメントとは？（後編）</p>
+                </a>
+              </li>
+              <li class="p-top-blog__item">
+                <a href="/topics/detail/">
+                  <div class="d-flex align-center mb-30 mb-sp-20">
+                    <p class="p-top-blog__date font-accent">2022.06.14 </p>
+                    <p class="p-top-blog__tag ml-30 is-bg-base-blue is-text-white ml-sp-10">ブログ</p>
+                  </div>
+                  <p class="p-top-blog__title">１年で大手企業の新規事業をリリース、全員で価値に向き合うプロダクトマネジメントとは？（前編）</p>
+                </a>
+              </li>
+              <li class="p-top-blog__item">
+                <a href="/topics/detail/">
+                  <div class="d-flex align-center mb-30 mb-sp-20">
+                    <p class="p-top-blog__date font-accent">2022.06.29</p>
+                    <p class="p-top-blog__tag ml-30 is-bg-base-blue is-text-white ml-sp-10">プレスリリース</p>
+                  </div>
+                  <p class="p-top-blog__title">フライウィールの データスタック を紹介します</p>
+                </a>
+              </li>
+            </ul>
+            <a href="/topics/" class=" mx-auto c-btn blue">
+              <span>ブログを見る</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- contents end -->
+
+  <footer class="l-footer">
+    <div class="max-inner">
+      <div class="d-pc-flex justify-btw">
+        <div class="l-footer__left">
+          <ul class="l-footer__sns d-flex align-center mb-23 mb-sp-32">
+            <li>
+              <a href="https://www.linkedin.com/company/flywheel-jp/" target="_blank">
+                <picture>
+                  <source srcset="/assets/img/common/linkedin-icon.svg">
+                  <img src="/assets/img/common/linkedin-icon.svg" alt="LinkedIn" loading="lazy">
+                </picture>
+              </a>
+            </li>
+            <li class="ml-23 ml-sp-30">
+              <a href="https://twitter.com/flywheel_jp" target="_blank">
+                <picture>
+                  <source srcset="/assets/img/common/twitter-icon.svg">
+                  <img src="/assets/img/common/twitter-icon.svg" alt="Twitter" loading="lazy">
+                </picture>
+              </a>
+            </li>
+            <li class="ml-23 ml-sp-25">
+              <a href="https://www.facebook.com/flywheel.jp/" target="_blank">
+                <picture>
+                  <source srcset="/assets/img/common/facebook-icon.svg">
+                  <img src="/assets/img/common/facebook-icon.svg" alt="Facebook" loading="lazy">
+                </picture>
+              </a>
+            </li>
+          </ul>
+          <div class="d-pc-flex align-center mb-sp-40">
+            <p class="l-footer__copyright is-pc">© 2018 FLYWHEEL, Inc. All Rights Reserved</p>
+            <p class="ml-30 l-footer__link mb-sp-20 ml-sp-0"><a href="about/security/">セキュリティ</a></p>
+            <p class="ml-30 l-footer__link ml-sp-0"><a href="about/privacy-policy/">プライバシーポリシー</a></p>
+          </div>
+
+        </div>
+
+        <div class="l-footer__right mb-sp-40">
+          <picture>
+            <source srcset="/assets/img/common/footer-logo.png">
+            <img src="/assets/img/common/footer-logo.png" alt="ICMS-SR0363" loading="lazy">
+          </picture>
+
+        </div>
+        <p class="l-footer__copyright is-sp">© 2018 FLYWHEEL, Inc. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/assets/js/slick.min.js"></script>
+  <!-- <script src="./assets/js/webgl.js"></script> -->
+  <script src="/assets/js/lp.js"></script>
+  <script type="text/javascript" src="/assets/js/slick-main.js"></script>
+  <!-- page js files end -->
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lil-gui@0.17.0/dist/lil-gui.umd.min.js"></script>
+  <script src="/assets/js/controls.js"></script>
+  <script src="/assets/js/webgl.js"></script>
+</body>
+
+</html>

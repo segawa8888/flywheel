@@ -1,0 +1,9 @@
+.p-growth__container {
+    @include pc {
+        padding-top: rem(223);
+        padding-bottom: rem(153);
+    }
+    @include sp {
+        padding-top: vw(125);
+    }
+}

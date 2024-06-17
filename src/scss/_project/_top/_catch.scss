@@ -1,0 +1,54 @@
+.p-top-catch {
+	@include pc {
+		// height: rem(2000);
+	}
+	& > div {
+		padding: rem(264) 0 rem(190);
+		position: sticky;
+		top: 0;
+		@include sp {
+			padding: vw(120) 0 vw(120);
+		}
+	}
+}
+
+.p-top-catch__heading {
+	@include font-pc(26, 27, 0, 600);
+	@include font-sp(18, 27, 0, 600);
+	border-bottom: solid 1px $baseColor;
+	margin-left: auto;
+	margin-right: auto;
+	@include pc {
+		max-width: rem(526.62);
+	}
+	@include sp {
+		max-width: vw(244);
+	}
+}
+
+.p-top-catch__text {
+	@include font-pc(20, 36, -20, 500);
+	@include font-sp(13, 28, -20, 500);
+}
+
+.p-top-catch__logo {
+	@include pc {
+		margin-bottom: rem(94.4);
+	}
+	@include sp {
+		margin-bottom: vw(56.6);
+	}
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		@include pc {
+			width: rem(530.44);
+			height: rem(87.65);
+		}
+		@include sp {
+			width: vw(220);
+			height: vw(36.35);
+		}
+	}
+}

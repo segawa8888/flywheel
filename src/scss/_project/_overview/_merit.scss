@@ -1,0 +1,98 @@
+.p-merit {
+	background-color: #f3f3f7;
+}
+
+.p-merit__top {
+	height: rem(4500);
+	margin-top: rem(80);
+	@include sp {
+		margin-top: rem(200);
+	}
+}
+.p-merit__top__inner {
+	position: sticky;
+	top: 0;
+	@include pc {
+		padding-top: rem(125);
+		padding-bottom: rem(184);
+	}
+	@include sp {
+		padding-top: vw(125);
+		padding-bottom: vw(119);
+	}
+}
+
+.p-merit__inner {
+	@include pc {
+		max-width: rem(710);
+		margin-left: rem(324);
+	}
+	@include sp {
+		padding-left: vw(47);
+	}
+	@media screen and (min-width: 1368px) {
+		margin-left: initial;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.p-merit__contents {
+	@include pc {
+		margin-top: rem(159.6);
+	}
+	@include sp {
+		margin-top: vw(122);
+	}
+}
+
+.p-merit__items {
+	position: relative;
+	@include pc {
+		height: rem(200);
+	}
+	@include sp {
+		height: vw(200);
+	}
+}
+.p-merit__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	transition: all 0.8s;
+	&.fadeMerit {
+		opacity: 1;
+	}
+}
+
+.p-merit__item:nth-child(2n) {
+	@include pc {
+		padding-left: rem(145);
+	}
+}
+
+.p-merit__tittle {
+	@include pc {
+		@include font-pc(48, 68, -50, 600);
+		white-space: nowrap;
+	}
+	@include sp {
+		@include font-sp(24, 33, -50, 600);
+	}
+}
+
+.p-merit__text {
+	@include pc {
+		margin-top: rem(23);
+		@include font-pc(18, 33, 0, 400);
+		white-space: nowrap;
+	}
+	@include sp {
+		margin-top: vw(12);
+		@include font-sp(14, 25, 0, 400);
+		padding-right: vw(42);
+	}
+}

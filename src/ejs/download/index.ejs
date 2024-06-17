@@ -1,0 +1,38 @@
+<%- include(`${ROOT}_include/_img`) %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% var meta={ path: "../",title: '資料請求' , description: 'description' , keywords: 'keywords' , og : { url: ``, iamge: '' } } -%>
+  <%- include(`${ROOT}_common/_head`, { meta: meta }) %>
+</head>
+
+<body>
+  <%- include(`${ROOT}_common/_header.ejs`, {path: meta.path}) %>
+  <!-- contents start -->
+  <div id="mainContents" class="dl sub">
+    <section class="pt-160 pb-sp-20 p-form">
+      <div class="max-inner">
+        <h1 class="u-title ta-c mb-100 mb-sp-40 mb-sp-100">資料請求</h1>
+        <p class="p-form-lead mb-90 mb-sp-70">フライウィール会社紹介資料とConata(コナタ)™ 導入事例集をダウンロードいただけます<br class="is-pc">フォームに必要な情報を入力し、送信してください。入力されたメールアドレス宛に、<br class="is-pc">ダウンロードのご案内をお送りします。</p>
+        <div>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "7085172",
+              formId: "89c2173c-91ec-4870-b3de-9942feef915a"
+            });
+          </script>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- contents end -->
+
+  <%- include(`${ROOT}_common/_footer.ejs`,{path: meta.path}) %>
+  <%- include(`${ROOT}_common/_script.ejs`, {path: meta.path}) %>
+</body>
+
+</html>

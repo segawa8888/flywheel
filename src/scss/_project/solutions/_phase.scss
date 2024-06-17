@@ -1,0 +1,9 @@
+.p-phase__container {
+    @include pc {
+        margin-top: rem(213);
+        padding-bottom: rem(120);
+    };
+    @include sp {
+        margin-top: vw(125);
+    }
+}
